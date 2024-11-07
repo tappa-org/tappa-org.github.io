@@ -1,0 +1,51 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Tuebingen AI PhD and Postdoc Assembly
+email: tappa.tue@gmail.com
+description: > #this means to ignore newlines until "baseurl:" Women in Machine Learning Tübingen.
+#baseurl:  # the subpath of your site, e.g. /blog
+url: https://tappa-org.org # the base hostname & protocol for your site
+
+# Gems
+gems: [jekyll-paginate]
+
+# Build settings
+markdown: kramdown
+paginate: 5
+paginate_path: '/page:num/'
+#markdown: kramdown
+highlighter: rouge
+theme: minima
+plugins:
+  - jekyll-paginate
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - tmp/
+  - vendo/
+kramdown:
+  input: GFM
+
+menuitems:
+    - { title:    Home,
+        url:      /index.html }
+    - { title:    Members,
+        url:      /members.html }
+    - { title:     Events,
+        url:      /events.html}
+    - { title:     Get In Touch,
+        url:      /contact.html}
+
+paginate: 5
+paginate_path: "/page:num/"

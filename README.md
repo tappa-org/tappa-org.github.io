@@ -1,14 +1,14 @@
 ![](img/tappa_logo.png)
 
 ## What is TAPPA?
-TAPPA stands for *Tübingen AI PhD and Postdoc Assembly* and is a grassroots initiative to bring together PhD students and Postdocs doing research in AI in Tübingen. 
+TAPPA stands for *Tübingen AI PhD and Postdoc Assembly* and is a grassroots initiative to bring together PhD students and Postdocs doing research in AI in Tübingen.
 
-TAPPA was created in a joint initiative by PhDs and Postdocs across institutes and graduate schools and is similar in spirit to a student council: **the goal is to enhance the PhD and Postdoc experience within the Tübingen AI ecosystem** by addressing common concerns, organizing events, and more. 
+TAPPA was created in a joint initiative by PhDs and Postdocs across institutes and graduate schools and is similar in spirit to a student council: **the goal is to enhance the PhD and Postdoc experience within the Tübingen AI ecosystem** by addressing common concerns, organizing events, and more.
 
 Currently, members come from the University of Tübingen, MPI-IS, the Tübingen AI Center, the Cluster of Excellence, the ELLIS Institue as well as CLS and IMPRS-IS, but it is open to all PhDs and Postdocs in the Tübingen AI environment. So feel invited to come by!
 
-### **Goals** 
-To work towards <mark>enhancing the PhD and Postdoc experience</mark>, we see TAPPA as a plattform to 
+### **Goals**
+To work towards <mark>enhancing the PhD and Postdoc experience</mark>, we see TAPPA as a platform to
 - join forces to push for common issues\
 *e.g. improved onboarding through a joint wiki, collecting arguments for higher salaries*
 - co-organize events across different institutes or PhD programs\
