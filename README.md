@@ -16,7 +16,7 @@ To work towards <mark>enhancing the PhD and Postdoc experience</mark>, we see TA
 - provide information flow, in particular also between representatives and their communities\
 *e.g. latest developments in grad schools, updates from board meetings*
 - include more people in organization and decision processes, for transparency and community building\
-*e.g. involvement in faculty recruiting, pushing for a community-wide support structure *
+*e.g. involvement in faculty recruiting, pushing for a community-wide support structure*
 
 ### **Why should you join TAPPA?**
 TAPPA is open to all PhDs and Postdocs in Tübingen doing research in AI! If you want to contribute to your community and get more involved in improving it, TAPPA is a great way to get to meet other motivated people, find collaborators and helpers and gain more insights into ongoing decision processes at the different institutes or grad schools. Come by our monthly meetings! We're looking forward to seeing you!
