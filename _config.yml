@@ -1,0 +1,20 @@
+# _config.yml
+title: "TAPPA"
+description: "Tuebingen AI PhD and Postdoc Assembly"
+baseurl: "" # Leave empty if deploying to GitHub Pages root
+url: "https://tappa-org.github.io/tappa-org" # Replace with your GitHub Pages URL
+
+# Theme configuration
+theme: mere-blog-theme # Same theme as in Gemfile
+
+# Build settings
+markdown: kramdown
+
+# Blog set-up
+paginate: 6
+paginate_path: "/page:num"
+
+# Authors' page
+collections:
+  authors:
+    output: true

@@ -1,0 +1,28 @@
+/* Paragraph */
+p {
+  margin-bottom: 0.5em; /* Adjust as needed */
+}
+
+/* Bullet points */
+ul {
+  list-style-type: disc; /* Options: disc, circle, square, none */
+  padding-left: 20px;    /* Adjusts left padding for alignment */
+}
+
+li {
+  font-size: 16px;       /* Adjusts font size */
+  color: #333;           /* Changes bullet text color */
+  margin-bottom: 10px;   /* Adds space between list items */
+}
+
+/* Faded color command for text */
+.faded {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* Corpus text style */
+.justified-text {
+  text-align: justify;
+  margin-left: 3em;
+  margin-right: 3em;
+}
