@@ -4,7 +4,7 @@ description: "Tuebingen AI PhD and Postdoc Assembly"
 url: "https://tappa-org.github.io/tappa-org" # Replace with your GitHub Pages URL
 
 # Theme configuration
-theme: mere-blog-theme # Same theme as in Gemfile
+remote_theme: chrisrhymes/mere-blog-theme # Same theme as in Gemfile
 
 # Build settings
 markdown: kramdown
