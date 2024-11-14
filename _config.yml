@@ -1,7 +1,6 @@
 # _config.yml
 title: "TAPPA"
 description: "Tuebingen AI PhD and Postdoc Assembly"
-baseurl: "" # Leave empty if deploying to GitHub Pages root
 url: "https://tappa-org.github.io/tappa-org" # Replace with your GitHub Pages URL
 
 # Theme configuration
