@@ -1,0 +1,9 @@
+- name: "Member 1"
+  role: "Role 1"
+  photo: "img/members/member1.jpg"
+  github: "https://github.com/member1"
+- name: "Member 2"
+  role: "Role 2"
+  photo: "img/members/member2.jpg"
+  github: "https://github.com/member2"
+# Add more members as needed
