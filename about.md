@@ -1,5 +1,7 @@
 ---
 layout: default
+title: About
+permalink: /about/
 ---
 
 ## What do we do at TAPPA?
