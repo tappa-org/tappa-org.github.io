@@ -47,6 +47,8 @@ plugins:
 #   - vendor/ruby/
 
 nav_links:
+  - name: "About"
+    url: "/about/"
   - name: "Members"
     url: "/members/"
   - name: "Contact"
