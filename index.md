@@ -20,9 +20,15 @@ It is similar in spirit to a student council: the goal is to enhance the PhD and
 *e.g. involvement in faculty recruiting, pushing for a community-wide support structure*
 
 ### **Why should you join TAPPA?**
-TAPPA is open to all PhDs and Postdocs in Tübingen doing research in AI! If you want to contribute to your community and get more involved in improving it, TAPPA is a great way to get to meet other motivated people, find collaborators and helpers and gain more insights into ongoing decision processes at the different institutes or grad schools. Come by our monthly meetings! We're looking forward to seeing you!
+TAPPA is open to all PhDs and Postdocs in Tübingen doing research in AI!
+If you want to contribute to your community and get more involved in improving it,
+TAPPA is a great way to get to meet other motivated people, find collaborators and
+helpers and gain more insights into ongoing decision processes at the different
+institutes or grad schools.
 
 ## TAPPA meetings
+
+Come by our monthly meetings! We're looking forward to seeing you!
 
 :clock5: Usually, we meet on the 1st Thursday of the month, 17.00-18.00.
 
@@ -40,7 +46,6 @@ Currently, members come from the University of Tübingen, MPI-IS, the Tübingen 
 
 ## Contact
 
-TAPPA is open to all PhDs and Postdocs in the Tübingen AI environment. So feel invited to come by!
 If you are interested in joining or have any further questions, please reach out to us:
 
 Laura Iacovissi (laura.iacovissi@uni-tuebingen.de)
