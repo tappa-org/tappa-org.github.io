@@ -20,9 +20,10 @@
 
 title: TAPPA
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  TAPPA is a grassroots initiative to bring together PhD students and Postdocs
+  doing research in AI in Tübingen. TAPPA is similar in spirit to a student
+  council: the goal is to enhance the PhD and Postdoc experience within the
+  Tübingen AI ecosystem by addressing common concerns, organizing events, and more.
 url: "http://tappa-org.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: tappa-org
 
