@@ -44,3 +44,9 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+nav_links:
+  - name: "Members"
+    url: "/members/"
+  - name: "Contact"
+    url: "/contact/"

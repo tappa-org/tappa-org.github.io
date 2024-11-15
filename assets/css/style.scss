@@ -1,0 +1,19 @@
+/* Navbar styling */
+.navbar {
+  display: flex;                  /* Arrange links in a row */
+  justify-content: space-evenly;  /* Distribute links evenly across the container */
+  width: 100%;                     /* Ensure navbar takes full width */
+  padding: 10px 20px;              /* Add padding for spacing inside the navbar */
+}
+
+.navbar a {
+  text-decoration: none;           /* Remove underline from links */
+  color: #333;                     /* Link color */
+  font-weight: bold;               /* Make links bold */
+  flex: 1;                          /* Each link takes equal space */
+  text-align: center;              /* Center-align text inside each link */
+}
+
+.navbar a:hover {
+  color: #007bff;                  /* Change color on hover */
+}
