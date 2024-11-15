@@ -17,3 +17,6 @@ paginate_path: "/page:num"
 collections:
   authors:
     output: true
+
+plugins:
+  - jekyll-paginate

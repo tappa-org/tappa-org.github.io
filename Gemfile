@@ -9,5 +9,8 @@ group :jekyll_plugins do
   gem "jekyll-timeago", "~> 0.13.1"
 end
 
+# Pagination plugin
+gem "jekyll-paginate", "~> 1.1"
+
 # Add your desired Jekyll theme
 gem "mere-blog-theme"
