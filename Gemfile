@@ -3,7 +3,11 @@
 source "https://rubygems.org"
 
 # Jekyll version and GitHub Pages gem
-gem "github-pages", group: :jekyll_plugins
+gem "jekyll", "~> 4.2"
+
+group :jekyll_plugins do
+  gem "jekyll-timeago", "~> 0.13.1"
+end
 
 # Add your desired Jekyll theme
 gem "mere-blog-theme"
