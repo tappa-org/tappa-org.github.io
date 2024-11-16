@@ -104,3 +104,7 @@ a {
   -webkit-transition: $global-transition;
   transition: $global-transition;
 }
+
+span.blockspam {
+  display: none;
+}
