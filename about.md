@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /About/
+# permalink: /About/
 ---
 
 ## What is TAPPA?
