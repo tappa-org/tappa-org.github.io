@@ -29,7 +29,6 @@ TAPPA is open to all PhDs and Postdocs in Tübingen doing research in AI! If you
 
 **Upcoming meetings**
 ```
-7th of November @ MPI-IS, N1.028
 5th of December @ MvL6, room tbd
 9th of Janurary @ MPI-IS, N1.028
 ```
