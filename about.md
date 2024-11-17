@@ -1,7 +1,7 @@
 ---
-layout: default
-title: About
-permalink: /about/
+layout: page
+title: ''
+# permalink: /About/
 ---
 
 ## What do we do at TAPPA?
@@ -21,17 +21,3 @@ If you want to contribute to your community and get more involved in improving i
 TAPPA is a great way to get to meet other motivated people, find collaborators and
 helpers and gain more insights into ongoing decision processes at the different
 institutes or grad schools.
-
-## TAPPA meetings
-
-Come by our monthly meetings! We're looking forward to seeing you!
-
-:clock5: Usually, we meet on the 1st Thursday of the month, 17.00-18.00.
-
-:round_pushpin: The location alternates between MPI-IS and MvL6 (Maria-von-Linden-Straße 6).
-
-**Upcoming**
-```
-5th of December @ MvL6, room tbd
-9th of January @ MPI-IS, N1.028
-```

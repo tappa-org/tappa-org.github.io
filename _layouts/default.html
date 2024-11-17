@@ -1,38 +1,22 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en-US" }}">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--
+    So Simple Jekyll Theme 3.2.0
+    Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+    Free for personal and commercial use under the MIT license
+    https://github.com/mmistakes/so-simple-theme/blob/master/LICENSE
+-->
+<html lang="{{ page.lang | default: site.lang | default: 'en-US' }}" class="no-js">
+  {% include head.html %}
 
-{% seo %}
-    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-    {% include head-custom.html %}
-  </head>
-  <body>
+  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %} {% if page.entries_layout == 'grid' %}page--wide{% endif %} {{ page.title | slugify }}">
+    {% include skip-links.html %}
+    {% include navigation.html %}
+    {% include masthead.html %}
 
-    <div class="container-lg px-3 my-5 markdown-body">
+    {{ content }}
 
-      {{ content }}
-
-      {% if site.title and site.title != page.title %}
-      <div class="footer border-top border-gray-light mt-5 pt-3">
-        <div class="navbar">
-        <a href="{{ "/" | absolute_url }}">   Home   </a>
-        <a href="{{ "/about/" | relative_url }}">   About   </a>
-        <a href="{{ "/members/" | relative_url }}">   Members   </a>
-        <a href="{{ "/contact/" | relative_url }}">   Contact   </a>
-        </div>
-      </div>
-      {% endif %}
-
-      <!--
-      <div class="text-right text-gray">
-        © TAPPA 2024.
-      </div>
-      -->
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
-    <script>anchors.add();</script>
+    {% include footer.html %}
+    {% include scripts.html %}
   </body>
+
 </html>

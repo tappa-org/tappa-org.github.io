@@ -1,10 +1,13 @@
 ---
-layout: default
-title: Contact
-permalink: /contact/
+layout: page
+image:
+  path: /images/tuebingen2.jpg
+  thumbnail: /images/tuebingen2.jpg
+  caption: "" #"Photo credit: Mila"
+title: ''
+# permalink: /Contact/
 ---
 
-# Contact us
+If you are interested in joining TAPPA or have any further questions, please reach out to us:
 
-If you are interested in joining or have any further questions, please reach out via
-[email](mailto:laura.iacovissi@uni-tuebingen.de?subject=Interested%20in%20joining%20TAPPA).
+Laura Iacovissi  (laura.iacovissi@<span class="blockspam" aria-hidden="true">PLEASE GO AWAY!</span><!-- jjnsjfkrkvk -->uni-tuebingen.de).
