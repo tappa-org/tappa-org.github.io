@@ -14,7 +14,10 @@ image:
 
 <!-- ![](images/header.png) -->
 
-TAPPA stands for *Tübingen AI PhD and Postdoc Assembly* and is a grassroots initiative to bring together PhD students and Postdocs doing research in AI in Tübingen. TAPPA  similar in spirit to a student council: **the goal is to enhance the PhD and Postdoc experience within the Tübingen AI ecosystem** by addressing common concerns, organizing events, and more.
+TAPPA stands for *Tübingen AI PhD and Postdoc Assembly* and is a grassroots initiative to bring together
+PhD students and Postdocs doing research in AI in Tübingen.
+It is similar in spirit to a student council: the goal is to **enhance the PhD and Postdoc experience** within
+the Tübingen AI ecosystem by addressing common concerns, organizing events, and more.
 
 ## TAPPA meetings
 
@@ -23,10 +26,11 @@ TAPPA stands for *Tübingen AI PhD and Postdoc Assembly* and is a grassroots ini
 :round_pushpin: The location alternates between MPI-IS and MvL6 (Maria-von-Linden-Straße 6).
 
 
-### Upcoming meetings 
+### Upcoming meetings
 {% highlight bash%}
 5th of December @ MvL6, room tbd
 9th of Janurary @ MPI-IS, N1.028
+6th of February @ MvL6, room tbd
 {% endhighlight %}
 
 ---

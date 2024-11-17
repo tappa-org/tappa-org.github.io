@@ -4,7 +4,7 @@ image:
   path: /images/tuebingen2.jpg
   thumbnail: /images/tuebingen2.jpg
   caption: "" #"Photo credit: Mila"
-# title: ''
+title: ''
 # permalink: /Contact/
 ---
 

@@ -289,6 +289,8 @@ figcaption { margin: 0.5rem 0; font-size: 80%; }
 
 a { -webkit-transition: all 0.4s ease; transition: all 0.4s ease; }
 
+span.blockspam { display: none; }
+
 /* ========================================================================== Tables ========================================================================== */
 table { width: 100%; border-collapse: collapse; /* For Firefox to horizontally scroll wider tables */ word-break: normal; word-break: keep-all; }
 table { font-size: 12px; }
