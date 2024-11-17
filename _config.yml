@@ -98,6 +98,12 @@ search_full_content: false # can have performance implications for large sites
 # category_archive_path: "/categories/#"
 # tag_archive_path: "/tags/#"
 
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path/
+
 # Front Matter Defaults
 defaults:
   # Posts defaults
@@ -107,6 +113,14 @@ defaults:
     values:
       layout: post
       share: false
+  # Posts defaults
+  - scope:
+      path: "_projects"
+      type: projects
+    values:
+      layout: post
+      share: false
+
 
 # Site Author
 author:
