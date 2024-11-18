@@ -35,4 +35,4 @@ the Tübingen AI ecosystem by addressing common concerns, organizing events, and
 
 ---
 
-## Current News and Events
+## News and Events
