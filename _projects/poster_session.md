@@ -1,7 +1,9 @@
 ---
-title: "AI-focused poster sessions & get-together"
+title: "Pre-Conference Poster Sessions & Get-Together"
 ---
 
-Project led by Cagatay Yildiz.
+Project led by Çağatay Yıldız.
 
-Cagatay has been organizing poster sessions two times a year where members of the Tübingen AI scene can present their newly published work. Active discussions with TAPPA members are shaping future events, making them more appealing to a wider audience  and encouraging the presentation of work that is in the making.
+Çağatay is currently organizing biannual pre-conference poster sessions where members of the Tübingen AI research environment can present their newly published work. Active discussions with TAPPA members are shaping future events. As an example, we are currently discussion to provide opportunities to discuss work in progress. 
+
+If you enjoyed previous versions of these poster sessions, have suggestions how to further improve them or would like to join the organizing team, please let us know!

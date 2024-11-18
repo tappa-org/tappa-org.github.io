@@ -1,7 +1,11 @@
 ---
-title: "Student-Candidate meetings: Involving PhDs and Postdocs in recruitment"
+title: "Student-Candidate meetings: Involving PhDs and Postdocs in faculty recruitment"
 ---
 
 Project led by Mila Gorecki.
 
-As the AI Center representative, Mila was tasked with organizing meetings between faculty candidates and PhD students. TAPPA was central in spreading the word and many of our members participated in those meetings, and our feedback was passed onto the deciding committee. It was empowering to involve PhDs in decision making processes that are of consequence to us all.
+In previous hiring rounds from the AI Center, Mila organized informal 30-minute meetings between faculty candidates and small groups of PhDs, Postdocs and MSc students. Feedback from these meetings was shared with the search committee. 
+
+Another way for PhD students and Postdocs to get involved in faculty recruitment is to join the search commitee as one of the Mittelbau representatives. 
+
+If you are interested in getting involved, please reach out!
