@@ -21,16 +21,16 @@ the Tübingen AI ecosystem by addressing common concerns, organizing events, and
 
 ## TAPPA meetings
 
-:clock5: Usually, we meet on the 1st Thursday of the month, 17.00-18.00.
+:clock5: Usually, we meet on the 1st Thursday of the month, 17:00-18:00.
 
 :round_pushpin: The location alternates between MPI-IS and MvL6 (Maria-von-Linden-Straße 6).
 
 
 ### Upcoming meetings
 {% highlight bash%}
-5th of December, 4pm @ 4th floor meeting room in MvL6
-9th of Janurary @ MPI-IS, N1.028
-6th of February @ MvL6, room tbd
+5th of December, 16:00 @ MvL6, 4th floor meeting room 
+9th of Janurary, 17:00 @ MPI-IS, N1.028
+6th of February, 17:00 @ MvL6, room tbd
 {% endhighlight %}
 
 ---
