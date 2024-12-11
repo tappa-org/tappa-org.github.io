@@ -2,7 +2,8 @@
 title: "Community building with Friday Talks"
 ---
 
-Led by Christian Fröhlich, Nina Effenberger and Sebastian Zezulka; Failure Friday edition led by Kibidi Neocosmos.
+*Looking for new organizers!*
+Previously led by Christian Fröhlich, Nina Effenberger and Sebastian Zezulka; Failure Friday edition led by Kibidi Neocosmos.
 
 
 Friday talks are a bi-weekly format in which two researchers from our community present their latest research (questions) as 10-minute talks, followed by drinks and pretzels. Failure Friday is a special edition of this format (happening roughly every 3-4 months): PIs and Postdocs are invited to talk about their experience with failure in their academic career.
