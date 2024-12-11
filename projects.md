@@ -9,5 +9,3 @@ image:
 collection: projects
 entries_layout: grid #list
 ---
-
-Some of the projects we focused on so far.
