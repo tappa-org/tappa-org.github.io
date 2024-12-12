@@ -1,7 +1,7 @@
 ---
 title: "Inclusion & Transparency"
 ---
-The rapid growth of AI research labs in Tübingen has created the need for a platform where young researchers can discuss and tackle their challenges. To address this, we created the TAPPA initiative to bring together PhD students and Postdocs working in Artificial Intelligence (AI). Our main goal is to build an inclusive, safe, and welcoming community, starting from the ground up.
+The rapid growth of AI research labs in Tübingen has created the need for a platform where young researchers can discuss and tackle their challenges. To address this, we created the TAPPA initiative to bring together PhD students and Postdocs. Our main goal is to build an inclusive, safe, and welcoming community, starting from the ground up.
 
 Some examples:
 - **Student-Candidate Meetings**: Involving PhDs and Postdocs in faculty recruitment. Led by Mila Gorecki. Help is always welcome!
