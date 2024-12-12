@@ -2,7 +2,7 @@
 title: "Community Building on Campus"
 ---
 
-Our ever-growing AI community in Tübingen thrives on strong connections! We work together in various teams and initiatives to help people connect with other researchers on both personal and professional levels. These efforts take the form of events, talks, parties, or support systems like a buddy program.
+Our AI community in Tübingen thrives on strong connections! We work together in various teams and initiatives to help people connect with other researchers on both personal and professional levels. These efforts take the form of events, talks, parties, or support systems like a buddy program.
 
 Some examples:
 - **Seasonal Poster Sessions & Get-Together**: Led by Çağatay Yıldız. help is always welcome!
