@@ -2,7 +2,7 @@
 title: "Support and Resources for International Researchers"
 ---
 
-[Abstract TBD]
+Building a strong, inclusive community means making sure international researchers feel welcome and supported. We provide tools, connections, and guidance to help newcomers navigate academic life and settle into the Tübingen research community.
 
 Some examples:
 - **Tuebingen AI Center Wiki**: Developed together with the AI Center Administration, led by Auguste Schulz.
