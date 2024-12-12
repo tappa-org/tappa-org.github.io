@@ -3,11 +3,11 @@ layout: post
 title:  "Friday Talks Comeback"
 date:   2025-01-01 00:00:00 +0100
 tags: event
-published: true
-image:
-  path:
-  thumbnail:
-  caption: ""
+published: false
+#image:
+#  path:
+#  thumbnail:
+#  caption: ""
 ---
 
 *Looking for new organizers!*
