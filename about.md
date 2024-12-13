@@ -1,7 +1,10 @@
 ---
 layout: page
 title: ''
-# permalink: /About/
+image:
+  path: /images/about-pic.png
+  thumbnail: /images/about-pic.png
+  caption: ""
 ---
 
 TAPPA is a grassroots initiative built by and for PhD students and Postdocs in the Tübingen AI research environment. As such, it serves as a platform to connect people who want to contribute to their community and address common concerns.
