@@ -2,8 +2,8 @@
 layout: page
 title: ''
 image:
-  path: /images/about-pic.png
-  thumbnail: /images/about-pic.png
+  path: /images/about-pic-long.jpeg
+  thumbnail: /images/about-pic-long.jpeg
   caption: ""
 ---
 
