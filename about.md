@@ -9,6 +9,8 @@ title: ''
 
 TAPPA is a grassroots initiative built by and for PhD students and Postdocs in the Tübingen AI research environment. As such, it serves as a platform to connect people who want to contribute to their community and address common concerns.
 
+![AI-generated image representing an office with a diverse crow, in an informal setting, talking and connecting with each other.](/images/about-pic-long.jpeg)
+
 ## What do we do at TAPPA?
 
 - join forces to push for common issues\
@@ -20,7 +22,6 @@ TAPPA is a grassroots initiative built by and for PhD students and Postdocs in t
 - include more people in organization and decision processes, for transparency and community building\
 <span style="color: gray;">*e.g. involvement in faculty recruiting, pushing for a community-wide support structure*</span>
 
-![AI-generated image representing an office with a diverse crow, in an informal setting, talking and connecting with each other.](/images/about-pic-long.jpeg)
 
 ## Why should you join?
 TAPPA is open to all PhDs and Postdocs in Tübingen doing research in AI!
