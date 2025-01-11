@@ -6,4 +6,4 @@ Our large community of researchers spans a wide range of interests, making it ch
 
 Some examples:
 - **Seasonal Poster Sessions & Get-Together**: Led by Çağatay Yıldız. help is always welcome!
-- **Friday Talk & Beer**: *Looking for new organizers!* Previously led by Christian Fröhlich, Nina Effenberger and Sebastian Zezulka.
+- **Friday Talk & Beer**: More info at https://fridaytalks.github.io/
