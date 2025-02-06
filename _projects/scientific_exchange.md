@@ -6,4 +6,4 @@ Our large community of researchers spans a wide range of interests, making it ch
 
 Some examples:
 - **Seasonal Poster Sessions & Get-Together**: Led by Çağatay Yıldız. help is always welcome!
-- **Friday Talk & Beer**: More info at https://fridaytalks.github.io/
+- **Friday Talk & Beer**: Led by Tim Xiao, Johannes Zenn and Zeju Qiu. More info at [https://fridaytalks.github.io/](https://fridaytalks.github.io/)
