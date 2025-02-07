@@ -27,7 +27,8 @@
   font-weight: $entry-title-weight;
   font-style: italic;
   letter-spacing: -1px;
-  word-wrap: break-word; /* break long words that could overflow */
+  word-wrap: break-word;
+  /* break long words that could overflow */
 
   a {
     text-decoration: none;
@@ -52,6 +53,7 @@
 }
 
 .entry-meta {
+
   .entry-date,
   .read-time {
     font-family: $meta-font-family;
@@ -59,7 +61,7 @@
     white-space: nowrap;
   }
 
-  .read-time + .entry-date::before {
+  .read-time+.entry-date::before {
     content: "\2022";
     padding: 0 0.5em;
   }
@@ -94,6 +96,27 @@
     order: 1;
   }
 
+  .entry-image {
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    order: -1;
+    max-height: 300px;
+    width: auto;
+    // margin-bottom: 0.5rem;
+    text-align: center;
+    /* ensures the image is always in the h-middle */
+    overflow: hidden;
+    /* hide the cropped portion */
+    background-color: lighten(blue, 50%);
+  }
+
+  img {
+    object-position: bottom;
+    object-fit: cover; //cover;
+    // top: 0%;
+    // transform: translateY(-50%);
+  }
+
   .entry-excerpt,
   .entry-content {
     -webkit-box-ordinal-group: 4;
@@ -101,14 +124,15 @@
     order: 3;
 
     /* remove space after last child element */
-    > *:last-child {
+    >*:last-child {
       margin-bottom: 0;
     }
   }
 
   .entry-excerpt {
+
     /* normalize font sizes */
-    > * {
+    >* {
       font-size: 1rem;
     }
   }
@@ -157,6 +181,23 @@
     order: 1;
   }
 
+  .entry-image {
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    order: -1;
+    height: 300px;
+    width: auto;
+    // margin-bottom: 0.5rem;
+    text-align: center;
+    overflow: hidden;
+    /* hide the cropped portion */
+  }
+
+  img {
+    object-position: center;
+    object-fit: cover; //contain;
+  }
+
   .entry-excerpt,
   .entry-content {
     -webkit-box-ordinal-group: 4;
@@ -164,14 +205,15 @@
     order: 3;
 
     /* remove space after last child element */
-    > *:last-child {
+    >*:last-child {
       margin-bottom: 0;
     }
   }
 
   .entry-excerpt {
+
     /* normalize font sizes */
-    > * {
+    >* {
       font-size: 1rem;
     }
   }
