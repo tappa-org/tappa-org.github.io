@@ -1,0 +1,32 @@
+---
+layout: page
+---
+
+{{ content }}
+
+<!-- Upcoming vs. past events -->
+<!-- {{site.posts | where_exp: 'post', 'post.date.to_date <= nowDate'}} -->
+
+{% assign nowDateSec="now" | date: "%s" | minus:0 %}
+<section id="Upcoming" class="taxonomy-section">
+  <h2 class="taxonomy-title">Upcoming</h2>
+  <div class="entries-{{ page.entries_layout | default: 'list' }}">
+    {% for entry in site.posts %}
+    {% assign postDateSec=entry.date | date: "%s" | minus: 0 %}
+    {% if nowDateSec < postDateSec %} {% include entry.html %} {% endif %} {% endfor %} </div>
+      <a href="#page-title" class="back-to-top">{{ site.data.text[site.locale].back_to_top | default: 'Back to Top' }}
+        &uarr;</a>
+</section>
+<section id="Past" class="taxonomy-section">
+  <h2 class="taxonomy-title">Past</h2>
+  <div class="entries-{{ page.entries_layout | default: 'list' }}">
+    {% for entry in site.posts %}
+    {% assign postDateSec=entry.date | date: "%s" | minus: 0 %}
+    {% if nowDateSec > postDateSec %}
+    {% include entry.html %}
+    {% endif %}
+    {% endfor %}
+  </div>
+  <a href="#page-title" class="back-to-top">{{ site.data.text[site.locale].back_to_top | default: 'Back to Top' }}
+    &uarr;</a>
+</section>

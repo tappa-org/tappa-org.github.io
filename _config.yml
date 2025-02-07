@@ -114,7 +114,6 @@ defaults:
     values:
       layout: post
       share: false
-  # Posts defaults
   - scope:
       path: "_projects"
       type: projects
