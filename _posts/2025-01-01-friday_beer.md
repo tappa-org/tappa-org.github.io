@@ -13,9 +13,7 @@ image:
 ---
 
 
-Dear all,
-
-We are excited to be **restarting the Friday Talks series** and would like to warmly invite you to the first session on 24th of January 2025 at 5pm at the AI Research Building (Maria-von-Lindenstraße 6). 
+Dear all, We are excited to be **restarting the Friday Talks series** and would like to warmly invite you to the first session on 24th of January 2025 at 5pm at the AI Research Building (Maria-von-Lindenstraße 6). 
 
 We are currently looking for speakers. If you would like to give a talk, please fill out this [form](https://tinyurl.com/mrx22r8p). There is only a limited number of spots left so better be quick! 
 
