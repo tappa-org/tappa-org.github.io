@@ -28,9 +28,9 @@ the Tübingen AI ecosystem by addressing common concerns, organizing events, and
 
 ### Upcoming meetings
 {% highlight bash%}
-6th of March, meeting skipped
-3rd of April, 17:00 @ MvL6, room tbd
 8th of May, 17:00 @ MPI-IS, N1.028
+5th of June, 17:00 @ MvL6, room tbd
+3rd of July, 17:00 @ MPI-IS, room tbd
 {% endhighlight %}
 
 ---
