@@ -9,3 +9,6 @@ image:
 collection: projects
 entries_layout: grid #list
 ---
+
+We are a diverse group of individuals with a wide range of interests and ongoing projects.
+Explore our key focus areas below. Click on any topic to learn more about the related initiatives.
