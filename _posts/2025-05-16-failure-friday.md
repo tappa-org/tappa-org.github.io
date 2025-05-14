@@ -1,7 +1,7 @@
 ---
 layout: post
 title:   "Failure Friday"
-date:   2025-01-24 17:00:00 +0100
+date:   2025-05-16 17:00:00 +0100
 tags:
 - event
 - social
