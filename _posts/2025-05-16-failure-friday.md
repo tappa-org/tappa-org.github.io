@@ -8,7 +8,7 @@ tags:
 published: true
 image:
   path: /images/events/2025-05-16-failurefriday0.png
-  thumbnail: /images/events/25-05-16-failurefriday-thumb.png
+  thumbnail: /images/events/25-05-16-failurefriday-thumb.jpeg
   caption: ""
 ---
 
