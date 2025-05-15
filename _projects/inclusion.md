@@ -1,7 +1,8 @@
 ---
 title: "Inclusion & Transparency"
 ---
-One of our main goals is to build an inclusive, safe, and welcoming community, starting from the ground up. We also want to students and Postdocs to be more aware of and involved in the decision-making process behind what happens in our campus.
+One of our main goals is to build an inclusive, safe, and welcoming community, starting from the ground up.
+We also want students and Postdocs to be more *aware of* and *involved* in the decision-making process behind what happens in our campus.
 
 Some examples:
 - **Student-Candidate Meetings**: Involving PhDs and Postdocs in faculty recruitment. Led by Mila Gorecki. Help is always welcome!
