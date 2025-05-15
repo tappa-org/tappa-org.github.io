@@ -16,7 +16,7 @@ At this Science Slam, PhD students and postdocs from the University of Tübingen
 
 The event is organized by the Tübingen AI PhD and Postdoc Assembly (TAPPA) and supported by the Cluster of Excellence "Machine Learning: New Perspectives for Science" and Rhet AI.
 
-When:  5 June, 7 pm
-Venue: Kupferbau, Hörsaal 22
-Organizers: Tübingen AI PhD and Postdoc Assembly (TAPPA)
-All talks will be in English. Admission is free.
+- When:  5 June, 7 pm
+- Venue: Kupferbau, Hörsaal 22
+- Organizers: Tübingen AI PhD and Postdoc Assembly (TAPPA)
+- All talks will be in English. Admission is free.
