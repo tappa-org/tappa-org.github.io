@@ -22,6 +22,7 @@ TAPPA is a grassroots initiative built by and for PhD students and Postdocs in t
 - include more people in organization and decision processes, for transparency and community building\
 <span style="color: gray;">*e.g. involvement in faculty recruiting, pushing for a community-wide support structure*</span>
 
+To get to know more about our interests and efforts, check out the [Projects page](https://tappa-org.github.io/projects/) or [get in touch](https://tappa-org.github.io/contact/) with us.
 
 ## Why should you join?
 TAPPA is open to all PhDs and Postdocs in Tübingen doing research in AI!
