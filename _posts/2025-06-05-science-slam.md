@@ -7,7 +7,7 @@ tags:
 published: true
 image:
   path: /images/events/2025-06-05-science-slam.jpeg
-  thumbnail: /images/events/2025-06-05-science-slam.jpeg
+  thumbnail: /images/events/2025-06-05-science-slam-thumb.jpeg
   caption: ""
 ---
 
