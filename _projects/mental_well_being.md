@@ -2,7 +2,9 @@
 title: "Mental Health & Well-Being"
 ---
 
-We care about creating a supportive environment, that helps researchers maintain good mental health and a healthy work-life balance. Our members lead different initiatives to support well-being on campus, some through group activities and others by offering people who are dedicated to listening and providing help when needed.
+We care about creating a supportive environment, that helps researchers maintain good mental health and a healthy work-life balance.
+
+Our members lead different initiatives to support well-being on campus, some through group activities and others by offering people who are dedicated to listening and providing help when needed.
 
 Some examples:
 - **Mental Health & Well-being Survey on Campus** (2023): Led by Laura Iacovissi and Chris Fröhlich. A new edition is coming soon!
