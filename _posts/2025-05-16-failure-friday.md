@@ -7,8 +7,8 @@ tags:
 - social
 published: true
 image:
-  path: /images/events/2025-05-16-failurefriday0.png
-  thumbnail: /images/events/failure-friday-lower.png
+  path: /images/events/2025-05-16-failurefriday.png
+  thumbnail: /images/events/failure-friday-thumb.png
   caption: ""
 ---
 
