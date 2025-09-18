@@ -10,4 +10,4 @@ title: ''
 
 If you are interested in joining TAPPA or have any further questions, please reach out to us:
 
-tappa.tue@<span class="blockspam" aria-hidden="true">PLEASE GO AWAY!</span><!-- jjnsjfkrkvk -->gmail.com).
+tappa.tue@<span class="blockspam" aria-hidden="true">PLEASE GO AWAY!</span><!-- jjnsjfkrkvk -->gmail.com
