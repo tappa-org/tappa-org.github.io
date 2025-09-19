@@ -10,12 +10,12 @@ We are a group of people who know the University of Tübingen and its support st
 
 We ensure confidentiality, so to be worth of your trust. You can read about this and other stuff in our [code of conduct](https://drive.google.com/file/d/1M7SegFyINVURnOB5UZmIYnSHj3CJcc_n/view?usp=sharing).
 
-Some, but not all, of the topics we are informed about are:
+Some, but not all, of the topics we are informed about:
 - housing
 - mental health and well-being
 - inclusion
 - being an international researcher
-- whatever you feel like chatting about :)
+- PhD/Postdoc life
 
 # Confidants
 
