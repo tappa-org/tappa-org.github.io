@@ -2,6 +2,33 @@
 layout: page
 ---
 
+<head>
+  <style>
+    /* Make project cards feel clickable */
+    .project-card {
+      cursor: pointer; /* shows pointer on hover */
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    }
+
+    .project-card:hover {
+      transform: translateY(-3px); /* slight lift */
+      box-shadow: 0 6px 12px rgba(0,0,0,0.12); /* subtle shadow */
+      border-color: #0056b3; /* optional border highlight */
+      background-color: #fdfdfd;
+    }
+
+    .project-card h2,
+    .project-card h3 {
+      transition: color 0.2s ease-in-out;
+    }
+
+    .project-card:hover h2,
+    .project-card:hover h3 {
+      color: #0056b3; /* accent color on hover */
+    }
+  </style>
+</head>
+
 {{ content }}
 
 <div class="entries-{{ page.entries_layout | default: 'list' }}">
