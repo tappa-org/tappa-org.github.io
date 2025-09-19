@@ -2,116 +2,39 @@
 layout: default
 ---
 
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en-US" }}">
-  <head>
-    {% seo %}
-      <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-      {% include head-custom.html %}
+{{ content }}
 
-    <style>
-      /* Members Board Styling */
-      .container-lg {
-        text-align: center;
-      }
-
-      .member-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); /* 3 columns */
-        gap: 20px;
-      }
-
-      .member-card {
-        background-color: #f8f9fa;
-        border-radius: 10px;
-        padding: 20px;
-        text-align: center;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      }
-
-      .member-photo {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        margin-bottom: 15px;
-      }
-
-      .member-info h3 {
-        font-size: 1.2rem;
-        margin-bottom: 10px;
-      }
-
-      .member-info p.role {
-        font-size: 1rem;
-        color: #666;
-        margin-bottom: 10px;
-      }
-
-      .member-info a {
-        font-size: 1rem;
-        color: #007bff;
-        text-decoration: none;
-      }
-
-      .member-info a:hover {
-        color: #0056b3;
-      }
-
-      /* Make the grid responsive for smaller screens */
-      @media (max-width: 768px) {
-        .member-container {
-          grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
-        }
-      }
-
-      @media (max-width: 480px) {
-        .member-container {
-          grid-template-columns: 1fr; /* 1 column on mobile */
-        }
-      }
-    </style>
-
-  </head>
-
-  <body>
-
-    <div class="container-lg px-3 my-5 markdown-body">
-
-      {{ content }}
-
-      <div class="members-board">
-        <div class="member-container">
-          {% for member in site.data.members %}
-            <div class="member-card">
-              <img src="{{ member.photo }}" alt="{{ member.name }}" class="member-photo">
-              <div class="member-info">
-                <h3>{{ member.name }}</h3>
-                <p class="role">{{ member.role }}</p>
-                <p><a href="{{ member.github }}" target="_blank">GitHub Profile</a></p>
-              </div>
-            </div>
-          {% endfor %}
+<div class="members-board">
+  <div class="member-container">
+    {% for member in site.data.members %}
+      <div class="member-card">
+        {% if member.photo %}
+          <img src="{{ member.photo | relative_url }}" alt="{{ member.name }}" class="member-photo">
+        {% endif %}
+        <div class="member-info">
+          <h3>{{ member.name }}</h3>
+          {% if member.role %}
+            <p class="role">{{ member.role }}</p>
+          {% endif %}
+          {% if member.bio %}
+            <p class="bio">{{ member.bio }}</p>
+          {% endif %}
+          <p class="links">
+            {% if member.github %}
+              <a href="{{ member.github }}" target="_blank">GitHub</a>
+            {% endif %}
+            {% if member.website %}
+              | <a href="{{ member.website }}" target="_blank">Website</a>
+            {% endif %}
+            {% if member.linkedin %}
+              | <a href="{{ member.linkedin }}" target="_blank">LinkedIn</a>
+            {% endif %}
+            {% if member.email %}
+              | <a href="mailto:{{ member.email }}">Email</a>
+            {% endif %}
+          </p>
         </div>
       </div>
-
-      {% if site.title and site.title != page.title %}
-      <div class="footer border-top border-gray-light mt-5 pt-3">
-        <div class="navbar">
-        <a href="{{ "/" | absolute_url }}">   Home   </a>
-        <a href="{{ "/about/" | relative_url }}">   About   </a>
-        <a href="{{ "/members/" | relative_url }}">   Members   </a>
-        <a href="{{ "/contact/" | relative_url }}">   Contact   </a>
-        </div>
-      </div>
-      {% endif %}
-
-      <!--
-      <div class="text-right text-gray">
-        © TAPPA 2024.
-      </div>
-      -->
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
-    <script>anchors.add();</script>
-  </body>
-</html>
+    {% endfor %}
+  </div>
+</div>
