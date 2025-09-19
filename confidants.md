@@ -57,7 +57,6 @@ permalink: /confidants/
     {% endcomment %}
     {% assign datafile = site.data.confidants %}
 
-
     {% assign sorted_confidants = datafile | sort: "name" %}
 
     {% for confidant in sorted_confidants %}
