@@ -4,7 +4,7 @@ layout: collection
 image:
   path: /images/neckar_lighter.jpeg
   thumbnail: /images/neckar_lighter.jpeg
-  caption: "" #"Punting boats at the Neckar front. Photo credit: Mila"
+  caption: "Punting boats at the Neckar front. Photo credit: Mila" #""
 # permalink: /projects/
 collection: projects
 entries_layout: grid #list
