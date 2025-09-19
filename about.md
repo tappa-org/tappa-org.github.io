@@ -9,9 +9,12 @@ title: ''
 
 TAPPA is a grassroots initiative built by and for PhD students and Postdocs in the Tübingen AI research environment. As such, it serves as a platform to connect people who want to contribute to their community and address common concerns.
 
+{:refdef: style="text-align: center;"}
 ![TAPPA at Summer Poster Session (2025)](/images/events/tappa_poster_event.jpeg)
 ![TAPPA Punting on Neckar (Summer 2025)](/images/events/punting2.jpeg)
 ![TAPPA Punting on Neckar (Summer 2025)](/images/events/punting.jpeg)
+{: refdef}
+
 
 ## What do we do at TAPPA?
 
