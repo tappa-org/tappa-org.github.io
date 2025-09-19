@@ -1,9 +1,12 @@
 - name: "Laura Iacovissi"
   role: "PhD Student"
   photo: ""
-  github: ""
+  bio: ""
+  website: "website"
+  email: "email"
 - name: "Ben Höltgen"
   role: "PhD Student"
   photo: ""
   bio: "bio test"
+  email: ""
 # Add more members as needed
