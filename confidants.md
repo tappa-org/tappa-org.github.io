@@ -1,8 +1,12 @@
 ---
 layout: page
-title: Confidants
+title: ''
 permalink: /confidants/
 ---
+
+# What is the Confidant System?
+
+# Confidants
 
 <style>
 /* Inline styles for the members/confidants board (kept on this page only) */
