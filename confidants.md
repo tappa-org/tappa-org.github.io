@@ -10,13 +10,13 @@ permalink: /confidants/
 # Confidants
 
 <style>
-/* Inline styles for the members/confidants board (kept on this page only) */
-.members-board {
+/* Inline styles for the confidants board (kept on this page only) */
+.confidants-board {
   display: flex;
   justify-content: center;
   margin: 2rem 0;
 }
-.member-container {
+.confidant-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1.25rem;
@@ -25,7 +25,7 @@ permalink: /confidants/
   align-items: start;
   justify-items: center;
 }
-.member-card {
+.confidant-card {
   background: #f8f9fa;
   border-radius: 10px;
   padding: 1.25rem;
@@ -34,49 +34,75 @@ permalink: /confidants/
   width: 100%;
   max-width: 320px;
 }
-.member-photo {
+.confidant-photo {
   width: 150px;
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 0.75rem;
 }
-.member-info h3 { margin: 0.35rem 0; font-size: 1.1rem; }
-.member-info p.role { margin: 0.25rem 0; color: #666; font-size: 0.95rem; }
-.member-info p.bio { font-size: 0.95rem; color: #444; margin-top: 0.5rem; }
-.member-info .links { margin-top: 0.5rem; }
-.member-info .links a { margin: 0 0.35rem; text-decoration: none; font-size: 0.9rem; }
-@media (max-width: 480px) { .member-photo { width: 120px; height: 120px; } }
+.confidant-info h3 { margin: 0.35rem 0; font-size: 1.1rem; }
+.confidant-info p.role { margin: 0.25rem 0; color: #666; font-size: 0.95rem; }
+.confidant-info p.bio { font-size: 0.95rem; color: #444; margin-top: 0.5rem; }
+.confidant-info .links { margin-top: 0.5rem; }
+.confidant-info .links a { margin: 0 0.35rem; text-decoration: none; font-size: 0.9rem; }
+@media (max-width: 480px) { .confidant-photo { width: 120px; height: 120px; } }
 </style>
 
-<div class="members-board">
-  <div class="member-container">
+<div class="confidants-board">
+  <div class="confidant-container">
     {% comment %}
-      This chooses your data file. If your members file is _data/confidants.yml this will use it;
-      otherwise it falls back to _data/members.yml.
+      This chooses your data file. If your confidants file is _data/confidants.yml this will use it;
+      otherwise it falls back to _data/confidants.yml.
     {% endcomment %}
-    {% if site.data.confidants %}
-      {% assign datafile = site.data.confidants %}
-    {% else %}
-      {% assign datafile = site.data.members %}
-    {% endif %}
+    {% assign datafile = site.data.confidants %}
 
-    {% assign sorted_members = datafile | sort: "name" %}
 
-    {% for member in sorted_members %}
-      <div class="member-card">
-        {% if member.photo %}
-          <img src="{{ member.photo | relative_url }}" alt="{{ member.name }}" class="member-photo">
+    {% assign sorted_confidants = datafile | sort: "name" %}
+
+    {% for confidant in sorted_confidants %}
+      <div class="confidant-card">
+        {% if confidant.photo %}
+          <img src="{{ confidant.photo | relative_url }}" alt="{{ confidant.name }}" class="confidant-photo">
         {% endif %}
-        <div class="member-info">
-          <h3>{{ member.name }}</h3>
-          {% if member.role %}<p class="role">{{ member.role }}</p>{% endif %}
-          {% if member.bio %}<p class="bio">{{ member.bio }}</p>{% endif %}
+        <div class="confidant-info">
+          <h3>{{ confidant.name }}</h3>
+          {% if confidant.role %}<p class="role">{{ confidant.role }}</p>{% endif %}
+          {% if confidant.bio %}<p class="bio">{{ confidant.bio }}</p>{% endif %}
           <p class="links">
-            {% if member.github %}<a href="{{ member.github }}" target="_blank">GitHub</a>{% endif %}
-            {% if member.website %}<a href="{{ member.website }}" target="_blank">Website</a>{% endif %}
-            {% if member.linkedin %}<a href="{{ member.linkedin }}" target="_blank">LinkedIn</a>{% endif %}
-            {% if member.email %}<a href="mailto:{{ member.email }}">Email</a>{% endif %}
+            {% if confidant.github %}<a href="{{ confidant.github }}" target="_blank">GitHub</a>{% endif %}
+            {% if confidant.website %}<a href="{{ confidant.website }}" target="_blank">Website</a>{% endif %}
+            {% if confidant.linkedin %}<a href="{{ confidant.linkedin }}" target="_blank">LinkedIn</a>{% endif %}
+            {% if confidant.email %}<a href="mailto:{{ confidant.email }}">Email</a>{% endif %}
+          </p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+# Helpers
+
+<div class="confidants-board">
+  <div class="confidant-container">
+    {% assign datafile = site.data.helpers %}
+
+    {% assign sorted_confidants = datafile | sort: "name" %}
+
+    {% for confidant in sorted_confidants %}
+      <div class="confidant-card">
+        {% if confidant.photo %}
+          <img src="{{ confidant.photo | relative_url }}" alt="{{ confidant.name }}" class="confidant-photo">
+        {% endif %}
+        <div class="confidant-info">
+          <h3>{{ confidant.name }}</h3>
+          {% if confidant.role %}<p class="role">{{ confidant.role }}</p>{% endif %}
+          {% if confidant.bio %}<p class="bio">{{ confidant.bio }}</p>{% endif %}
+          <p class="links">
+            {% if confidant.github %}<a href="{{ confidant.github }}" target="_blank">GitHub</a>{% endif %}
+            {% if confidant.website %}<a href="{{ confidant.website }}" target="_blank">Website</a>{% endif %}
+            {% if confidant.linkedin %}<a href="{{ confidant.linkedin }}" target="_blank">LinkedIn</a>{% endif %}
+            {% if confidant.email %}<a href="mailto:{{ confidant.email }}">Email</a>{% endif %}
           </p>
         </div>
       </div>
