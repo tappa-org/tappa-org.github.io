@@ -6,6 +6,7 @@ permalink: /confidants/
 
 # What is the Confidant System?
 
+
 # Confidants
 
 <style>
@@ -60,7 +61,9 @@ permalink: /confidants/
       {% assign datafile = site.data.members %}
     {% endif %}
 
-    {% for member in datafile %}
+    {% assign sorted_members = datafile | sort: "name" %}
+
+    {% for member in sorted_members %}
       <div class="member-card">
         {% if member.photo %}
           <img src="{{ member.photo | relative_url }}" alt="{{ member.name }}" class="member-photo">

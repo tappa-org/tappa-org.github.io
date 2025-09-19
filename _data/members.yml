@@ -1,12 +1,32 @@
-- name: "Laura Iacovissi"
-  role: "PhD Student"
-  photo: ""
-  bio: ""
-  website: "website"
-  email: "email"
 - name: "Ben Höltgen"
   role: "PhD Student"
   photo: ""
   bio: "bio test"
   email: ""
+
+- name: "Laura Iacovissi"
+  role: "PhD Student"
+  photo: ""
+  bio: ""
+  website: "website"
+  email: "laura.iacovissi@uni-tuebingen.de"
+
+- name: "Josch Strüber"
+  role: "PhD Student"
+  photo: ""
+  bio: "bio test"
+  email: ""
+
+- name: "Federico D'Agostino"
+  role: "PhD Student"
+  photo: ""
+  bio: "bio test"
+  email: ""
+
+- name: "Kibidi Neocosmos"
+  role: "PhD Student"
+  photo: ""
+  bio: "bio test"
+  email: ""
+
 # Add more members as needed
