@@ -1,8 +1,6 @@
 - name: "Ben Höltgen"
   role: "PhD Student"
   photo: ""
-  bio: "bio test"
-  email: ""
 
 - name: "Laura Iacovissi"
   role: "PhD Student"
@@ -14,19 +12,22 @@
 - name: "Joschka Strüber"
   role: "PhD Student"
   photo: "images/confidants/josch.jpg"
-  bio: "bio test"
-  email: ""
 
 - name: "Federico D'Agostino"
   role: "PhD Student"
   photo: "images/confidants/federico.jpeg"
-  bio: "bio test"
-  email: ""
 
 - name: "Kibidi Neocosmos"
   role: "PhD Student"
   photo: "images/confidants/kibidi.jpg"
-  bio: "bio test"
-  email: ""
+
+- name: "Joanna Sliwa"
+  role: "PhD Student"
+  photo: ""
+
+- name: "Nikita Kister"
+  role: "PhD Student"
+  photo: ""
+
 
 # Add more members as needed
