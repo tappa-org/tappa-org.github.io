@@ -7,8 +7,8 @@ show_excerpts: true
 entries_layout: list
 title: ""
 image:
-  path: /images/header_long_lighter.jpeg
-  thumbnail: /images/header_long_lighter.jpeg
+  path: /images/header_long.jpeg
+  thumbnail: /images/header_long.jpeg
   caption: "TAPPA - Tübingen PhD and Postdoc Assembly, background shows a network of people."
 ---
 
