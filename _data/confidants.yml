@@ -1,5 +1,5 @@
 - name: "Ben Höltgen"
-  role: "PhD Student"
+  #role: "PhD Student"
   photo: "images/confidants/ben.jpg"
   bio: "4th year PhD student sitting in MvL1, Room A-433. Come by or message me!"
   website: "https://ben-hoeltgen.github.io/"
@@ -25,7 +25,7 @@
   photo: "images/confidants/kibidi.jpg"
 
 - name: "Joanna Sliwa"
-  role: "PhD Student"
+  #role: "PhD Student"
   photo: "images/confidants/joanna.jpeg"
   bio: "3rd year PhD student sitting in MvL1, 5th floor (A-533)"
   website: "https://joannasliwa.github.io/"
