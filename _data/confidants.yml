@@ -6,9 +6,9 @@
   email: "benedikt.hoeltgen@uni-tuebingen.de"
 
 - name: "Laura Iacovissi"
-  role: "PhD Student"
+  #role: "PhD Student"
   photo: "images/confidants/laura.jpg"
-  bio: "Now sitting in the 4th level of MvL1, kitchenette side (same office as Ben). Just pass by!"
+  bio: "PhD Student sitting in the 4th level of MvL1, kitchenette side (same office as Ben). Just pass by!"
   website: "https://fm.ls/laura-iacovissi"
   email: "laura.iacovissi@uni-tuebingen.de"
 
