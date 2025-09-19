@@ -6,26 +6,26 @@
 
 - name: "Laura Iacovissi"
   role: "PhD Student"
-  photo: ""
+  photo: "images/confidants/laura.jpeg"
   bio: ""
   website: "website"
   email: "laura.iacovissi@uni-tuebingen.de"
 
-- name: "Josch Strüber"
+- name: "Joschka Strüber"
   role: "PhD Student"
-  photo: ""
+  photo: "images/confidants/josch.jpeg"
   bio: "bio test"
   email: ""
 
 - name: "Federico D'Agostino"
   role: "PhD Student"
-  photo: ""
+  photo: "images/confidants/federico.jpeg"
   bio: "bio test"
   email: ""
 
 - name: "Kibidi Neocosmos"
   role: "PhD Student"
-  photo: ""
+  photo: "images/confidants/kibidi.jpeg"
   bio: "bio test"
   email: ""
 
