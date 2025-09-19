@@ -1,6 +1,6 @@
 ---
 layout: events
-title: Events
+title: News and Events
 # permalink: /Events/
 entries_layout: grid #list
 ---
