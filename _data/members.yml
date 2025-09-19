@@ -1,6 +1,6 @@
 - name: "Ben Höltgen"
   role: "PhD Student"
-  photo: ""
+  photo: "images/logo.png"
 
 - name: "Laura Iacovissi"
   role: "PhD Student"
@@ -23,11 +23,11 @@
 
 - name: "Joanna Sliwa"
   role: "PhD Student"
-  photo: ""
+  photo: "images/logo.png"
 
 - name: "Nikita Kister"
   role: "PhD Student"
-  photo: ""
+  photo: "images/logo.png"
 
 
 # Add more members as needed
