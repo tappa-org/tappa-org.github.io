@@ -4,33 +4,36 @@ layout: page
 
 <head>
   <style>
-    /* Make project cards feel clickable */
+    /* 3D hover effect for project cards */
     .project-card {
-      cursor: pointer; /* shows pointer on hover */
-      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      transform-style: preserve-3d;
+      perspective: 1000px;
+      padding: 1rem;
     }
 
     .project-card:hover {
-      transform: translateY(-3px); /* slight lift */
-      box-shadow: 0 6px 12px rgba(0,0,0,0.12); /* subtle shadow */
-      border-color: #0056b3; /* optional border highlight */
-      background-color: #fdfdfd;
+      transform: scale(1.05) rotateX(3deg) rotateY(3deg);
+      box-shadow: 0 12px 20px rgba(0,0,0,0.25);
     }
 
+    /* Optional: smooth color change for headings */
     .project-card h2,
     .project-card h3 {
-      transition: color 0.2s ease-in-out;
+      transition: color 0.3s ease;
     }
 
     .project-card:hover h2,
     .project-card:hover h3 {
-      color: #0056b3; /* accent color on hover */
+      color: #0056b3;
     }
   </style>
 </head>
 
 {{ content }}
 
-<div class="entries-{{ page.entries_layout | default: 'list' }}">
-  {% include documents-collection.html collection=page.collection sort_by=page.sort_by sort_order=page.sort_order %}
-</div>
+<div class="entries-{{ page.entries_lay_
