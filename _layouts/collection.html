@@ -9,19 +9,21 @@ layout: page
       background: #fff;
       border-radius: 10px;
       box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
       cursor: pointer;
       transform-style: preserve-3d;
       perspective: 1000px;
       padding: 1rem;
+      text-align: left;
     }
 
     .project-card:hover {
       transform: scale(1.05) rotateX(3deg) rotateY(3deg);
       box-shadow: 0 12px 20px rgba(0,0,0,0.25);
+      border-color: #0056b3;
+      background-color: #fdfdfd;
     }
 
-    /* Optional: smooth color change for headings */
     .project-card h2,
     .project-card h3 {
       transition: color 0.3s ease;
@@ -36,4 +38,22 @@ layout: page
 
 {{ content }}
 
-<div class="entries-{{ page.entries_lay_
+<div class="entries-{{ page.entries_layout | default: 'list' }}">
+  {% comment %}
+    Each entry from the collection will be wrapped in a div.project-card
+    to enable the hover effect.
+  {% endcomment %}
+  {% include documents-collection.html collection=page.collection sort_by=page.sort_by sort_order=page.sort_order %}
+</div>
+
+{% comment %}
+  Make sure that inside documents-collection.html, each project entry is
+  wrapped like this:
+
+  <div class="project-card">
+    <h2>{{ project.title }}</h2>
+    ...
+  </div>
+
+  Otherwise, the hover effect won’t apply.
+{% endcomment %}
