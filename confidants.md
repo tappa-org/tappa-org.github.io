@@ -6,6 +6,18 @@ permalink: /confidants/
 
 # What is the Confidant System?
 
+We are a group of people that are well-informed about the University of Tübingen support structures, and who make themselves
+available to their peers in case of problems. We can help finding what you need by
+pointing you to right person or information. Usually, we have been in Tübingen for a while, and therefore know all the dos and donts.
+
+We ensure confidentiality, so to be worth of your trust. You can read about this and other stuff in our [code of conduct](https://drive.google.com/file/d/1M7SegFyINVURnOB5UZmIYnSHj3CJcc_n/view?usp=sharing).
+
+Some, but not all, of the topics we are informed about are:
+- housing
+- mental health and well-being
+- inclusion
+- being an international researcher
+- whatever you feel like chatting about :)
 
 # Confidants
 

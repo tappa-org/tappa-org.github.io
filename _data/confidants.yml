@@ -26,7 +26,10 @@
 
 - name: "Joanna Sliwa"
   role: "PhD Student"
-  photo: "images/logo.png"
+  photo: "images/confidants/joanna.jpeg"
+  bio: "3rd year PhD student sitting in MvL1, 5th floor (A-533)"
+  website: "https://joannasliwa.github.io/"
+  email: "joanna.sliwa@uni-tuebingen.de"
 
 - name: "Nikita Kister"
   role: "PhD Student"
