@@ -23,14 +23,14 @@ the Tübingen AI ecosystem by addressing common concerns, organizing events, and
 
 :clock5: Usually, we meet on the 1st Thursday of the month, 17:00-18:00.
 
-:round_pushpin: The location alternates between MPI-IS and MvL6 (Maria-von-Linden-Straße 6).
+:round_pushpin: The location alternates between MPI-IS, MvL6 and MvL1 (MvL = Maria-von-Linden-Straße).
 
 
 ### Upcoming meetings
 {% highlight bash%}
-7th of August, 17:00 @ MvL6, [room tbd]
-4th of September, 17:00 @ MPI-IS, N1.028
-2nd of October, 17:00 @ MvL6, [room tbd]
+2nd of October, 17:00 @ MvL1, [room tbd]
+6th of November, 17:00 @ MPI-IS, N1.028
+4th of Dicember, 17:00 @ MvL6, [room tbd]
 {% endhighlight %}
 
 ---
