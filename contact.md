@@ -1,8 +1,8 @@
 ---
 layout: page
 image:
-  path: /images/tuebingen2.jpg
-  thumbnail: /images/tuebingen2.jpg
+  path: /images/tuebingen2_lighter.jpeg
+  thumbnail: /images/tuebingen2_lighter.jpeg
   caption: "" #"Photo credit: Mila"
 title: 'Get in touch with us!'
 # permalink: /Contact/

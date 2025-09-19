@@ -2,8 +2,8 @@
 title: Projects
 layout: collection
 image:
-  path: /images/neckar.jpg
-  thumbnail: /images/neckar.jpg
+  path: /images/neckar_lighter.jpeg
+  thumbnail: /images/neckar_lighter.jpeg
   caption: "" #"Punting boats at the Neckar front. Photo credit: Mila"
 # permalink: /projects/
 collection: projects
