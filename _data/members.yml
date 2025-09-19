@@ -6,14 +6,14 @@
 
 - name: "Laura Iacovissi"
   role: "PhD Student"
-  photo: "images/confidants/laura.jpeg"
+  photo: "images/confidants/laura.jpg"
   bio: "Now sitting in the 4th level of MvL1, kitchenette side. Just pass by!"
   website: "fm.ls/laura-iacovissi"
   email: "laura.iacovissi@uni-tuebingen.de"
 
 - name: "Joschka Strüber"
   role: "PhD Student"
-  photo: "images/confidants/josch.jpeg"
+  photo: "images/confidants/josch.jpg"
   bio: "bio test"
   email: ""
 
@@ -25,7 +25,7 @@
 
 - name: "Kibidi Neocosmos"
   role: "PhD Student"
-  photo: "images/confidants/kibidi.jpeg"
+  photo: "images/confidants/kibidi.jpg"
   bio: "bio test"
   email: ""
 
