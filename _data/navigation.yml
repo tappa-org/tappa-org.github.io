@@ -2,16 +2,16 @@
 
 - title: Home
   url: /
-- title: About
+- title: About us
   url: /about/
 - title: Events
   url: /events/
 - title: Projects
   url: /projects/
-- title: Contact
+- title: Get in touch
   url: /contact/
-# - title: Categories
-#   url: /categories/
+- title: Confidants
+  url: /confidants/
 # - title: Tags
 #   url: /tags/
 # - title: Recipes
