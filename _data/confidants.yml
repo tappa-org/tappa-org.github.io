@@ -36,7 +36,7 @@
   photo: "images/logo.png"
 
 - name: "Tomáš Daniš"
-  role: "PhD Student"
+  #role: "PhD Student"
   photo: "images/confidants/tomas.jpg"
   email: "tomas.danis@uni-tuebingen.de"
   bio: "2nd year PhD student at MvL6, ground floor, kitchen side. Come by any time :)"
