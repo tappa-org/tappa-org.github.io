@@ -6,6 +6,10 @@ permalink: /confidants/
 
 # What is the Confidant System?
 
+{:refdef: style="text-align: center;"}
+![Confidant system infographic](/images/ConfidantSticker.png)
+{: refdef}
+
 We are a group of people who know the University of Tübingen and its support structures well. We’re here to help you when you need guidance, pointing you to the right people or information. Most of us have been in Tübingen for a while, so we know all the dos and don’ts--and we’re happy to share them with you.
 
 We ensure confidentiality, so to be worth of your trust. You can read about this and other stuff in our [code of conduct](https://drive.google.com/file/d/1M7SegFyINVURnOB5UZmIYnSHj3CJcc_n/view?usp=sharing).
