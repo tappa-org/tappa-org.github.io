@@ -6,13 +6,32 @@ permalink: /confidants/
 
 # What is the Confidant System?
 
-{:refdef: style="text-align: center;"}
-![Confidant system infographic](/images/ConfidantSticker.png){: style="max-width: 60%; height: auto;" }
-{: refdef}
+# What is the Confidant System?
 
-We are a group of people who know the University of Tübingen and its support structures well. We’re here to help you when you need guidance related to your academic life, pointing you to the right people or information. Most of us have been in Tübingen for a while, so we know all the dos and don’ts--and we’re happy to share them with you.
+# What is the Confidant System?
 
-We ensure confidentiality, so to be worth of your trust. You can read about this and other stuff in our [code of conduct](https://drive.google.com/file/d/1M7SegFyINVURnOB5UZmIYnSHj3CJcc_n/view?usp=sharing).
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 1rem;">
+
+  <!-- Text column -->
+  <div style="flex: 1 1 300px; min-width: 280px;">
+    <p>
+    We are a group of people who know the University of Tübingen and its support structures well.  
+    We’re here to help you when you need guidance related to your academic life, pointing you to the right people or information.  
+    Most of us have been in Tübingen for a while, so we know all the dos and don’ts—and we’re happy to share them with you.
+    </p>
+    <p>
+    We ensure confidentiality, so as to be worthy of your trust.  
+    You can read about this and other details in our
+    <a href="https://drive.google.com/file/d/1M7SegFyINVURnOB5UZmIYnSHj3CJcc_n/view?usp=sharing">code of conduct</a>.
+    </p>
+  </div>
+
+  <!-- Image column -->
+  <div style="flex: 1 1 300px; min-width: 280px; text-align: center;">
+    <img src="/images/ConfidantSticker.png" alt="Confidant system infographic" style="max-width: 100%; height: auto; border-radius: 8px;">
+  </div>
+
+</div>
 
 # Confidants
 
