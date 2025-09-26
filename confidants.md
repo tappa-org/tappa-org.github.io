@@ -6,10 +6,6 @@ permalink: /confidants/
 
 # What is the Confidant System?
 
-# What is the Confidant System?
-
-# What is the Confidant System?
-
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 1rem;">
 
   <!-- Text column -->
