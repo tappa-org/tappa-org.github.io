@@ -28,7 +28,7 @@ the Tübingen AI ecosystem by addressing common concerns, organizing events, and
 
 ### Upcoming meetings
 {% highlight bash%}
-2nd of October, 17:00 @ MvL1, [room tbd]
+2nd of October, 17:00 @ MvL1, 4th floor large conference room
 6th of November, 17:00 @ MPI-IS, N1.028
 4th of Dicember, 17:00 @ MvL6, [room tbd]
 {% endhighlight %}
