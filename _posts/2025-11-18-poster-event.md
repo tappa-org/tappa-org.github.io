@@ -5,7 +5,7 @@ date:   2025-11-18 15:00:00 +0100
 tags: event
 published: true
 image:
-  path: /images/events/2025-11-poster-event.png
+  path: /images/events/2025-11-poster-event-thumb.png
   thumbnail: /images/events/2025-11-poster-event.png
   caption: ""
 ---
