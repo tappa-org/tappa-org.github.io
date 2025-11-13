@@ -10,8 +10,6 @@ image:
   caption: ""
 ---
 
-
-Dear all,
 The Tübingen AI Center, the Cluster of Excellence "Machine Learning”, and the ELLIS Institute Tübingen are pleased to invite you to the Tübingen AI Summer Poster Event 2025. The event will spotlight recent ML papers from Tübingen published in top-tier venues.
 
 If your paper has been accepted to one of the venues [here](https://ellis.eu/nomination-phd-postdoc) since the last event (December 2024), please present your poster! Otherwise, come and join us to mingle, discuss, exchange, and wrap up the day with drinks and snacks!

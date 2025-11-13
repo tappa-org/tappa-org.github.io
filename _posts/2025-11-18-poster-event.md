@@ -10,8 +10,6 @@ image:
   caption: ""
 ---
 
-Dear all,
-
 The ELLIS Institute Tübingen, the Tübingen AI Center, the Cluster of Excellence “Machine Learning: New Perspectives for Science”, and TAPPA are pleased to invite you to the Tübingen AI Winter Poster Event 2025.
 
 The event will showcase recent ML papers from Tübingen published in top-tier venues.

@@ -11,9 +11,9 @@ image:
 ---
 
 
-Dear all, the end of the year 2024 is coming closer! We would like to celebrate the approaching end of this academic year with the second edition of the **Tübingen Pre-NeurIPS Fest**, a poster session followed by a festive get-together. 
+The end of the year 2024 is coming closer! We would like to celebrate the approaching end of this academic year with the second edition of the **Tübingen Pre-NeurIPS Fest**, a poster session followed by a festive get-together.
 
 If you have a paper accepted to a peer-reviewed ML venue since June, please sign up as a poster presenter! We hope to accommodate up to 40 posters.
 
-Best, 
-Cluster of Excellence "Machine Learning" & Tübingen AI Center & ELLIS Institute Tübingen & Tübingen AI PhD and Postdoc Assembly (TAPPA). 
+Best,
+Cluster of Excellence "Machine Learning" & Tübingen AI Center & ELLIS Institute Tübingen & Tübingen AI PhD and Postdoc Assembly (TAPPA).
