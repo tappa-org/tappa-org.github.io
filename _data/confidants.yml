@@ -1,20 +1,25 @@
 - name: "Ben Höltgen"
   #role: "PhD Student"
   photo: "images/confidants/ben.jpg"
-  bio: "4th year PhD student sitting in MvL1, Room A-433. Come by or message me!"
+  bio: "4th year PhD student sitting in MvL1, Room A433. Come by or message me!"
   website: "https://ben-hoeltgen.github.io/"
   email: "benedikt.hoeltgen@uni-tuebingen.de"
 
 - name: "Laura Iacovissi"
   #role: "PhD Student"
   photo: "images/confidants/laura.jpg"
-  bio: "PhD Student sitting in the 4th level of MvL1, kitchenette side (same office as Ben). Just pass by!"
+  bio: "PhD Student sitting in the 4th level of MvL1, A433. Just pass by!"
   website: "https://fm.ls/laura-iacovissi"
   email: "laura.iacovissi@uni-tuebingen.de"
 
 - name: "Joschka Strüber"
   role: "PhD Student"
   photo: "images/confidants/josch.jpg"
+
+- name: "Eric Günter"
+  bio: "PhD Student @ MvL1, 4th floor, office A430"
+  photo: "images/confidants/eric.png"
+  email: "eric.guenther@uni-tuebingen.de"
 
 - name: "Federico D'Agostino"
   role: "PhD Student"
@@ -27,7 +32,7 @@
 - name: "Joanna Sliwa"
   #role: "PhD Student"
   photo: "images/confidants/joanna.jpeg"
-  bio: "3rd year PhD student sitting in MvL1, 5th floor (A-533)"
+  bio: "3rd year PhD student sitting in MvL1, 5th floor (A533)"
   website: "https://joannasliwa.github.io/"
   email: "joanna.sliwa@uni-tuebingen.de"
 
