@@ -506,10 +506,7 @@ a { color: inherit; }
 
 /* body runs justified with automatic hyphenation, the way a journal sets it */
 .feature-body {
-  columns: 2;
-  column-gap: 44px;
-  text-align: justify;
-  hyphens: auto;
+  max-width: 46em;
   font-size: 16.5px;
   line-height: 1.62;
   color: var(--body-ink);
@@ -2418,4 +2415,51 @@ a.cal-title:focus-visible { color: var(--accent); text-decoration: underline; }
 }
 @media (max-width: 620px) {
   .photo-poll { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
+   Article rail — the margin track that puts the spare screen
+   width to work: pulled quotes and side notes next to a single
+   readable text column
+   ============================================================ */
+.article-rail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.rail-quote {
+  margin: 0;
+  padding-top: 14px;
+  border-top: 3px solid var(--accent);
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 1.45;
+  color: var(--accent-deep);
+}
+.rail-quote .pullquote-credit { display: block; margin-top: 8px; }
+
+@media (max-width: 900px) {
+  .article-rail {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 26px;
+  }
+  .article-rail > * { flex: 1 1 240px; }
+}
+
+/* survey quotes as an explicit two-column grid of intact cards */
+.survey-quotes {
+  max-width: none;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px 26px;
+  align-items: start;
+}
+.survey-quotes blockquote { margin: 0; }
+@media (max-width: 900px) {
+  .survey-quotes { grid-template-columns: 1fr; }
 }
