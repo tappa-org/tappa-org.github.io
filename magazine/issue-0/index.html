@@ -1,43 +1,1064 @@
 <!DOCTYPE html>
-<!--
-  PLACEHOLDER — replace this whole file with the real Issue 0 single-pager.
-
-  Keep it free of YAML front matter: with no front matter Jekyll treats this as a
-  static file and copies it verbatim, so your CSS/JS is never run through Liquid.
-  (Add front matter and any literal {{ or {% in the file will break the build,
-  because _config.yml sets liquid.error_mode: strict.)
-
-  Relative asset links resolve against /magazine/issue-0/, so images placed
-  alongside this file can be referenced by plain filename.
--->
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tappa Quarterly — Issue 0</title>
-<style>
-  body {
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
-    color: #333;
-    background: #f7f7f7;
-    text-align: center;
-    padding: 2rem;
-  }
-  h1 { margin: 0; font-size: 1.5rem; }
-  p { margin: 0; color: #6b6b6b; }
-  a { color: #0653a5; }
-</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TAPPA Quarterly — Issue 00</title>
+<!-- Fonts are served from this origin, not a third-party CDN, so no visitor IP
+     is disclosed to Google. See fonts/OFL-*.txt for the licences. -->
+<link rel="preload" href="fonts/spectral-800-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/spectral-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/inter-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Tappa Quarterly &mdash; Issue 0</h1>
-  <p>Placeholder. The magazine goes here.</p>
-  <p><a href="/magazine/">&larr; Back to the magazine page</a></p>
+
+<!-- ============================================================
+     Placeholder artwork sprite. Every figure on this page is a
+     drawn placeholder in the house palette — swap each <use> for
+     an <img> when the real photograph arrives.
+     ============================================================ -->
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="m-arcs" viewBox="0 0 400 300">
+      <rect width="400" height="300" fill="#08372E"/>
+      <g fill="none" stroke="#7BE0C0" stroke-width="1.2" opacity="0.55">
+        <circle cx="300" cy="150" r="40"/><circle cx="300" cy="150" r="72"/>
+        <circle cx="300" cy="150" r="104"/><circle cx="300" cy="150" r="136"/>
+        <circle cx="300" cy="150" r="168"/><circle cx="300" cy="150" r="200"/>
+      </g>
+      <circle cx="300" cy="150" r="14" fill="#7BE0C0"/>
+    </symbol>
+
+    <symbol id="m-ribbon" viewBox="0 0 400 300">
+      <rect width="400" height="300" fill="#FAF7F1"/>
+      <path d="M0 206 C70 168 110 106 175 100 C245 94 275 158 330 184 C360 198 380 214 400 222 L400 300 L0 300 Z" fill="#0F7A5F" opacity="0.08"/>
+      <path d="M0 168 C70 132 110 74 175 68 C245 62 275 128 330 152 C360 165 380 178 400 184 L400 222 C380 214 360 198 330 184 C275 158 245 94 175 100 C110 106 70 168 0 206 Z" fill="#0F7A5F" opacity="0.14"/>
+      <path d="M0 187 C70 150 110 90 175 84 C245 78 275 143 330 168 C360 181 380 196 400 203" fill="none" stroke="#0F7A5F" stroke-width="2.4"/>
+      <circle cx="80" cy="150" r="4" fill="#141414"/><circle cx="175" cy="84" r="4" fill="#141414"/>
+      <circle cx="330" cy="168" r="4" fill="#141414"/>
+    </symbol>
+
+    <symbol id="m-contour" viewBox="0 0 400 300">
+      <rect width="400" height="300" fill="#FFFFFF"/>
+      <g fill="none" stroke="#0F7A5F" stroke-width="1.1" opacity="0.5">
+        <path d="M-10 60 C90 20 150 96 230 70 C300 48 350 88 410 66"/>
+        <path d="M-10 96 C90 56 150 132 230 106 C300 84 350 124 410 102"/>
+        <path d="M-10 132 C90 92 150 168 230 142 C300 120 350 160 410 138"/>
+        <path d="M-10 168 C90 128 150 204 230 178 C300 156 350 196 410 174"/>
+        <path d="M-10 204 C90 164 150 240 230 214 C300 192 350 232 410 210"/>
+        <path d="M-10 240 C90 200 150 276 230 250 C300 228 350 268 410 246"/>
+      </g>
+      <path d="M-10 150 C90 110 150 186 230 160 C300 138 350 178 410 156" fill="none" stroke="#08372E" stroke-width="2.2"/>
+    </symbol>
+
+    <symbol id="m-matrix" viewBox="0 0 400 300">
+      <rect width="400" height="300" fill="#FAF7F1"/>
+      <g fill="#0F7A5F">
+        <g opacity="0.9"><circle cx="40" cy="60" r="5"/><circle cx="88" cy="60" r="5"/><circle cx="136" cy="60" r="4.4"/><circle cx="184" cy="60" r="3.8"/><circle cx="232" cy="60" r="3"/><circle cx="280" cy="60" r="2.3"/><circle cx="328" cy="60" r="1.7"/></g>
+        <g opacity="0.8"><circle cx="40" cy="110" r="5"/><circle cx="88" cy="110" r="4.6"/><circle cx="136" cy="110" r="4"/><circle cx="184" cy="110" r="3.3"/><circle cx="232" cy="110" r="2.6"/><circle cx="280" cy="110" r="2"/><circle cx="328" cy="110" r="1.4"/></g>
+        <g opacity="0.7"><circle cx="40" cy="160" r="4.4"/><circle cx="88" cy="160" r="4"/><circle cx="136" cy="160" r="3.4"/><circle cx="184" cy="160" r="2.8"/><circle cx="232" cy="160" r="2.2"/><circle cx="280" cy="160" r="1.6"/><circle cx="328" cy="160" r="1.2"/></g>
+        <g opacity="0.6"><circle cx="40" cy="210" r="3.6"/><circle cx="88" cy="210" r="3.2"/><circle cx="136" cy="210" r="2.7"/><circle cx="184" cy="210" r="2.2"/><circle cx="232" cy="210" r="1.8"/><circle cx="280" cy="210" r="1.3"/><circle cx="328" cy="210" r="1"/></g>
+        <g opacity="0.5"><circle cx="40" cy="256" r="2.8"/><circle cx="88" cy="256" r="2.4"/><circle cx="136" cy="256" r="2"/><circle cx="184" cy="256" r="1.7"/><circle cx="232" cy="256" r="1.4"/><circle cx="280" cy="256" r="1.1"/><circle cx="328" cy="256" r="0.9"/></g>
+      </g>
+    </symbol>
+
+    <symbol id="m-steps" viewBox="0 0 400 300">
+      <rect width="400" height="300" fill="#FFFFFF"/>
+      <g fill="#0F7A5F">
+        <rect x="34" y="196" width="44" height="74" opacity="0.28"/>
+        <rect x="94" y="156" width="44" height="114" opacity="0.42"/>
+        <rect x="154" y="104" width="44" height="166" opacity="0.58"/>
+        <rect x="214" y="140" width="44" height="130" opacity="0.74"/>
+        <rect x="274" y="72" width="44" height="198" opacity="0.9"/>
+      </g>
+      <line x1="20" y1="270" x2="380" y2="270" stroke="#141414" stroke-width="1.4"/>
+    </symbol>
+
+    <symbol id="m-calib" viewBox="0 0 400 300">
+      <rect width="400" height="300" fill="#FAF7F1"/>
+      <rect x="56" y="34" width="288" height="232" fill="none" stroke="#D8D8D2"/>
+      <line x1="56" y1="266" x2="344" y2="34" stroke="#6B6B66" stroke-width="1.4" stroke-dasharray="6 5"/>
+      <path d="M56 266 C136 258 186 220 240 164 C286 116 316 70 344 34" fill="none" stroke="#0F7A5F" stroke-width="2.6"/>
+      <circle cx="240" cy="164" r="5" fill="#0F7A5F"/>
+    </symbol>
+
+    <symbol id="m-rings" viewBox="0 0 400 300">
+      <rect width="400" height="300" fill="#08372E"/>
+      <g fill="none" stroke="#7BE0C0" stroke-width="1.4" opacity="0.6">
+        <circle cx="130" cy="150" r="26"/><circle cx="130" cy="150" r="50"/><circle cx="130" cy="150" r="74"/>
+        <circle cx="270" cy="150" r="26"/><circle cx="270" cy="150" r="50"/><circle cx="270" cy="150" r="74"/>
+      </g>
+      <circle cx="130" cy="150" r="10" fill="#7BE0C0" opacity="0.9"/>
+      <circle cx="270" cy="150" r="10" fill="#7BE0C0" opacity="0.9"/>
+    </symbol>
+
+    <symbol id="m-hatch" viewBox="0 0 400 300">
+      <rect width="400" height="300" fill="#FFFFFF"/>
+      <g stroke="#0F7A5F" stroke-width="7" opacity="0.16">
+        <path d="M-60 300 L120 -40"/><path d="M0 300 L180 -40"/><path d="M60 300 L240 -40"/>
+        <path d="M120 300 L300 -40"/><path d="M180 300 L360 -40"/><path d="M240 300 L420 -40"/>
+        <path d="M300 300 L480 -40"/>
+      </g>
+      <g stroke="#08372E" stroke-width="2.4">
+        <path d="M40 300 L220 -40"/><path d="M220 300 L400 -40"/>
+      </g>
+    </symbol>
+
+    <symbol id="m-frame" viewBox="0 0 400 300">
+      <rect width="400" height="300" fill="#FAF7F1"/>
+      <rect x="28" y="24" width="344" height="252" fill="none" stroke="#0F7A5F" stroke-width="1.6" opacity="0.5"/>
+      <path d="M28 220 L140 130 L212 194 L286 132 L372 208" fill="none" stroke="#0F7A5F" stroke-width="2.2"/>
+      <circle cx="308" cy="76" r="20" fill="none" stroke="#0F7A5F" stroke-width="2.2"/>
+    </symbol>
+  </defs>
+</svg>
+
+<div class="progress" id="progress"></div>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="mark" href="#top">TAPPA <span>Quarterly</span></a>
+    <nav id="nav">
+      <a href="#editorial">Editorial</a>
+      <a href="#people">People</a>
+      <a href="#research">Research</a>
+      <a href="#fun">Fun</a>
+      <a href="#life">Life</a>
+      <a href="#numbers">Numbers</a>
+      <a href="#credits">Credits</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============================ COVER ============================ -->
+  <section class="cover">
+    <svg class="cover-art" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <g fill="none" stroke="#7BE0C0" stroke-width="0.7" opacity="0.22">
+        <circle cx="330" cy="150" r="40"/><circle cx="330" cy="150" r="76"/>
+        <circle cx="330" cy="150" r="112"/><circle cx="330" cy="150" r="148"/>
+        <circle cx="330" cy="150" r="184"/><circle cx="330" cy="150" r="220"/>
+        <circle cx="330" cy="150" r="256"/>
+      </g>
+    </svg>
+    <canvas class="cover-field" id="cover-field" aria-hidden="true"></canvas>
+
+    <div class="cover-top">
+      <span>Issue 00 — Summer 2026</span>
+      <span>tappa-org.github.io</span>
+    </div>
+
+    <div class="lockup-wrap">
+      <span class="brand">TAPPA</span>
+      <span class="quarterly">Quarterly</span>
+      <p class="cover-desc">The magazine of the Tübingen AI PhD &amp; postdoc community — interviews, research, community life and the occasional survey.</p>
+    </div>
+
+    <div class="cover-lead">
+      <div class="cover-lead-inner">
+        <div>
+          <div class="kicker kicker-mint">The Interview · People</div>
+          <h1 class="cover-headline">The Shape of Uncertainty</h1>
+          <p class="cover-standfirst">Philipp Hennig on the detour from physics, computation as inference, and why “everything is AI” and “no jobs for AI PhDs” cannot both be true.</p>
+          <a class="cover-cta" href="#people">Read the interview</a>
+        </div>
+        <div class="teasers">
+          <a class="teaser" href="#numbers">
+            <span class="teaser-thumb"><svg preserveAspectRatio="xMidYMid slice"><use href="#m-steps"/></svg></span>
+            <span>
+              <span class="teaser-label">By the Numbers</span>
+              <span class="teaser-title">Should We Fly to Conferences?</span>
+              <span class="teaser-blurb">The community survey on flying, trains and the climate crisis</span>
+            </span>
+          </a>
+          <a class="teaser" href="#research">
+            <span class="teaser-thumb"><svg preserveAspectRatio="xMidYMid slice"><use href="#m-calib"/></svg></span>
+            <span>
+              <span class="teaser-label">Research</span>
+              <span class="teaser-title">FridayTalks</span>
+              <span class="teaser-blurb">The monthly talk series, by and for the Tübingen AI community</span>
+            </span>
+          </a>
+          <a class="teaser" href="#life">
+            <span class="teaser-thumb"><svg preserveAspectRatio="xMidYMid slice"><use href="#m-rings"/></svg></span>
+            <span>
+              <span class="teaser-label">Life · Fun</span>
+              <span class="teaser-title">Ice Cream Parlours, Rated</span>
+              <span class="teaser-blurb">Plus: the quarter's calendar, and a German word to carry</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ CONTENTS ============================ -->
+  <section class="contents">
+    <div class="col">
+      <div class="contents-head">In this issue</div>
+      <ul class="contents-list">
+        <li><a href="#editorial"><span class="n">01</span><span class="t">Editorial</span></a></li>
+        <li><a href="#people"><span class="n">02</span><span class="t">People</span></a></li>
+        <li><a href="#research"><span class="n">03</span><span class="t">Research</span></a></li>
+        <li><a href="#fun"><span class="n">04</span><span class="t">Fun</span></a></li>
+        <li><a href="#life"><span class="n">05</span><span class="t">Life</span></a></li>
+        <li><a href="#numbers"><span class="n">06</span><span class="t">By the Numbers</span></a></li>
+        <li><a href="#credits"><span class="n">07</span><span class="t">Masthead &amp; Credits</span></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================ EDITORIAL ============================ -->
+  <section class="chapter" id="editorial">
+    <div class="col">
+      <div class="chapter-head">
+        <span class="n">01</span>
+        <h2>Editorial</h2>
+        <span class="sub">From the editors</span>
+      </div>
+      <div class="accent-rule"></div>
+
+      <div class="split split-reverse">
+        <figure class="fig">
+          <div class="ph ph-4-3">
+            <svg preserveAspectRatio="xMidYMid slice"><use href="#m-frame"/></svg>
+            <span class="ph-badge">Placeholder</span>
+          </div>
+          <figcaption class="figcaption">
+            <span class="fignum">Figure 1 |</span> Cover concept for Issue 00.
+            <span class="credit">Illustration: TAPPA design team</span>
+          </figcaption>
+        </figure>
+        <div>
+          <h3 class="sub-headline">Welcome to Issue 00</h3>
+          <p class="standfirst">Why this magazine exists, who it is for, and what you can expect to find in it every quarter.</p>
+          <p>[Editorial — Haiwen &amp; Mina's welcome note lands here: what TAPPA Quarterly is, why now, what's inside, and how to join issue #1.]</p>
+          <p>[Second paragraph.]</p>
+          <a class="arrow-link" href="#credits">→ Masthead &amp; credits</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ BREAK ============================ -->
+  <figure class="break">
+    <div class="ph ph-break">
+      <svg preserveAspectRatio="xMidYMid slice"><use href="#m-contour"/></svg>
+      <span class="ph-badge">Placeholder</span>
+    </div>
+    <figcaption class="figcaption col">
+      <span class="fignum">Figure 2 |</span> A full-bleed image break sits between chapters — drop a wide photograph of the institute here.
+      <span class="credit">Illustration: TAPPA design team</span>
+    </figcaption>
+  </figure>
+
+  <!-- ============================ PEOPLE ============================ -->
+  <section class="chapter" id="people">
+    <div class="col">
+      <div class="chapter-head">
+        <span class="n">02</span>
+        <h2>People</h2>
+        <span class="sub">The interview</span>
+      </div>
+      <div class="accent-rule"></div>
+
+      <div class="split split-wide">
+        <div>
+          <div class="kicker">The Interview</div>
+          <h3 class="feature-headline">The Shape of Uncertainty</h3>
+          <p class="standfirst">Most of our readers have met Philipp Hennig already — he holds the chair for the Methods of Machine Learning in Tübingen, co-founded the research field of probabilistic numerics, and since this summer directs the Tübingen AI Center. Knowing his title is not the same as knowing how he thinks about the job. We talked in his office in July. What follows is a lightly edited Q&amp;A.</p>
+          <div class="byline">Interview by Haiwen Huang · <span id="read-time"></span></div>
+        </div>
+        <figure class="fig">
+          <div class="ph ph-portrait">
+            <svg preserveAspectRatio="xMidYMid slice"><use href="#m-arcs"/></svg>
+            <span class="ph-badge ph-badge-light">Portrait placeholder</span>
+          </div>
+          <figcaption class="figcaption">
+            <span class="fignum">Figure 3 |</span> Philipp Hennig, photographed near the institute.
+            <span class="credit">Photo: —— · credit the photographer before publishing</span>
+          </figcaption>
+        </figure>
+      </div>
+
+      <blockquote class="pullquote">
+        <p>“Everything out there is suddenly AI. And yet there are no more jobs for AI PhDs. That cannot both be true at the same time.”</p>
+      </blockquote>
+
+      <div class="feature-body">
+        <h4 class="qa-part">Early years: from physics to machine learning</h4>
+        <p class="qa-q">What did you want to be as a kid?</p>
+        <p>A scientist. I have a vague memory of an art class where we had to draw ourselves in the future. Other kids drew a pop star or a football player. I drew myself in a lab coat, with glasses. For a long time I thought I'd be a chemist, because I had this picture of the lab, mixing things together, things going <em>poof</em>. I found that fun when I was eight or nine. As time went by I realized I was better with the abstract stuff.</p>
+
+        <p class="qa-q">Yet you started out on the experimental side of physics.</p>
+        <p>I did — until the lab courses. I had a summer internship in Heidelberg, an incredibly complicated atomic physics setup that filled rooms three times the size of this one. I spent two weeks building a tiny device to go inside it: a little coil I had to wrap by hand and glue in. Then we put it in, pulled the vacuum — that took another week — started the measurement, and discovered that my device didn't work. A short circuit, which happened while putting it in. So I spent two more weeks taking the whole thing apart again.</p>
+        <p>During those two weeks I remember telling myself: this is so stupid. I need a job where starting over doesn't have such an overhead. In theory, you can just crumple up the paper, throw it away and start again.</p>
+
+        <p class="qa-q">That led to machine learning?</p>
+        <p>Through a few detours — a master's in quantum field theory, then a year in biomedical physics, and finally, I convinced David MacKay to be my PhD advisor, because I wanted to learn about empirical inference. I didn't even think of the field I entered as “machine learning” then. It was a small niche then. The first NeurIPS I went to had 500 participants. Coming in from somewhere else was completely normal: for me, as a student of physics, it was possible to just go in there and be part of this. Geoff Hinton is a psychologist by training, right? These days it's much harder, because the competition is so insane.</p>
+
+        <h4 class="qa-part">Research: computation is machine learning</h4>
+        <p class="qa-q">What is probabilistic numerics?</p>
+        <p>It's a formalism unifying information from data, and information from computations. To understand why this is needed, we have to realise that data was originally not part of scientific computation: the scientific process used to be: someone goes out into the field with a lab book. A physicist at her telescope, a biologist collecting samples — with a piece of paper, not with a computer. They come back, plot points on millimeter paper, draw a line through them, and that line becomes a law: a physicist writes down a differential equation. And <em>now</em> the computer comes in — you turn the equation into a simulation. The important thing is that there used to be a filter between the data and the computer: the human, who produces the equation. Of course, we have long since moved all the data right into the computer. But the algorithms for simulation are still set up for this paradigm.</p>
+        <p>And here's the twist: numerical computation is by nature an inference. Solving a differential equation, a minimization problem, a very large linear system: these are too complicated to solve exactly. You have a finite amount of computation for an infinitely complex task, so the answer is always an estimate — which is exactly the situation statistics is in with finite data. And statistics knows how to say how wrong an estimate is: a posterior, computed from a prior and the information you have. Probabilistic numerics applies that to computation itself — a solution that quantifies its own uncertainty.</p>
+      </div>
+
+      <figure class="fig fig-wide gp-figure">
+        <div class="gp-head">
+          <span class="gp-label">Try it — click anywhere on the figure to add an observation</span>
+          <span class="gp-controls">
+            <span class="gp-count" id="gp-count">3 observations</span>
+            <button class="gp-reset" type="button" id="gp-reset">Reset</button>
+          </span>
+        </div>
+        <div class="ph ph-21-9 gp-stage">
+          <canvas id="gp-canvas" tabindex="0"
+                  role="img"
+                  aria-label="An interactive Gaussian process posterior. Click to add observations; the uncertainty bands narrow near data and widen away from it."></canvas>
+        </div>
+        <figcaption class="figcaption">
+          <span class="fignum">Figure 4 |</span> Where the data is dense the posterior is confident; between observations the bands widen. Add points and watch the model admit what it doesn't know — the interview's argument, made playable.
+          <span class="credit">Interactive figure: TAPPA design team</span>
+        </figcaption>
+      </figure>
+
+      <div class="feature-body feature-body-tail">
+        <p class="qa-q">Your 2022 book was subtitled <em>Computation as Machine Learning</em>. Your ICML tutorial this year says computation <em>is</em> machine learning. What changed?</p>
+        <p>Machine learning is now the dominant driver of computer science. It used to be a sub-discipline; now there is no field of computer science that is not touched by it. Which probably also means that the canonical way of thinking about what computers <em>do</em> should pay more attention to inference, data and learning.</p>
+        <p>And computation itself has changed. The data now comes to us on a disk, and building the model from it doesn't involve a human anymore — it's automated. Meanwhile the computations we do in ML are themselves numerical: to train a deep net you solve an optimization problem; to generate an image you solve a differential equation; for scientific inference you solve a PDE. So it makes sense to phrase the computation in the same language as the inference.</p>
+        <p>I entered this field wanting to convince the old folks, the numerical analysts, that there might be something interesting for ML to contribute to their field. Now it has reversed: the field is driven by ML, so it's more important to tell the ML people that the methods they already use can also make their computations more efficient and more reliable.</p>
+
+        <h4 class="qa-part">Work and life: being a professor in an uncertain age</h4>
+        <p class="qa-q">Researcher, teacher, director — how would you describe your role?</p>
+        <p>I used to have a relatively good picture of what an academic is; that picture is now challenged by how our field is evolving. But it's still clear to me that an academic is neither an eremitic thinker nor a publicly funded entrepreneur, but a <em>teacher</em> first and foremost. We are the keepers of the garden of knowledge. Our central job is to help young people think straight, by handing on hard-won patterns of thought. And to find and offer new ones. Because, in contrast to school teachers, professors don't just convey a fixed canon, but also have to figure out what there even <em>is</em> to know. This is why research is an irreplaceable part of this job.</p>
+
+        <p class="qa-q">Is that harder in AI than in other fields?</p>
+        <p>It's an old adage that computer science is a new discipline every ten years. At the moment, though, it is changing its very nature, its mechanisms. What even <em>is</em> a scientific contribution in an age when the scientific process itself is increasingly automated? The machine learning I joined in my PhD was an academic discipline, like physics. Now it is increasingly an engineering discipline, a technology that can be used to empower domain scientists, as well as generate tools of economic value. But most importantly, it's rapidly also becoming the technology that “does” computer science now.</p>
+        <p>The increasing autonomy of agents obviously raises fundamental questions about what skills students of this discipline should actually know and learn. I don't think I fully know the answer yet — which is both concerning and exciting, because, as I just said, it's my job to figure this out! This will be the key question of the coming years, for academia.</p>
+
+        <p class="qa-q">What does a normal week look like now?</p>
+        <p>I rarely have a “normal week” these days. A typical day is a rapid sequence of context switches. I was lecturing this morning, then had meetings with some of my PhD students, then with the AI Center's executive office. This afternoon, I will present a proposal to the University Senate. Yesterday, I was in a phone conference with officers in the federal and state ministries, to coordinate Germany's AI strategy.</p>
+
+        <p class="qa-q">Is there something you'd want to spend more time on?</p>
+        <p>Constantly. All of the things I just mentioned are very exciting. I love teaching. I feel great responsibility for my PhD students. I want the AI Center to be successful, and of course I want to help our politicians make good decisions. Unfortunately, I can't do all things, all the time. The hardest part of my job is that I very frequently have to tell people no, or to apologize for not being able to fully meet their concerns, or that I even sometimes just forget about that one email, or that one appointment.</p>
+
+        <p class="qa-q">How do you hold it together?</p>
+        <p>I have a very structured schedule. I get up at a fixed, very early time every day, get the kids ready for school, go to work, leave at a particular time to pick up my younger daughter from school, some sports, dinner with my family, and then some more work when they sleep. I stopped having lunch completely. And I have gotten more confident to take decisions directly, rather than pondering them until I feel fully confident about the right path.</p>
+        <p>I want to be clear, though, that I'm not recommending this way to live to PhD students. This setup works for me where I am in life. In your mid-forties, the things you built earlier in life are set up, and life becomes more about maintenance. A PhD student should experiment. Try out things. Get lost in ideas, for days on end.</p>
+
+        <p class="qa-q">What do you use the time for?</p>
+        <p>At this point in my career my primary responsibility — whether as an academic teacher, as an advisor to PhD students, or as a director of the AI Center — is to make this place the <em>perfect</em> starting point for young people who come here with a passion for AI. I have the privilege of tenure, so I don't have to worry about myself anymore, and can think about the institution, and the students.</p>
+
+        <p class="qa-q">So what do you think the Center should deliver to undergraduates and PhD students?</p>
+        <p>While I have found my path in life, the students are here to find theirs. The better we help them in this crucial phase, the better for them, but also the better for our society and all the challenges it faces (not least from AI).</p>
+        <p>For undergraduates the main value we must deliver is raw technical knowledge — and incredibly, this is also what they clearly seek. The passion of young students for arcane knowledge is incredibly motivating to me. Every time I walk into the lecture hall, I have a short moment of disbelief that this is my job: a room much like a theatre. The door opens, and — depending on the course — between 30 and 250 people walk in, sit down, and go quiet, naturally, and wait expectantly to hear about some of the most mind-bendingly abstract stuff humanity has ever produced.</p>
+        <p>But as the students advance, especially when they become PhD students, the AI Center's task becomes to empower them as individuals taking their own path. We do this quite concretely, by providing technical infrastructure, access to compute, space to work and to grow in, even to found a company or some other venture. But we also want to be a spiritually empowering place, a community in which students feel comfortable to try out bold things. I'm very glad that my colleague Matthias Bethge shares this vision for the center.</p>
+
+        <p class="qa-q">Shouldn't professors also found startups?</p>
+        <p>Professors can play a crucial role in getting a startup off the ground initially. But a successful startup path is a wild ride over easily a decade. Most of it — building an organization, funding, hiring the right people — has little to do with the initial technology idea. And it's not something you do twenty percent on the side while teaching lectures. It's a formidable job for an amazing young person with a passion. I believe it is important for the institution to celebrate and credit these young people who dare. This doesn't mean professors shouldn't think about business opportunities or economic value creation at all, quite the contrary. But, personally, I feel that I am more effective by bringing young people to found, than by trying to do it all myself.</p>
+
+        <h4 class="qa-part">Community: changing generations of AI researchers</h4>
+        <p class="qa-q">Have the students changed over the years?</p>
+        <p>The personalities have. When I joined, the field was small and niche, and the PhD students of my generation were nerds who wanted to tinker and do cool maths. Then there was a phase, around the mid 2010s, when AI was the social part of computer science: the role of data and users, the connections to psychology and neuroscience. A lot of the students I worked with then cared about social questions, and that made for a more diverse group. Then it became unquestionably clear that a lot of money could be made, and many of the very smartest, driven students in the world decided to do AI. This also made for a very competitive environment.</p>
+
+        <p class="qa-q">So what is the field like now?</p>
+        <p>We are momentarily in a paradoxical situation: every field has become perfused by AI. Materials science is now AI. Biology is now AI. Medicine is now AI. Mechanical engineering is now AI. And yet, there's a perception that there are no more good jobs for AI PhDs. Of course, these two things cannot both be true at the same time! I believe the answer is that the job profile of AI PhDs is now, very suddenly, quite different from what it used to be until very recently.</p>
+        <p>Mathematical insights are still crucial, but “coding” now means a different thing. Literature research, writing papers, implementing baselines is becoming drastically simpler, and thus a smaller part of the job. Scaling up ideas to big data and big models is much more feasible. All of this means it is now possible, and valuable, to transfer AI knowledge into other domains. This requires social and new intellectual skills, to communicate and cooperate with people from other disciplines. Eventually, this will all make the field more enjoyable. But right now it feels painful, because many of these changes are taking place on a time-scale shorter than a single PhD thesis.</p>
+
+        <p class="qa-q">My younger brother is choosing a major right now. Five years ago AI was the obvious answer; now it feels much trickier — you might be automating yourself, or automating others and being blamed for it. You've written that choosing it today takes a kind of leadership.</p>
+        <p>Yes, it seems to me that deciding to work in AI now is much less natural than it was five or six years ago, when much of the world agreed that this was the hot field to study. There's a lot to dislike about AI, the technology and its effects on society and the world economy, at the moment. I hope this means that the people who come to us now arrive with visions for change. That they want to build a technology that benefits humanity, and shares its proceeds fairly.</p>
+
+        <p class="qa-q">Ten years from now, what would make you say the Center really worked?</p>
+        <p>I hope that by then many people will have gone through this community, this building, this campus. And that they look back to their time in Tübingen fondly, feeling that this place was where they set their seeds for success, because they were surrounded by inspiring, smart, passionate, and kind people.</p>
+
+        <h4 class="qa-part">Afterwards: on not knowing what comes next</h4>
+        <p class="qa-q">If you could send one line back to yourself as a PhD student, what would it be?</p>
+        <p>I would like to tell my own alter ego from more than a decade ago something that many PhD students must be told: “It's going to be fine.”</p>
+        <p>The PhD is a pivotal point in the student's life. Some PhD students need to be reminded of this, so they can make use of this unique moment. But for most, especially those used to success, the intensity of the thought can be overwhelming. I was like that as well. For those among your readers who sometimes feel like it is all a bit too much, I wish that our community, your peers and my colleagues, can help you find joy in this wild ride.</p>
+
+        <p class="qa-note"><em>This interview was conducted in Tübingen in July 2026. It has been edited and condensed for clarity.</em></p>
+      </div>
+
+      <div class="cards cards-2 cards-top-rule">
+        <a class="card" href="#">
+          <div class="ph ph-16-9">
+            <svg preserveAspectRatio="xMidYMid slice"><use href="#m-hatch"/></svg>
+            <span class="ph-badge">Placeholder</span>
+          </div>
+          <div class="kicker">Nominate</div>
+          <h4>Who should we feature next?</h4>
+          <p>Know someone whose work deserves a page? Send us a name and a sentence in <strong>#tappa-quarterly</strong>.</p>
+          <span class="arrow-link">→ Nominate in the channel</span>
+        </a>
+        <a class="card" href="#" data-todo="feedback-form-url">
+          <div class="ph ph-16-9">
+            <svg preserveAspectRatio="xMidYMid slice"><use href="#m-matrix"/></svg>
+            <span class="ph-badge">Placeholder</span>
+          </div>
+          <div class="kicker">Feedback</div>
+          <h4>Tell us what you think</h4>
+          <p>Three questions, two minutes: keep it? what's missing? want to help with issue #1?</p>
+          <span class="arrow-link">→ The feedback form</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ RESEARCH ============================ -->
+  <section class="chapter chapter-warm" id="research">
+    <div class="col">
+      <div class="chapter-head">
+        <span class="n">03</span>
+        <h2>Research</h2>
+        <span class="sub">The talk series of the Tübingen AI community</span>
+      </div>
+      <div class="accent-rule"></div>
+
+      <div class="kicker">Community · Talk series</div>
+      <h3 class="feature-headline">FridayTalks</h3>
+      <p class="standfirst">Did you know that more than 60 research groups in Tübingen work in the field of AI? Do you have a research idea you would like to share with local AI researchers? Or are you simply curious about what the group next door is working on?</p>
+      <div class="byline">By the FridayTalks team</div>
+
+      <div class="feature-body">
+        <p>FridayTalks is a monthly talk series where AI researchers from across Tübingen share their work with the AI community. Our aim is to create a space where researchers from different domains, institutions, and startups can exchange ideas, connect and network, and get to know one another.</p>
+        <p>What began as a student-organized, bi-weekly talk series in MvL6 has grown into a regular community event in the modern lecture hall at MvL1. FridayTalks now has its own <a href="https://fridaytalks.github.io/" target="_blank" rel="noopener noreferrer">website</a>, a <a href="https://www.youtube.com/@FridayTalksTuebingen" target="_blank" rel="noopener noreferrer">YouTube channel</a>, and food and drinks supported by the <a href="https://tuebingen.ai" target="_blank" rel="noopener noreferrer">Tübingen AI Center</a>.</p>
+      </div>
+
+      <blockquote class="pullquote">
+        <p>“Of the Tübingen AI community, by the Tübingen AI community, for the Tübingen AI community.”</p>
+        <footer class="pullquote-credit">— AI Lincoln</footer>
+      </blockquote>
+
+      <div class="feature-body">
+        <h4 class="qa-part">Call for talks</h4>
+        <p>We invite AI researchers throughout Tübingen to share their recent work at FridayTalks. Any topic related to AI research is welcome. We especially want to give overlooked ideas more visibility, so we strongly encourage talks on work that is currently under submission or has previously been rejected.</p>
+        <p>Sign up via <a href="https://fridaytalks.github.io/" target="_blank" rel="noopener noreferrer">the FridayTalks website</a>, or get in touch with any member of the organizing team below.</p>
+        <p>The next FridayTalks will be on <strong>August 21</strong>, <strong>September 18</strong> and <strong>October 30</strong>. Mark your calendars!</p>
+      </div>
+
+      <div class="ft-people">
+        <figure class="ft-person">
+          <a href="https://jzenn.github.io" target="_blank" rel="noopener noreferrer"><img class="ft-photo" src="images/johannes.jpg" alt="Johannes Zenn" loading="lazy"></a>
+          <figcaption>
+            <a class="ft-name" href="https://jzenn.github.io" target="_blank" rel="noopener noreferrer">Johannes Zenn</a>
+            <span class="ft-years">2025 –</span>
+            <span class="ft-role">General Chair · Program Chair</span>
+          </figcaption>
+        </figure>
+        <figure class="ft-person">
+          <a href="https://hertie.ai/machine-learning/team/members/shreyash-garg" target="_blank" rel="noopener noreferrer"><img class="ft-photo" src="images/shreyash.jpg" alt="Shreyash Garg" loading="lazy"></a>
+          <figcaption>
+            <a class="ft-name" href="https://hertie.ai/machine-learning/team/members/shreyash-garg" target="_blank" rel="noopener noreferrer">Shreyash Garg</a>
+            <span class="ft-years">2026 –</span>
+            <span class="ft-role">Communication Chair · Program Chair</span>
+          </figcaption>
+        </figure>
+        <figure class="ft-person">
+          <a href="https://uni-tuebingen.de/en/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/methoden-des-maschinellen-lernens/personen/" target="_blank" rel="noopener noreferrer"><img class="ft-photo" src="images/paul.webp" alt="Paul Fischer" loading="lazy"></a>
+          <figcaption>
+            <a class="ft-name" href="https://uni-tuebingen.de/en/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/methoden-des-maschinellen-lernens/personen/" target="_blank" rel="noopener noreferrer">Paul Fischer</a>
+            <span class="ft-years">2026 –</span>
+            <span class="ft-role">Sponsor Chair</span>
+          </figcaption>
+        </figure>
+        <figure class="ft-person">
+          <a href="https://institute-tue.ellis.eu/en/people/vmilovanovic" target="_blank" rel="noopener noreferrer"><img class="ft-photo" src="images/vera.jpg" alt="Vera Milovanovic" loading="lazy"></a>
+          <figcaption>
+            <a class="ft-name" href="https://institute-tue.ellis.eu/en/people/vmilovanovic" target="_blank" rel="noopener noreferrer">Vera Milovanovic</a>
+            <span class="ft-years">2026 –</span>
+            <span class="ft-role">Program Chair</span>
+          </figcaption>
+        </figure>
+      </div>
+      <p class="ft-people-caption">The FridayTalks organizing committee.</p>
+
+      <div class="aside-box aside-wide ft-farewell">
+        <img class="ft-photo ft-photo-small" src="images/tim.jpg" alt="Tim Xiao" loading="lazy">
+        <div>
+          <div class="aside-heading">Thank you, Tim!</div>
+          <p><a href="https://timx.me" target="_blank" rel="noopener noreferrer">Tim Xiao</a> (General Chair · Program Chair, 2025–2026) was a constant driving force — and a co-reinitiator — behind FridayTalks. After successfully defending his PhD, he has now passed the torch to the current team. A huge thank you to Tim for making FridayTalks what it is today!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ BREAK ============================ -->
+  <figure class="break break-deep">
+    <div class="ph ph-break">
+      <svg preserveAspectRatio="xMidYMid slice"><use href="#m-rings"/></svg>
+      <span class="ph-badge ph-badge-light">Placeholder</span>
+    </div>
+    <figcaption class="figcaption col">
+      <span class="fignum">Figure 5 |</span> Second full-bleed break — a good place for the best photograph of the quarter.
+      <span class="credit">Illustration: TAPPA design team</span>
+    </figcaption>
+  </figure>
+
+  <!-- ============================ FUN ============================ -->
+  <section class="chapter" id="fun">
+    <div class="col">
+      <div class="chapter-head">
+        <span class="n">04</span>
+        <h2>Fun</h2>
+        <span class="sub">Photos, events and the quarter ahead</span>
+      </div>
+      <div class="accent-rule"></div>
+
+      <div class="cards cards-2">
+        <a class="card" href="#" data-todo="photo-form-url">
+          <div class="ph ph-16-9">
+            <svg preserveAspectRatio="xMidYMid slice"><use href="#m-frame"/></svg>
+            <span class="ph-badge">Placeholder</span>
+          </div>
+          <div class="kicker">Photos</div>
+          <h4>Photo of the Quarter</h4>
+          <p>Send up to three photos taken this quarter in or around Tübingen — the community votes, and the winner gets the full page below. Runners-up go into a collage.</p>
+          <span class="arrow-link">→ Submit your photos</span>
+        </a>
+        <a class="card" href="/events/">
+          <div class="ph ph-16-9">
+            <svg preserveAspectRatio="xMidYMid slice"><use href="#m-hatch"/></svg>
+            <span class="ph-badge">Placeholder</span>
+          </div>
+          <div class="kicker">Events</div>
+          <h4>Event Recap &amp; Preview</h4>
+          <p>What happened last quarter, and what is coming up — recaps and photos on the TAPPA events page.</p>
+          <span class="arrow-link">→ TAPPA events</span>
+        </a>
+      </div>
+
+      <div class="split split-wide" style="margin-top:48px">
+        <!-- ---------------- what's on ---------------- -->
+        <div>
+          <div class="kicker">Calendar</div>
+          <h3 class="sub-headline">What's On — The Quarter Ahead</h3>
+          <p>Talks, socials and deadlines worth putting in the calendar now. Filter by kind, then add any of them to your own calendar.</p>
+
+          <div class="cal" id="calendar">
+            <div class="cal-filters" role="group" aria-label="Filter events by kind">
+              <button class="cal-chip is-on" type="button" data-filter="all" aria-pressed="true">All</button>
+              <button class="cal-chip" type="button" data-filter="academic" aria-pressed="false">Academic</button>
+              <button class="cal-chip" type="button" data-filter="entrepreneurial" aria-pressed="false">Entrepreneurial</button>
+              <button class="cal-chip" type="button" data-filter="social" aria-pressed="false">Social</button>
+              <button class="cal-chip" type="button" data-filter="sporty" aria-pressed="false">Sporty</button>
+              <button class="cal-chip" type="button" data-filter="food" aria-pressed="false">Food &amp; craft</button>
+            </div>
+
+            <ul class="cal-list">
+              <li class="cal-item" data-kind="academic scientific entrepreneurial"
+                  data-start="2026-09-09T09:30" data-end="2026-09-09T21:00"
+                  data-title="Cyber Valley Day 2026" data-where="Maria-von-Linden-Strasse 1, Tübingen">
+                <span class="cal-date"><span class="cal-day">09</span><span class="cal-mon">Sep</span></span>
+                <span class="cal-body">
+                  <span class="cal-kind">Academic · Entrepreneurial</span>
+                  <a class="cal-title" href="https://www.eventbrite.de/e/cyber-valley-day-2026-tickets-1988826009131" target="_blank" rel="noopener noreferrer">Cyber Valley Day</a>
+                  <span class="cal-meta">9:30–21:00 · Maria-von-Linden-Strasse 1</span>
+                  <span class="cal-desc">Ten years of the Cyber Valley Innovation Campus, with short scientific inputs and an exhibition of research projects.</span>
+                  <a class="cal-reg" href="https://www.eventbrite.de/e/cyber-valley-day-2026-tickets-1988826009131" target="_blank" rel="noopener noreferrer">Tickets →</a>
+                </span>
+                <button class="cal-add" type="button">Add</button>
+              </li>
+
+              <li class="cal-item" data-kind="academic scientific" data-allday="true"
+                  data-start="2026-09-14" data-end="2026-09-17"
+                  data-title="Knowing — AI (10th DGEKW Digital Anthropology conference)" data-where="Alte Aula, University of Tübingen">
+                <span class="cal-date"><span class="cal-day">14–16</span><span class="cal-mon">Sep</span></span>
+                <span class="cal-body">
+                  <span class="cal-kind">Academic</span>
+                  <a class="cal-title" href="https://uni-tuebingen.de/de/295071" target="_blank" rel="noopener noreferrer">Knowing — AI: Anthropological and Interdisciplinary Perspectives on Knowledge Production</a>
+                  <span class="cal-meta">Alte Aula, University of Tübingen</span>
+                  <span class="cal-desc">The 10th DGEKW Digital Anthropology conference, examining how knowledge is made with and beyond AI.</span>
+                  <a class="cal-reg" href="https://docs.google.com/forms/d/e/1FAIpQLSchSwmWObzhehvc403XzpCQadZl905vP2Ydl1t9QuAyfa8pew/viewform" target="_blank" rel="noopener noreferrer">Register →</a>
+                </span>
+                <button class="cal-add" type="button">Add</button>
+              </li>
+
+              <li class="cal-item" data-kind="food international handcraft" data-allday="true"
+                  data-start="2026-09-16" data-end="2026-09-21"
+                  data-title="Umbria-Provence Market" data-where="Tübingen old town">
+                <span class="cal-date"><span class="cal-day">16–20</span><span class="cal-mon">Sep</span></span>
+                <span class="cal-body">
+                  <span class="cal-kind">Food · International · Handcraft</span>
+                  <a class="cal-title" href="https://www.tuebingen.de/veranstaltungen#/484" target="_blank" rel="noopener noreferrer">Umbria-Provence Market</a>
+                  <span class="cal-meta">Tübingen old town</span>
+                  <span class="cal-desc">Food and handcraft from the Italian region of Umbria and the French region of Provence.</span>
+                </span>
+                <button class="cal-add" type="button">Add</button>
+              </li>
+
+              <li class="cal-item" data-kind="sporty social" data-allday="true"
+                  data-start="2026-09-20" data-end="2026-09-21"
+                  data-title="Erbe-Lauf" data-where="Tübingen old town">
+                <span class="cal-date"><span class="cal-day">20</span><span class="cal-mon">Sep</span></span>
+                <span class="cal-body">
+                  <span class="cal-kind">Sporty · Social</span>
+                  <a class="cal-title" href="https://www.tuebinger-erbe-lauf.de/" target="_blank" rel="noopener noreferrer">Erbe-Lauf</a>
+                  <span class="cal-meta">Tübingen old town</span>
+                  <span class="cal-desc">A 10 km run plus kids' runs, a team event and the handbike championship. Fun to run or to cheer.</span>
+                  <a class="cal-reg" href="https://www.tuebinger-erbe-lauf.de/anmeldung" target="_blank" rel="noopener noreferrer">Sign up to run →</a>
+                </span>
+                <button class="cal-add" type="button">Add</button>
+              </li>
+
+              <li class="cal-item" data-kind="academic scientific entrepreneurial" data-allday="true"
+                  data-start="2026-10-07" data-end="2026-10-09"
+                  data-title="All Hands Meeting of AI Centers in Germany" data-where="Messe Stuttgart">
+                <span class="cal-date"><span class="cal-day">7–8</span><span class="cal-mon">Oct</span></span>
+                <span class="cal-body">
+                  <span class="cal-kind">Academic · Entrepreneurial</span>
+                  <a class="cal-title" href="https://fro.tuebingen.ai/" target="_blank" rel="noopener noreferrer">All Hands Meeting of AI Centers in Germany</a>
+                  <span class="cal-meta">Messe Stuttgart</span>
+                  <span class="cal-desc">The Frontier AI Innovation Summit brings the German AI Excellence Centers together with the ELIAS Alliance Annual Meeting.</span>
+                </span>
+                <button class="cal-add" type="button">Add</button>
+              </li>
+
+              <li class="cal-item" data-kind="social"
+                  data-start="2026-10-10T14:00" data-end="2026-10-10T16:00"
+                  data-title="Tübinger Duck-Race" data-where="Neckar river, Tübingen">
+                <span class="cal-date"><span class="cal-day">10</span><span class="cal-mon">Oct</span></span>
+                <span class="cal-body">
+                  <span class="cal-kind">Social</span>
+                  <a class="cal-title" href="https://www.tuebinger-entenrennen.de/" target="_blank" rel="noopener noreferrer">Tübinger Duck-Race</a>
+                  <span class="cal-meta">14:00 · Neckar river</span>
+                  <span class="cal-desc">Which rubber duck runs down the Neckar fastest? Bet on your duck.</span>
+                  <a class="cal-reg" href="https://www.tuebinger-entenrennen.de/#kaufen" target="_blank" rel="noopener noreferrer">Buy a duck →</a>
+                </span>
+                <button class="cal-add" type="button">Add</button>
+              </li>
+            </ul>
+
+            <p class="cal-foot">
+              <span id="cal-count" aria-live="polite">6 events</span>
+              <button class="cal-all" type="button" id="cal-all">Download all as .ics</button>
+            </p>
+          </div>
+          <p class="cal-credit">Compiled by rabanus. More at <a href="https://www.tuebingen.de/veranstaltungen#/" target="_blank" rel="noopener noreferrer">tuebingen.de/veranstaltungen</a>.</p>
+        </div>
+
+        <!-- ---------------- german word ---------------- -->
+        <div>
+          <div class="kicker">Language</div>
+          <h3 class="sub-headline">Word &amp; Idiom of the Quarter</h3>
+          <p>Two to carry into the next quarter. Tap a card to turn it over.</p>
+
+          <div class="flashcards">
+            <button class="flash flash-tall" type="button" aria-pressed="false">
+              <span class="flash-inner">
+                <span class="flash-face flash-front">
+                  <span class="flash-tag">Idiom</span>
+                  <span class="flash-term">„Das bricht dir auch keinen Zacken aus der Krone.“</span>
+                  <span class="flash-hint">Tap to reveal</span>
+                </span>
+                <span class="flash-face flash-back">
+                  <span class="flash-tag">Idiom</span>
+                  <span class="flash-def">Word for word: “this won't break a spike off your crown”. Say it to someone refusing a task they consider beneath their pay grade.</span>
+                </span>
+              </span>
+            </button>
+
+            <button class="flash flash-tall" type="button" aria-pressed="false">
+              <span class="flash-inner">
+                <span class="flash-face flash-front">
+                  <span class="flash-tag">Word</span>
+                  <span class="flash-term">halt</span>
+                  <span class="flash-hint">Tap to reveal</span>
+                </span>
+                <span class="flash-face flash-back">
+                  <span class="flash-tag">Word</span>
+                  <span class="flash-def">Means “stop” or “hold” — but also works as an intensifier, close to the English “just”, as in “it's just the way it is”.</span>
+                  <span class="flash-use">„Ist halt so.“ · „Kann ich halt nichts für.“ · „Sei halt netter.“</span>
+                  <span class="flash-note">All of them sound snappier with <em>halt</em> — which makes it the perfect tool for professional conversations about the potential flaws in your work.</span>
+                </span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <figure class="fig fig-wide">
+        <div class="ph ph-21-9 ph-empty">
+          <span class="ph-empty-label">Photo of the Quarter — submissions open, voting soon</span>
+        </div>
+        <figcaption class="figcaption">
+          <span class="fignum">Photo of the Quarter |</span> Submitted by the community, chosen by your votes. The winning shot lands here.
+          <span class="credit">Photo: —— · credit the photographer before publishing</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============================ LIFE ============================ -->
+  <section class="chapter chapter-warm" id="life">
+    <div class="col">
+      <div class="chapter-head">
+        <span class="n">05</span>
+        <h2>Life</h2>
+        <span class="sub">Around the AI Center — and beyond the desk</span>
+      </div>
+      <div class="accent-rule"></div>
+
+      <!-- ---------------- ice cream ---------------- -->
+      <div id="icecream">
+        <div class="kicker">Life · Ice Cream</div>
+        <h3 class="feature-headline">Ice Cream Parlours of Tübingen, Rated</h3>
+        <p class="standfirst">Summer came and went and came back again, and there will be more of it — probably even this year, thanks to global heating. All the more important, then, to know where to cool off. A small interdisciplinary, international expert team tested more or less every ice cream parlour in and around Tübingen to produce this obviously exhaustive pro-and-contra list.</p>
+        <div class="byline">By Rabanus &amp; Fynn · The parlours are i.i.d. randomly ordered</div>
+
+        <div class="scoops-bar">
+          <span class="scoops-count" id="scoops-count" aria-live="polite">7 parlours</span>
+          <span class="scoops-actions">
+            <button class="scoops-btn" type="button" id="scoops-fav" aria-pressed="false">Experts' picks only</button>
+            <button class="scoops-btn" type="button" id="scoops-shuffle">Re-randomise ↻</button>
+          </span>
+        </div>
+
+        <div class="scoops" id="scoops">
+          <article class="scoop is-fav" data-fav="true">
+            <h4 class="scoop-name">Zuckerbäck <span class="scoop-star" title="Expert favourite" aria-label="Expert favourite">★</span></h4>
+            <ul class="scoop-list scoop-pro">
+              <li>Many options are vegan</li><li>House-made ice cream</li><li>Rare flavours</li><li>Delicious</li>
+            </ul>
+            <ul class="scoop-list scoop-con">
+              <li>Expensive</li><li>Rarely open when you need it</li><li>Relatively small selection of flavours</li><li>Small portions</li>
+            </ul>
+          </article>
+
+          <article class="scoop is-fav" data-fav="true">
+            <h4 class="scoop-name">Il Dolce <span class="scoop-star" title="Expert favourite" aria-label="Expert favourite">★</span></h4>
+            <ul class="scoop-list scoop-pro">
+              <li>Rare flavours</li><li>House-made ice cream</li><li>Delicious</li>
+            </ul>
+            <ul class="scoop-list scoop-con">
+              <li>Pretty full</li><li>Rarely open when you need it</li><li>Small portions</li><li>Relatively small selection of flavours</li>
+            </ul>
+          </article>
+
+          <article class="scoop" data-fav="false">
+            <h4 class="scoop-name">San Marco, Cortina, Cortina II <span class="scoop-note">(they are all the same)</span></h4>
+            <ul class="scoop-list scoop-pro">
+              <li>They exist</li>
+              <li>Always open — San Marco even in winter</li>
+              <li>Cortina II is the only reliably open option in its “area” (rather small scale)</li>
+              <li>Gluten-free cones</li>
+              <li>Some vegan options</li>
+              <li>House-made ice cream (true for at least one of them)</li>
+            </ul>
+            <ul class="scoop-list scoop-con">
+              <li>Too expensive for what you get, quality-wise</li>
+              <li>Gluten-free and vegan cones cost €1.50 extra</li>
+            </ul>
+          </article>
+
+          <article class="scoop is-fav" data-fav="true">
+            <h4 class="scoop-name">Porto Pino <span class="scoop-star" title="Expert favourite" aria-label="Expert favourite">★</span></h4>
+            <ul class="scoop-list scoop-pro">
+              <li>Many different flavours</li><li>Large portions</li>
+              <li>You can split portions into different flavours (recommended)</li>
+              <li>Always open</li><li>Tastes good</li><li>House-made ice cream</li>
+              <li>Directly opposite La Dolce Vita</li>
+            </ul>
+            <ul class="scoop-list scoop-con">
+              <li>Expensive</li><li>Quite few vegan options</li>
+              <li>A bit over-excessive — very overloaded ice cream cans</li>
+              <li>Small cones</li><li>Owner is also a landlord</li>
+            </ul>
+          </article>
+
+          <article class="scoop" data-fav="false">
+            <h4 class="scoop-name">La Dolce Vita</h4>
+            <ul class="scoop-list scoop-pro">
+              <li>Many different flavours</li><li>Large portions</li>
+              <li>Nice terrace with a Neckar view</li><li>Solid quality</li>
+              <li>House-made ice cream</li><li>Directly opposite Porto Pino</li>
+            </ul>
+            <ul class="scoop-list scoop-con">
+              <li>Expensive</li>
+              <li>A bit over-excessive — very overloaded ice cream cans</li>
+            </ul>
+          </article>
+
+          <article class="scoop" data-fav="false">
+            <h4 class="scoop-name">FIGO</h4>
+            <ul class="scoop-list scoop-pro">
+              <li>Many different flavours</li>
+              <li>Just opposite the Stiftskirche — the most popular sitting stairs in Tübingen</li>
+              <li>Always open</li><li>Some vegan options</li><li>Solid quality</li><li>House-made ice cream</li>
+            </ul>
+            <ul class="scoop-list scoop-con">
+              <li>Expensive</li><li>A bit over-abundant</li>
+              <li>It was a book store beforehand, so maybe a downgrade</li>
+            </ul>
+          </article>
+
+          <article class="scoop" data-fav="false">
+            <h4 class="scoop-name">Rino</h4>
+            <ul class="scoop-list scoop-pro">
+              <li>Very good quality</li><li>Exotic flavours</li><li>Cheaper than most in Tübingen</li>
+            </ul>
+            <ul class="scoop-list scoop-con">
+              <li>Located in Rottenburg old town — about 30 min by bike, 20 min by bus</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+
+      <div class="cards-top-rule">
+        <div class="aside-box aside-wide">
+          <div class="aside-heading">You're Not Alone</div>
+          <ul>
+            <li>The <a href="/confidants/"><strong>TAPPA Confidants</strong></a> — a friendly, confidential first point of contact.</li>
+            <li><strong>University psychological counselling</strong>, open to staff and doctoral researchers.</li>
+            <li><strong>Peer support</strong>: who to talk to, and a gentle script for starting.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ BY THE NUMBERS ============================ -->
+  <section class="chapter" id="numbers">
+    <div class="col">
+      <div class="chapter-head">
+        <span class="n">06</span>
+        <h2>By the Numbers</h2>
+        <span class="sub">One question, answered with data</span>
+      </div>
+      <div class="accent-rule"></div>
+
+      <div class="kicker">Survey</div>
+      <h3 class="feature-headline">Should We Fly to Conferences?</h3>
+      <p class="standfirst">How do you travel to conferences? Do you like taking the plane? Do you feel like you have a choice? How do you feel about flying being such a normal part of academic culture? And what about your coworkers and supervisors?</p>
+      <div class="byline">By Fynn Neurath &amp; Tabea Frisch · with help from Ben Schwarz and Nils Weinhardt</div>
+
+      <div class="feature-body">
+        <p>In June, a record-breaking heatwave hit Tübingen at the same time that a lot of us were traveling to oversea conferences. As our offices started to heat up, we started to think about personal attitudes and systemic issues around flying in academia and the climate crisis. And we wondered how our community thinks about these topics.</p>
+        <p>So we sent out a survey about flying behavior in the machine learning community in Tübingen that many of you answered! While it falls short of ready-to-be-published levels of scientific rigor (we consulted a social scientist for this, but survey methodology is of course a complex discipline…) and is not representative (both in the number and selection of people filling out this survey…), we of course wanted to share the results with you.</p>
+        <p>Thank you to Ben Schwarz and Nils Weinhardt for helping with survey design and evaluation, and of course thank all of you for completing the survey!</p>
+      </div>
+
+      <figure class="fig fig-wide">
+        <div class="ph ph-21-9 ph-empty">
+          <span class="ph-empty-label">Survey results — plots in layout</span>
+        </div>
+        <figcaption class="figcaption">
+          <span class="fignum">Figure 6 |</span> How we fly, how we feel about it, and where the two diverge — selected plots from the survey.
+          <span class="credit">Survey &amp; evaluation: Fynn Neurath, Tabea Frisch, Ben Schwarz, Nils Weinhardt</span>
+        </figcaption>
+      </figure>
+
+      <div class="feature-body">
+        <p><strong>Overall, there does not seem to be a connection between how people feel about the climate crisis and their flying behavior.</strong> This could of course be due to the small sample size — or there is actually not much of a connection. Looking at the individual questions, the overwhelming majority of people believe that the climate crisis is an urgent problem. Moreover, many people think that they have a choice in what conferences to attend, and that individual behavior can at least have somewhat of an impact. However, flying to conferences is considered to be an important part of academia.</p>
+        <p>To get some more insight into how people deal with this conflict between systemic expectations and personal preferences, we also asked you to share your thoughts in the survey. Here, we give a selection of excerpts of different takes:</p>
+      </div>
+
+      <div class="feature-body survey-quotes">
+        <blockquote><p>“Please dear PIs make it easier for PhDs and PostDocs to not fly. […] Suggest PhDs and PostDocs a single longer stay on a different continent so that several conferences and workshops can be visited there at once. Organize and support European efforts for ML conferences such as Eurips or ECML.”</p></blockquote>
+        <blockquote><p>“Of course individual behavior has an impact — if every PhD reduces 1 academic flight to conference per year that would be huge! But for a PhD / postdoc to miss a conference because they want to take a stand — the costs are too huge. The question I would ask is how many academic flights can top-level individuals afford to forego to achieve the same effect?”</p></blockquote>
+        <blockquote><p>“Hate the game, not the player.”</p></blockquote>
+        <blockquote><p>“I think there should be higher incentives set by the research institution/uni to travel to conferences in Europe by train if doable within reasonable time (~less than 18 hours?), because I still experience many people considering flying the default. It would also be nice to have night trains as a viable option to get reimbursed. For conferences that require flying, I think it is nice to at least use the time there and append some vacation, so that the stay is somewhat longer. I also do like this aspect of our work that we get to go to different places around the world and really benefitted from attending a conference in North America.”</p></blockquote>
+        <blockquote><p>“Doing things in person is a vital aspect of any worthy community work. Flying is a tool just as any other.”</p></blockquote>
+        <blockquote><p>“That flying is often a requisite to get your paper published is absurd. […] I know people who did not want to fly to the other part of the world (for many reasons, including how bad for your health it is to do it often!), and yet they had to in order to see their paper published.”</p></blockquote>
+        <blockquote><p>“Traveling the world makes the job of a researcher appealing as well, I think. Most people are interested in seeing the world and getting to do it while doing your job, connecting conferences and vacations while your employer pays at least half (if not all) of the costs is pretty cool. I'm an admin and my colleagues and me are definitely jealous of that. […] On the other hand… people are flying thousands of miles several times a year to present powerpoint slides to a random group of people, which one could do online as well and has already been done so during the Corona lockdowns. […] Maybe one could find a compromise, like… every second conference only gets attended online? Or one only attends one conference per year that would require a flight?”</p></blockquote>
+        <blockquote><p>“I have several good friends in academia who moved after the PhD abroad to e.g. US, Canada, Japan. Most of them fly back home to Germany at least 2 to 3 times per year, e.g. for their defense, Christmas, long-distance relationship, family. In addition to conferences, I think we shouldn't overlook this type of mobility.”</p></blockquote>
+        <blockquote><p>“In my former Institute we were about 25 people traveling with Interrail pass to a conference. This was much cheaper, especially those &lt;27 years, than flying.”</p></blockquote>
+        <blockquote><p>“I see flying to conferences as both a problem and a benefit of working in academia. Flying long distance has a big impact on the climate crisis and should be avoided whenever possible. I have not used a plane for nine consecutive years before going to last year's ICML. However, visiting conferences to connect, present your work, find collaborators and discuss ideas is an important aspect of academia.”</p></blockquote>
+      </div>
+
+      <div class="feature-body">
+        <p>We are happy about the positive feedback we received in response to this survey so far, and about the discussions that it already started. If you have further thoughts and comments on the topic or survey or want to continue this conversation in whatever way, we are glad to hear from you! Maybe it will even lead to a follow-up in the next TAPPAS issue…</p>
+      </div>
+
+      <div class="split split-wide cards-top-rule" style="padding-top:34px">
+        <div>
+          <div class="kicker">Try it</div>
+          <h3 class="sub-headline">Your Own Year, Estimated</h3>
+          <p>Rather than settle it with anecdotes, put your own conference year into the estimator and see what it comes to.</p>
+
+          <form class="estimator" id="estimator" onsubmit="return false;">
+            <div class="est-row">
+              <label for="est-trips">Conferences a year</label>
+              <input type="number" id="est-trips" value="3" min="0" max="20" step="1">
+            </div>
+            <div class="est-row">
+              <label for="est-km">Typical one-way distance <span class="est-unit">km</span></label>
+              <input type="number" id="est-km" value="1200" min="0" max="20000" step="50">
+            </div>
+            <div class="est-row">
+              <label for="est-factor">Emission factor <span class="est-unit">kg CO₂e per passenger-km</span></label>
+              <input type="number" id="est-factor" value="0.18" min="0" max="1" step="0.01">
+            </div>
+
+            <div class="est-out">
+              <div class="est-figure">
+                <output id="est-total" for="est-trips est-km est-factor">—</output>
+                <span class="est-caption">CO₂e a year, flying return</span>
+              </div>
+              <div class="est-track"><span class="est-bar" id="est-bar"></span></div>
+              <p class="est-compare">Roughly <output id="est-compare">—</output> if the same trips went by rail.</p>
+            </div>
+          </form>
+
+          <p class="est-note">The estimator uses rough averages — real emissions depend on the route, the aircraft, and how full it is.</p>
+        </div>
+
+        <div>
+          <div class="aside-box aside-box-ink" style="margin-top:26px">
+            <div class="aside-heading">P.S. — The Correct Answer</div>
+            <p>By the way, the correct answer is that the CO₂-equivalent emissions of a flight from Stuttgart to Madrid are <strong>9 to 26 times</strong> the emissions of taking the train — depending on how the electricity-production emissions are calculated (include green certificates or not) and how crowded the transport is (a fully booked train gets more efficient).</p>
+            <p><a class="arrow-link" href="https://uic.hafas.cloud/bin/query.exe/en?L=vs_uic&amp;" target="_blank" rel="noopener noreferrer">→ Source: UIC EcoPassenger</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ CREDITS ============================ -->
+  <section class="chapter chapter-warm" id="credits">
+    <div class="col">
+      <div class="chapter-head">
+        <span class="n">07</span>
+        <h2>Masthead &amp; Credits</h2>
+        <span class="sub">Who made Issue 00</span>
+      </div>
+      <div class="accent-rule"></div>
+
+      <div class="cards cards-3">
+        <div class="card card-plain">
+          <div class="kicker">Editorial</div>
+          <h4>Editors &amp; writers</h4>
+          <p>Edited by <strong>Haiwen Huang</strong> &amp; <strong>Mina Remeli</strong>. The interview by <strong>Haiwen Huang</strong>. Flying survey by <strong>Fynn Neurath</strong> &amp; <strong>Tabea Frisch</strong>, with <strong>Ben Schwarz</strong> &amp; <strong>Nils Weinhardt</strong>. Ice cream parlours by <strong>Rabanus Derr</strong> &amp; <strong>Fynn Neurath</strong>. What's On compiled by <strong>Rabanus Derr</strong>. Word &amp; idiom by <strong>Fynn Neurath</strong>. FridayTalks page by <strong>Johannes Zenn</strong> and the FridayTalks team.</p>
+        </div>
+        <div class="card card-plain">
+          <div class="kicker">Design</div>
+          <h4>Design &amp; illustration</h4>
+          <p>Visual identity and layout by <strong>Beste Aydemir</strong> and the TAPPA design team. Remaining figures are drawn placeholders in the house palette, to be swapped for photographs as they arrive.</p>
+        </div>
+        <div class="card card-plain">
+          <div class="kicker">Thanks</div>
+          <h4>Thank you</h4>
+          <p>To <strong>Philipp Hennig</strong> for the interview, to everyone who answered the flying survey, and to everyone who sent photos, ideas and votes. Want issue #1 to exist? <a href="#" data-todo="feedback-form-url">Tell us in the feedback form</a> — three questions, two minutes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ SUBSCRIBE ============================ -->
+  <section class="subscribe" id="subscribe">
+    <div class="col subscribe-inner">
+      <div class="subscribe-text">
+        <h2>Get the next issue</h2>
+        <p>TAPPA Quarterly goes out once a quarter over the university mailing list. Subscribing, unsubscribing and your data are all handled by the university's own list server — we never see or store your address.</p>
+      </div>
+      <div class="subscribe-actions">
+        <!-- TODO: point this at your Mailman/Sympa list, e.g.
+             https://lists.uni-tuebingen.de/mailman/listinfo/tappa -->
+        <a class="subscribe-cta" href="#" data-todo="mailing-list-url">Subscribe via the university list</a>
+        <a class="subscribe-alt" href="#" data-todo="mailing-list-url">Manage or cancel your subscription</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================ IMPRESSUM ============================ -->
+<section class="legal" id="impressum">
+  <div class="col">
+    <div class="legal-head">
+      <h2>Impressum &amp; Datenschutz</h2>
+      <span class="legal-sub">Angaben gemäß § 5 DDG · Legal notice &amp; privacy</span>
+    </div>
+
+    <div class="legal-grid">
+      <!-- ---------------- Impressum ---------------- -->
+      <div class="legal-col">
+        <h3>Impressum</h3>
+
+        <dl class="legal-dl">
+          <dt>Diensteanbieter</dt>
+          <dd>
+            [TAPPA — full legal name of the group or association]<br>
+            [Legal form, e.g. nicht eingetragene Studierendeninitiative / e.V.]<br>
+            [Street and number]<br>
+            [72076 Tübingen, Germany]
+          </dd>
+
+          <dt>Vertreten durch</dt>
+          <dd>[Name(s) of the chair or responsible board members]</dd>
+
+          <dt>Kontakt</dt>
+          <dd>
+            E-Mail: <a href="mailto:tappa@example.uni-tuebingen.de">[tappa@example.uni-tuebingen.de]</a><br>
+            Telefon: [+49 …]
+          </dd>
+
+          <dt>Registereintrag</dt>
+          <dd>[Vereinsregister … / Amtsgericht … / VR … — or delete this entry if not registered]</dd>
+
+          <dt>Verantwortlich für den Inhalt<br><span class="legal-fine">nach § 18 Abs. 2 MStV</span></dt>
+          <dd>
+            [Name of the responsible editor]<br>
+            [Street and number]<br>
+            [72076 Tübingen, Germany]
+          </dd>
+        </dl>
+
+        <h4>Haftung für Links</h4>
+        <p>Diese Seite verlinkt auf externe Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Für diese fremden Inhalte ist stets der jeweilige Anbieter verantwortlich.</p>
+
+        <h4>Urheberrecht · Copyright</h4>
+        <p>Beiträge und Bilder sind Eigentum der jeweiligen Autorinnen und Autoren; sie sind bei den einzelnen Artikeln genannt. Die Schriften Spectral und Inter stehen unter der SIL Open Font License 1.1.</p>
+      </div>
+
+      <!-- ---------------- Datenschutz ---------------- -->
+      <div class="legal-col">
+        <h3>Datenschutzerklärung</h3>
+        <p class="legal-lede">Kurzfassung: Diese Seite setzt keine Tracking-Cookies, bindet keine Dienste Dritter ein und erhebt keine personenbezogenen Daten.</p>
+
+        <h4>Keine Analyse, kein Tracking</h4>
+        <p>Es kommen weder Analyse-Werkzeuge noch Werbenetzwerke zum Einsatz. Es werden keine Cookies gesetzt.</p>
+
+        <h4>Schriften</h4>
+        <p>Spectral und Inter werden von diesem Server ausgeliefert, nicht über ein Google-CDN. Beim Laden der Seite wird also keine IP-Adresse an Dritte übertragen.</p>
+
+        <h4>Lokale Speicherung</h4>
+        <p>Die Umfrage merkt sich Ihre eigene Antwort im <code>localStorage</code> Ihres Browsers, damit sie angezeigt werden kann. Diese Angabe verlässt Ihr Gerät nicht und lässt sich durch Löschen der Browserdaten entfernen.</p>
+
+        <h4>Umfrage</h4>
+        <p>Sofern die Umfrage serverseitig gezählt wird, speichert der Server ausschließlich einen mit einem Geheimnis gesalzenen SHA-256-Hash der IP-Adresse, um Mehrfachabstimmungen zu begrenzen. Die IP-Adresse selbst wird nicht gespeichert; die Hashes werden nach 90 Tagen gelöscht.</p>
+
+        <h4>Newsletter</h4>
+        <p>Der Versand läuft über die Mailingliste der Universität. An- und Abmeldung sowie die Verarbeitung Ihrer Adresse erfolgen dort; wir sehen und speichern keine E-Mail-Adressen. Es gilt die Datenschutzerklärung der Universität Tübingen.</p>
+
+        <h4>Hosting</h4>
+        <p>Die Seite wird bei [hosting provider] gehostet. Beim Abruf werden dort technisch notwendige Server-Logs (u. a. IP-Adresse) verarbeitet. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO.</p>
+
+        <h4>Ihre Rechte</h4>
+        <p>Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch sowie ein Beschwerderecht bei einer Aufsichtsbehörde. Wenden Sie sich dafür an die oben genannte Kontaktadresse.</p>
+      </div>
+    </div>
+
+    <p class="legal-note">Alle Angaben in eckigen Klammern müssen vor der Veröffentlichung ersetzt werden. Dieser Entwurf ist keine Rechtsberatung — bitte einmal von der Universität oder dem AStA gegenlesen lassen.</p>
+  </div>
+</section>
+
+<footer class="colophon">
+  <div class="col colophon-inner">
+    <p>TAPPA Quarterly is written and edited by the Tübingen AI PhD &amp; postdoc community.</p>
+    <p><a href="#impressum">Impressum &amp; Datenschutz</a> · © 2026 TAPPA · House Style v0.1</p>
+  </div>
+</footer>
+
+<dialog class="lightbox" id="lightbox" aria-label="Enlarged figure">
+  <button class="lightbox-close" type="button" id="lightbox-close" aria-label="Close">&times;</button>
+  <div class="lightbox-stage" id="lightbox-stage"></div>
+  <p class="lightbox-caption" id="lightbox-caption"></p>
+</dialog>
+
+<script src="app.js"></script>
+
 </body>
 </html>

@@ -1,0 +1,21 @@
+name = "tappa-poll"
+main = "worker.js"
+compatibility_date = "2026-01-01"
+
+# Comma-separated list of sites allowed to call this endpoint from a browser.
+# Add your custom domain here too if you get one.
+[vars]
+ALLOWED_ORIGINS = "https://tappa-org.github.io,http://localhost:8000"
+
+# `database_id` is filled in by `wrangler d1 create tappa-poll` — paste it here.
+[[d1_databases]]
+binding = "DB"
+database_name = "tappa-poll"
+database_id = "PASTE_DATABASE_ID_HERE"
+
+# Nightly cleanup of expired voter hashes.
+[triggers]
+crons = ["0 4 * * *"]
+
+# IP_SALT is a secret, NOT a var — never put it in this file.
+#   wrangler secret put IP_SALT
