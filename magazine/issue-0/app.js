@@ -568,7 +568,7 @@
       zoom.setAttribute('aria-label', 'Enlarge this figure');
 
       zoom.addEventListener('click', function () {
-        var art = frame.querySelector('svg');
+        var art = frame.querySelector('svg, img');
         stage.innerHTML = '';
         if (art) stage.appendChild(art.cloneNode(true));
 

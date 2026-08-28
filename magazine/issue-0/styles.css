@@ -2305,3 +2305,20 @@ a.cal-title:focus-visible { color: var(--accent); text-decoration: underline; }
   color: inherit;
 }
 .survey-quotes blockquote { break-inside: avoid; }
+
+/* real photographs and chart images inside figure frames */
+.ph > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ph-plot { aspect-ratio: auto; background: #fff; border: 1px solid var(--rule); }
+.ph-plot > img { height: auto; object-fit: contain; }
+.lightbox-stage img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 76vh;
+  object-fit: contain;
+}

@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   class="httpgd"
+   width="973.00"
+   height="602.00"
+   viewBox="0 0 778.40 481.60"
+   version="1.1"
+   id="svg64"
+   sodipodi:docname="nominal_ed.svg"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview64"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.94141829"
+     inkscape:cx="486.5"
+     inkscape:cy="301.14138"
+     inkscape:window-width="1920"
+     inkscape:window-height="1008"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g53" />
+  <defs
+     id="defs17">
+    <style
+       type="text/css"
+       id="style1"><![CDATA[
+    .httpgd line, .httpgd polyline, .httpgd polygon, .httpgd path, .httpgd rect, .httpgd circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+  ]]></style>
+    <clipPath
+       id="c0">
+      <rect
+         x="0.00"
+         y="0.00"
+         width="778.40"
+         height="481.60"
+         id="rect1" />
+    </clipPath>
+    <clipPath
+       id="c1">
+      <rect
+         x="6.48"
+         y="26.76"
+         width="765.45"
+         height="79.32"
+         id="rect2" />
+    </clipPath>
+    <clipPath
+       id="c2">
+      <rect
+         x="0.00"
+         y="0.00"
+         width="778.40"
+         height="481.60"
+         id="rect3" />
+    </clipPath>
+    <clipPath
+       id="c3">
+      <rect
+         x="6.48"
+         y="139.31"
+         width="765.45"
+         height="79.32"
+         id="rect4" />
+    </clipPath>
+    <clipPath
+       id="c4">
+      <rect
+         x="0.00"
+         y="0.00"
+         width="778.40"
+         height="481.60"
+         id="rect5" />
+    </clipPath>
+    <clipPath
+       id="c5">
+      <rect
+         x="6.48"
+         y="251.86"
+         width="765.45"
+         height="79.32"
+         id="rect6" />
+    </clipPath>
+    <clipPath
+       id="c6">
+      <rect
+         x="0.00"
+         y="0.00"
+         width="778.40"
+         height="481.60"
+         id="rect7" />
+    </clipPath>
+    <clipPath
+       id="c7">
+      <rect
+         x="6.48"
+         y="364.41"
+         width="765.45"
+         height="79.32"
+         id="rect8" />
+    </clipPath>
+    <clipPath
+       id="c8">
+      <rect
+         x="0.00"
+         y="0.00"
+         width="778.40"
+         height="481.60"
+         id="rect9" />
+    </clipPath>
+    <clipPath
+       id="c9">
+      <rect
+         x="6.48"
+         y="344.13"
+         width="765.45"
+         height="20.28"
+         id="rect10" />
+    </clipPath>
+    <clipPath
+       id="c10">
+      <rect
+         x="0.00"
+         y="0.00"
+         width="778.40"
+         height="481.60"
+         id="rect11" />
+    </clipPath>
+    <clipPath
+       id="c11">
+      <rect
+         x="6.48"
+         y="231.58"
+         width="765.45"
+         height="20.28"
+         id="rect12" />
+    </clipPath>
+    <clipPath
+       id="c12">
+      <rect
+         x="0.00"
+         y="0.00"
+         width="778.40"
+         height="481.60"
+         id="rect13" />
+    </clipPath>
+    <clipPath
+       id="c13">
+      <rect
+         x="6.48"
+         y="119.03"
+         width="765.45"
+         height="20.28"
+         id="rect14" />
+    </clipPath>
+    <clipPath
+       id="c14">
+      <rect
+         x="0.00"
+         y="0.00"
+         width="778.40"
+         height="481.60"
+         id="rect15" />
+    </clipPath>
+    <clipPath
+       id="c15">
+      <rect
+         x="6.48"
+         y="6.48"
+         width="765.45"
+         height="20.28"
+         id="rect16" />
+    </clipPath>
+    <clipPath
+       id="c16">
+      <rect
+         x="0.00"
+         y="0.00"
+         width="778.40"
+         height="481.60"
+         id="rect17" />
+    </clipPath>
+  </defs>
+  <rect
+     width="100%"
+     height="100%"
+     style="stroke: none;fill: #FFFFFF;"
+     id="rect18" />
+  <g
+     clip-path="url(#c0)"
+     id="g19">
+    <rect
+       x="0.00"
+       y="0.00"
+       width="778.40"
+       height="481.60"
+       style="stroke-width: 1.26;stroke: none;fill: #FFFFFF;"
+       id="rect19" />
+  </g>
+  <g
+     clip-path="url(#c1)"
+     id="g29">
+    <rect
+       x="41.27"
+       y="30.36"
+       width="53.53"
+       height="72.11"
+       style="stroke-width: 1.26;stroke-linecap: butt;stroke-linejoin: miter;fill: #0D0887;fill-opacity: 0.90;"
+       id="rect20" />
+    <rect
+       x="94.80"
+       y="30.36"
+       width="374.70"
+       height="72.11"
+       style="stroke-width: 1.26;stroke-linecap: butt;stroke-linejoin: miter;fill: #7E03A8;fill-opacity: 0.90;"
+       id="rect21" />
+    <rect
+       x="469.49"
+       y="30.36"
+       width="80.29"
+       height="72.11"
+       style="stroke-width: 1.26;stroke-linecap: butt;stroke-linejoin: miter;fill: #CC4678;fill-opacity: 0.90;"
+       id="rect22" />
+    <rect
+       x="549.78"
+       y="30.36"
+       width="133.82"
+       height="72.11"
+       style="stroke-width: 1.26;stroke-linecap: butt;stroke-linejoin: miter;fill: #F89441;fill-opacity: 0.90;"
+       id="rect23" />
+    <rect
+       x="683.60"
+       y="30.36"
+       width="53.53"
+       height="72.11"
+       style="stroke-width: 1.26;stroke-linecap: butt;stroke-linejoin: miter;fill: #F0F921;fill-opacity: 0.90;"
+       id="rect24" />
+    <g
+       id="g24">
+      <text
+         x="68.03"
+         y="71.06"
+         text-anchor="middle"
+         style="font-family: Liberation Sans;font-size: 13.00px;font-weight: bold;"
+         textLength="7.44px"
+         lengthAdjust="spacingAndGlyphs"
+         id="text24">0</text>
+    </g>
+    <g
+       id="g25">
+      <text
+         x="282.14"
+         y="71.06"
+         text-anchor="middle"
+         style="font-family: Liberation Sans;font-size: 13.00px;font-weight: bold;"
+         textLength="7.44px"
+         lengthAdjust="spacingAndGlyphs"
+         id="text25">1</text>
+    </g>
+    <g
+       id="g26">
+      <text
+         x="509.64"
+         y="71.06"
+         text-anchor="middle"
+         style="font-family: Liberation Sans;font-size: 13.00px;font-weight: bold;"
+         textLength="7.44px"
+         lengthAdjust="spacingAndGlyphs"
+         id="text26">2</text>
+    </g>
+    <g
+       id="g27">
+      <text
+         x="616.69"
+         y="71.06"
+         text-anchor="middle"
+         style="font-family: Liberation Sans;font-size: 13.00px;font-weight: bold;"
+         textLength="7.44px"
+         lengthAdjust="spacingAndGlyphs"
+         id="text27">3</text>
+    </g>
+    <g
+       id="g28">
+      <text
+         x="710.37"
+         y="71.06"
+         text-anchor="middle"
+         style="font-family: Liberation Sans;font-size: 13.00px;font-weight: bold;"
+         textLength="14.88px"
+         lengthAdjust="spacingAndGlyphs"
+         id="text28">4+</text>
+    </g>
+  </g>
+  <g
+     clip-path="url(#c3)"
+     id="g37">
+    <rect
+       x="41.27"
+       y="142.91"
+       width="160.58"
+       height="72.11"
+       style="stroke-width: 1.26;stroke-linecap: butt;stroke-linejoin: miter;fill: #0D0887;fill-opacity: 0.90;"
+       id="rect29" />
+    <rect
+       x="201.85"
+       y="142.91"
+       width="454.99"
+       height="72.11"
+       style="stroke-width: 1.26;stroke-linecap: butt;stroke-linejoin: miter;fill: #7E03A8;fill-opacity: 0.90;"
+       id="rect30" />
+    <rect
+       x="656.84"
+       y="142.91"
+       width="53.53"
+       height="72.11"
+       style="stroke-width: 1.26;stroke-linecap: butt;stroke-linejoin: miter;fill: #CC4678;fill-opacity: 0.90;"
+       id="rect31" />
+    <rect
+       x="710.37"
+       y="142.91"
+       width="26.76"
+       height="72.11"
+       style="stroke-width: 1.26;stroke-linecap: butt;stroke-linejoin: miter;fill: #F89441;fill-opacity: 0.90;"
+       id="rect32" />
+    <rect
+       x="737.13"
+       y="142.91"
+       width="0.00"
+       height="72.11"
+       style="stroke-width: 1.26;stroke-linecap: butt;stroke-linejoin: miter;fill: #F0F921;fill-opacity: 0.90;"
+       id="rect33" />
+    <g
+       id="g33">
+      <text
+         x="121.56"
+         y="183.61"
+         text-anchor="middle"
+         style="font-family: Liberation Sans;font-size: 13.00px;font-weight: bold;"
+         textLength="7.44px"
+         lengthAdjust="spacingAndGlyphs"
+         id="text33">0</text>
+    </g>
+    <g
+       id="g34">
+      <text
+         x="429.35"
+         y="183.61"
+         text-anchor="middle"
+         style="font-family: Liberation Sans;font-size: 13.00px;font-weight: bold;"
+         textLength="7.44px"
+         lengthAdjust="spacingAndGlyphs"
+         id="text34">1</text>
+    </g>
+    <g
+       id="g35">
+      <text
+         x="683.60"
+         y="183.61"
+         text-anchor="middle"
+         style="font-family: Liberation Sans;font-size: 13.00px;font-weight: bold;"
+         textLength="7.44px"
+         lengthAdjust="spacingAndGlyphs"
+         id="text35">2</text>
+    </g>
+    <g
+       id="g36">
+      <text
+         x="723.75"
+         y="183.61"
+         text-anchor="middle"
+         style="font-family: Liberation Sans;font-size: 13.00px;font-weight: bold;"
+         textLength="7.44px"
+         lengthAdjust="spacingAndGlyphs"
+         id="text36">3</text>
+    </g>
+  </g>
+  <g
+     clip-path="url(#c5)"
+     id="g43">
+    <rect
+       x="41.27"
+       y="255.46"
+       width="562.04"
+       height="72.11"
+       style="stroke-width: 1.26;stroke-linecap: butt;stroke-linejoin: miter;fill: #0D0887;fill-opacity: 0.90;"
+       id="rect37" />
+    <rect
+       x="603.31"
+       y="255.46"
+       width="133.82"
+       height="72.11"
+       style="stroke-width: 1.26;stroke-linecap: butt;stroke-linejoin: miter;fill: #7E03A8;fill-opacity: 0.90;"
+       id="rect38" />
+    <rect
+       x="737.13"
+       y="255.46"
+       width="0.00"
+       height="72.11"
+       style="stroke-width: 1.26;stroke-linecap: butt;stroke-linejoin: miter;fill: #CC4678;fill-opacity: 0.90;"
+       id="rect39" />
+    <rect
+       x="737.13"
+       y="255.46"
+       width="0.00"
+       height="72.11"
+       style="stroke-width: 1.26;stroke-linecap: butt;stroke-linejoin: miter;fill: #F89441;fill-opacity: 0.90;"
+       id="rect40" />
+    <rect
+       x="737.13"
+       y="255.46"
+       width="0.00"
+       height="72.11"
+       style="stroke-width: 1.26;stroke-linecap: butt;stroke-linejoin: miter;fill: #F0F921;fill-opacity: 0.90;"
+       id="rect41" />
+    <g
+       id="g41">
+      <text
+         x="322.29"
+         y="296.16"
+         text-anchor="middle"
+         style="font-family: Liberation Sans;font-size: 13.00px;font-weight: bold;"
+         textLength="7.44px"
+         lengthAdjust="spacingAndGlyphs"
+         id="text41">0</text>
+    </g>
+    <g
+       id="g42">
+      <text
+         x="670.22"
+         y="296.16"
+         text-anchor="middle"
+         style="font-family: Liberation Sans;font-size: 13.00px;font-weight: bold;"
+         textLength="7.44px"
+         lengthAdjust="spacingAndGlyphs"
+         id="text42">1</text>
+    </g>
+  </g>
+  <g
+     clip-path="url(#c7)"
+     id="g51">
+    <rect
+       x="41.27"
+       y="368.01"
+       width="428.22"
+       height="72.11"
+       style="stroke-width: 1.26;stroke-linecap: butt;stroke-linejoin: miter;fill: #0D0887;fill-opacity: 0.90;"
+       id="rect43" />
+    <rect
+       x="469.49"
+       y="368.01"
+       width="214.11"
+       height="72.11"
+       style="stroke-width: 1.26;stroke-linecap: butt;stroke-linejoin: miter;fill: #7E03A8;fill-opacity: 0.90;"
+       id="rect44" />
+    <rect
+       x="683.60"
+       y="368.01"
+       width="26.76"
+       height="72.11"
+       style="stroke-width: 1.26;stroke-linecap: butt;stroke-linejoin: miter;fill: #CC4678;fill-opacity: 0.90;"
+       id="rect45" />
+    <rect
+       x="710.37"
+       y="368.01"
+       width="0.00"
+       height="72.11"
+       style="stroke-width: 1.26;stroke-linecap: butt;stroke-linejoin: miter;fill: #F89441;fill-opacity: 0.90;"
+       id="rect46" />
+    <rect
+       x="710.37"
+       y="368.01"
+       width="26.76"
+       height="72.11"
+       style="stroke-width: 1.26;stroke-linecap: butt;stroke-linejoin: miter;fill: #F0F921;fill-opacity: 0.90;"
+       id="rect47" />
+    <g
+       id="g47">
+      <text
+         x="255.38"
+         y="408.71"
+         text-anchor="middle"
+         style="font-family: Liberation Sans;font-size: 13.00px;font-weight: bold;"
+         textLength="7.44px"
+         lengthAdjust="spacingAndGlyphs"
+         id="text47">0</text>
+    </g>
+    <g
+       id="g48">
+      <text
+         x="576.55"
+         y="408.71"
+         text-anchor="middle"
+         style="font-family: Liberation Sans;font-size: 13.00px;font-weight: bold;"
+         textLength="7.44px"
+         lengthAdjust="spacingAndGlyphs"
+         id="text48">1</text>
+    </g>
+    <g
+       id="g49">
+      <text
+         x="696.99"
+         y="408.71"
+         text-anchor="middle"
+         style="font-family: Liberation Sans;font-size: 13.00px;font-weight: bold;"
+         textLength="7.44px"
+         lengthAdjust="spacingAndGlyphs"
+         id="text49">2</text>
+    </g>
+    <g
+       id="g50">
+      <text
+         x="723.75"
+         y="408.71"
+         text-anchor="middle"
+         style="font-family: Liberation Sans;font-size: 13.00px;font-weight: bold;"
+         textLength="14.88px"
+         lengthAdjust="spacingAndGlyphs"
+         id="text50">4+</text>
+    </g>
+  </g>
+  <g
+     clip-path="url(#c9)"
+     id="g53"
+     transform="translate(0,-4.8)">
+    <g
+       id="g52">
+      <text
+         x="389.20001"
+         y="357.98001"
+         text-anchor="middle"
+         style="font-size:10.4px;font-family:'Liberation Sans';fill:#1a1a1a"
+         textLength="497.57999"
+         lengthAdjust="spacingAndGlyphs"
+         id="text51">How many other flights did you take for work in the last year (both ways together count as one flight)?</text>
+    </g>
+  </g>
+  <g
+     clip-path="url(#c11)"
+     id="g55"
+     transform="translate(0,-6.4)">
+    <g
+       id="g54">
+      <text
+         x="389.20001"
+         y="245.42999"
+         text-anchor="middle"
+         style="font-size:10.4px;font-family:'Liberation Sans';fill:#1a1a1a"
+         textLength="481.35999"
+         lengthAdjust="spacingAndGlyphs"
+         id="text53">How many of these flights were to European conferences (both ways together count as one flight)?</text>
+    </g>
+  </g>
+  <g
+     clip-path="url(#c13)"
+     id="g57"
+     transform="translate(0,-6.4)">
+    <g
+       id="g56">
+      <text
+         x="389.20001"
+         y="132.88"
+         text-anchor="middle"
+         style="font-size:10.4px;font-family:'Liberation Sans';fill:#1a1a1a"
+         textLength="225.78"
+         lengthAdjust="spacingAndGlyphs"
+         id="text55">To how many of these did you travel by plane?</text>
+    </g>
+  </g>
+  <g
+     clip-path="url(#c15)"
+     id="g59">
+    <g
+       id="g58">
+      <text
+         x="389.20"
+         y="20.33"
+         text-anchor="middle"
+         style="font-family: Liberation Sans;font-size: 10.40px;fill: #1A1A1A;"
+         textLength="254.24px"
+         lengthAdjust="spacingAndGlyphs"
+         id="text57">How many conferences did you visit in the last year?</text>
+    </g>
+  </g>
+  <g
+     clip-path="url(#c16)"
+     id="g64">
+    <g
+       id="g60">
+      <text
+         x="41.27"
+         y="456.98"
+         text-anchor="middle"
+         style="font-family: Liberation Sans;font-size: 10.40px;fill: #4D4D4D;"
+         textLength="5.94px"
+         lengthAdjust="spacingAndGlyphs"
+         id="text59">0</text>
+    </g>
+    <g
+       id="g61">
+      <text
+         x="308.91"
+         y="456.98"
+         text-anchor="middle"
+         style="font-family: Liberation Sans;font-size: 10.40px;fill: #4D4D4D;"
+         textLength="11.88px"
+         lengthAdjust="spacingAndGlyphs"
+         id="text60">10</text>
+    </g>
+    <g
+       id="g62">
+      <text
+         x="576.55"
+         y="456.98"
+         text-anchor="middle"
+         style="font-family: Liberation Sans;font-size: 10.40px;fill: #4D4D4D;"
+         textLength="11.88px"
+         lengthAdjust="spacingAndGlyphs"
+         id="text61">20</text>
+    </g>
+    <g
+       id="g63">
+      <text
+         x="389.20"
+         y="472.00"
+         text-anchor="middle"
+         style="font-family: Liberation Sans;font-size: 13.00px;"
+         textLength="36.84px"
+         lengthAdjust="spacingAndGlyphs"
+         id="text62">Count</text>
+    </g>
+  </g>
+</svg>
