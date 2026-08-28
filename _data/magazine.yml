@@ -5,7 +5,7 @@
 #
 # `url` is where the issue itself lives. Keep the trailing slash.
 
-- title: "Issue 0"
+- title: "Issue 1"
   date: "Summer 2026"
   cover: /images/magazine/tappa-quarterly-cover.jpg
-  url: /magazine/issue-0/
+  url: /magazine/issue-1/
