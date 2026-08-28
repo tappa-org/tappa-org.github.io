@@ -278,7 +278,7 @@
           </div>
           <figcaption class="figcaption">
             <span class="fignum">Figure 3 |</span> Philipp Hennig.
-            <span class="credit">Photo: —— · add the photographer credit before publishing</span>
+            <span class="credit">Photo: Tübingen AI Center / Elia Schmid, 2024</span>
           </figcaption>
         </figure>
       </div>
@@ -438,6 +438,50 @@
         <p>The next FridayTalks will be on <strong>August 21</strong>, <strong>September 18</strong> and <strong>October 30</strong>. Mark your calendars!</p>
       </div>
 
+      <div class="cards-top-rule" style="margin-top:44px">
+        <div class="kicker">From the archive</div>
+        <h3 class="sub-headline">Three Recent Talks</h3>
+        <p>Missed a Friday? Every talk lands on the <a href="https://www.youtube.com/@FridayTalksTuebingen" target="_blank" rel="noopener noreferrer">YouTube channel</a>. Hover a card for the abstract, click to watch.</p>
+
+        <div class="cards cards-3">
+          <a class="card talk" href="https://www.youtube.com/watch?v=h_EhNpHREnE" target="_blank" rel="noopener noreferrer">
+            <div class="ph ph-16-9 talk-thumb">
+              <img src="images/fridaytalks/weiland.jpg" alt="Talk recording: Tim Weiland, Fast Bayesian Inference for Structured Models">
+              <span class="talk-play" aria-hidden="true">▶</span>
+              <span class="talk-abstract">Many Bayesian models — spatial models, time series, splines, mixed models — share the same structure: a few hyperparameters control a large, structured Gaussian field of latent variables, informed by a likelihood. For fully Bayesian inference here, MCMC is often overkill: repeated Laplace approximations compute posteriors quickly, deterministically, and often highly accurately. The talk presents the idea, and a probabilistic programming framework that makes it easy.</span>
+            </div>
+            <div class="kicker">24 Jul 2026 · Tim Weiland</div>
+            <h4>Fast Bayesian Inference for Structured Models</h4>
+            <p>Why MCMC is often overkill for structured models — and a framework that makes fast, deterministic alternatives easy to use.</p>
+            <span class="arrow-link">→ Watch on YouTube</span>
+          </a>
+
+          <a class="card talk" href="https://www.youtube.com/watch?v=4LyaCMJdqIs" target="_blank" rel="noopener noreferrer">
+            <div class="ph ph-16-9 talk-thumb">
+              <img src="images/fridaytalks/nikolaou.jpg" alt="Talk recording: Konstantin Nikolaou, Spectral Reach">
+              <span class="talk-play" aria-hidden="true">▶</span>
+              <span class="talk-abstract">Neural scaling laws guide modern foundation models, but we still don't really understand why bigger is better. Taking a spectral perspective on learning dynamics, the talk develops a scalable measure of training's position in the spectrum. Across scaling experiments a clear story emerges: training consistently moves from dominant modes into the spectral tail, and larger models reach further into this tail than smaller ones can — a concrete reason bigger is better.</span>
+            </div>
+            <div class="kicker">24 Jul 2026 · Konstantin Nikolaou</div>
+            <h4>Spectral Reach: Why Bigger is Better</h4>
+            <p>Neural scaling, seen spectrally: training moves into the spectral tail, and larger models reach further into it.</p>
+            <span class="arrow-link">→ Watch on YouTube</span>
+          </a>
+
+          <a class="card talk" href="https://www.youtube.com/watch?v=vTD9JIlyn2k" target="_blank" rel="noopener noreferrer">
+            <div class="ph ph-16-9 talk-thumb">
+              <img src="images/fridaytalks/goel.jpg" alt="Talk recording: Shashwat Goel, Realistic Evaluations for Agent Adaptation">
+              <span class="talk-play" aria-hidden="true">▶</span>
+              <span class="talk-abstract">AI agents increasingly work in dynamic environments that require adapting to new information as it arrives. FutureSim measures this by replaying real-world events in the order they occurred: agents forecast world events beyond their knowledge cutoff while real news arrives and questions resolve. Frontier agents separate clearly — the best reaches 25% accuracy, and many score a worse Brier skill score than making no prediction at all.</span>
+            </div>
+            <div class="kicker">26 Jun 2026 · Shashwat Goel</div>
+            <h4>Realistic Evaluations for Agent Adaptation</h4>
+            <p>FutureSim replays real-world events in order and asks frontier agents to forecast past their knowledge cutoff.</p>
+            <span class="arrow-link">→ Watch on YouTube</span>
+          </a>
+        </div>
+      </div>
+
       <div class="ft-people">
         <figure class="ft-person">
           <a href="https://jzenn.github.io" target="_blank" rel="noopener noreferrer"><img class="ft-photo" src="images/johannes.jpg" alt="Johannes Zenn" loading="lazy"></a>
@@ -514,7 +558,7 @@
           </div>
           <div class="kicker">Photos</div>
           <h4>Photo of the Quarter</h4>
-          <p>Send up to three photos taken this quarter in or around Tübingen — the community votes, and the winner gets the full page below. Runners-up go into a collage.</p>
+          <p>Send up to three photos taken this quarter in or around Tübingen — then vote for your favourite right on this page, below. The winner takes a full page in the next issue.</p>
           <span class="arrow-link">→ Submission form pinned in #tappa-quarterly</span>
         </div>
         <a class="card" href="/events/">
@@ -678,15 +722,75 @@
         </div>
       </div>
 
-      <figure class="fig fig-wide">
-        <div class="ph ph-21-9 ph-empty">
-          <span class="ph-empty-label">Photo of the Quarter — submissions open, voting soon</span>
+      <div class="cards-top-rule" id="photo-vote" style="margin-top:48px">
+        <div class="kicker">Vote</div>
+        <h3 class="sub-headline">Photo of the Quarter — Cast Your Vote</h3>
+        <p>The community's photos of the quarter, chosen by your votes. Pick your favourite: the winner takes a full page in the next issue, runners-up go into a collage.</p>
+
+        <!-- data-api: paste the deployed Worker URL here (see backend/README.md).
+             Left empty, the poll falls back to a local mock so the page works offline.
+             Swap each placeholder <svg> for the submitted photo, and fill in
+             caption + photographer. -->
+        <div class="poll photo-poll" id="poll" data-poll="photo-2026-00" data-api="">
+          <button class="poll-option" type="button" data-key="photo1" data-base="0">
+            <span class="ph ph-16-9">
+              <svg preserveAspectRatio="xMidYMid slice"><use href="#m-contour"/></svg>
+              <span class="ph-badge">Placeholder</span>
+            </span>
+            <span class="photo-meta">
+              <span class="poll-label">[Photo 1 — caption]</span>
+              <span class="photo-by">by [name]</span>
+            </span>
+            <span class="bar"><span class="fill"></span></span>
+            <span class="pct">0%</span>
+          </button>
+
+          <button class="poll-option" type="button" data-key="photo2" data-base="0">
+            <span class="ph ph-16-9">
+              <svg preserveAspectRatio="xMidYMid slice"><use href="#m-ribbon"/></svg>
+              <span class="ph-badge">Placeholder</span>
+            </span>
+            <span class="photo-meta">
+              <span class="poll-label">[Photo 2 — caption]</span>
+              <span class="photo-by">by [name]</span>
+            </span>
+            <span class="bar"><span class="fill"></span></span>
+            <span class="pct">0%</span>
+          </button>
+
+          <button class="poll-option" type="button" data-key="photo3" data-base="0">
+            <span class="ph ph-16-9">
+              <svg preserveAspectRatio="xMidYMid slice"><use href="#m-frame"/></svg>
+              <span class="ph-badge">Placeholder</span>
+            </span>
+            <span class="photo-meta">
+              <span class="poll-label">[Photo 3 — caption]</span>
+              <span class="photo-by">by [name]</span>
+            </span>
+            <span class="bar"><span class="fill"></span></span>
+            <span class="pct">0%</span>
+          </button>
+
+          <button class="poll-option" type="button" data-key="photo4" data-base="0">
+            <span class="ph ph-16-9">
+              <svg preserveAspectRatio="xMidYMid slice"><use href="#m-rings"/></svg>
+              <span class="ph-badge ph-badge-light">Placeholder</span>
+            </span>
+            <span class="photo-meta">
+              <span class="poll-label">[Photo 4 — caption]</span>
+              <span class="photo-by">by [name]</span>
+            </span>
+            <span class="bar"><span class="fill"></span></span>
+            <span class="pct">0%</span>
+          </button>
         </div>
-        <figcaption class="figcaption">
-          <span class="fignum">Photo of the Quarter |</span> Submitted by the community, chosen by your votes. The winning shot lands here.
-          <span class="credit">Photo: —— · credit the photographer before publishing</span>
-        </figcaption>
-      </figure>
+
+        <p class="poll-meta">
+          <span id="poll-status">Cast your vote — pick one.</span>
+          <button class="poll-reset" type="button" id="poll-reset" hidden>Change vote</button>
+        </p>
+        <p class="poll-note">One vote per reader, counted on the server. No account, no cookie beyond remembering your own choice, and nothing personal is stored.</p>
+      </div>
     </div>
   </section>
 
@@ -839,42 +943,43 @@
         <p>Thank you to Ben Schwarz and Nils Weinhardt for helping with survey design and evaluation, and of course thank all of you for completing the survey!</p>
       </div>
 
-      <figure class="fig fig-wide">
-        <div class="ph ph-plot">
-          <img src="images/flying/nominal.svg" alt="Four stacked bar charts: conferences visited last year, how many were reached by plane, flights to European conferences, and other work flights.">
-        </div>
-        <figcaption class="figcaption">
-          <span class="fignum">Figure 6 |</span> How we fly: most respondents attended one conference last year, most flew to it — and almost nobody flew within Europe.
-          <span class="credit">Survey &amp; evaluation: Fynn Neurath, Tabea Frisch, Ben Schwarz, Nils Weinhardt</span>
-        </figcaption>
-      </figure>
+      <div class="grid-even">
+        <figure class="fig">
+          <div class="ph ph-plot">
+            <img src="images/flying/nominal.svg" alt="Four stacked bar charts: conferences visited last year, how many were reached by plane, flights to European conferences, and other work flights.">
+          </div>
+          <figcaption class="figcaption">
+            <span class="fignum">Figure 6 |</span> How we fly: most respondents attended one conference last year, most flew to it — and almost nobody flew within Europe.
+            <span class="credit">Survey &amp; evaluation: Fynn Neurath, Tabea Frisch, Ben Schwarz, Nils Weinhardt</span>
+          </figcaption>
+        </figure>
 
-      <figure class="fig fig-wide">
-        <div class="ph ph-plot">
-          <img src="images/flying/ordinal.svg" alt="Seven diverging bar charts of attitudes, from belief in individual impact to comfort discussing flying with one's group.">
-        </div>
-        <figcaption class="figcaption">
-          <span class="fignum">Figure 7 |</span> How we feel: the climate crisis reads as urgent and flying as career-relevant — and hardly anyone has skipped a conference over it.
-          <span class="credit">Survey &amp; evaluation: Fynn Neurath, Tabea Frisch, Ben Schwarz, Nils Weinhardt</span>
-        </figcaption>
-      </figure>
-
-      <div class="feature-body">
-        <p><strong>Overall, there does not seem to be a connection between how people feel about the climate crisis and their flying behavior.</strong> This could of course be due to the small sample size — or there is actually not much of a connection. Looking at the individual questions, the overwhelming majority of people believe that the climate crisis is an urgent problem. Moreover, many people think that they have a choice in what conferences to attend, and that individual behavior can at least have somewhat of an impact. However, flying to conferences is considered to be an important part of academia.</p>
+        <figure class="fig">
+          <div class="ph ph-plot">
+            <img src="images/flying/ordinal.svg" alt="Seven diverging bar charts of attitudes, from belief in individual impact to comfort discussing flying with one's group.">
+          </div>
+          <figcaption class="figcaption">
+            <span class="fignum">Figure 7 |</span> How we feel: the climate crisis reads as urgent and flying as career-relevant — and hardly anyone has skipped a conference over it.
+            <span class="credit">Survey &amp; evaluation: Fynn Neurath, Tabea Frisch, Ben Schwarz, Nils Weinhardt</span>
+          </figcaption>
+        </figure>
       </div>
 
-      <figure class="fig fig-wide">
-        <div class="ph ph-plot">
-          <img src="images/flying/flights_awareness.svg" alt="Stacked bar charts of belief in individual impact and urgency of the climate crisis, split by number of conference flights last year.">
+      <div class="split split-wide" style="margin-top:34px">
+        <div>
+          <p><strong>Overall, there does not seem to be a connection between how people feel about the climate crisis and their flying behavior.</strong> This could of course be due to the small sample size — or there is actually not much of a connection. Looking at the individual questions, the overwhelming majority of people believe that the climate crisis is an urgent problem. Moreover, many people think that they have a choice in what conferences to attend, and that individual behavior can at least have somewhat of an impact. However, flying to conferences is considered to be an important part of academia.</p>
+          <p>To get some more insight into how people deal with this conflict between systemic expectations and personal preferences, we also asked you to share your thoughts in the survey. Here, we give a selection of excerpts of different takes:</p>
         </div>
-        <figcaption class="figcaption">
-          <span class="fignum">Figure 8 |</span> Belief in individual impact (top) and urgency of the climate crisis (bottom), against the number of conference flights last year — the two barely connect.
-          <span class="credit">Survey &amp; evaluation: Fynn Neurath, Tabea Frisch, Ben Schwarz, Nils Weinhardt</span>
-        </figcaption>
-      </figure>
 
-      <div class="feature-body">
-        <p>To get some more insight into how people deal with this conflict between systemic expectations and personal preferences, we also asked you to share your thoughts in the survey. Here, we give a selection of excerpts of different takes:</p>
+        <figure class="fig">
+          <div class="ph ph-plot">
+            <img src="images/flying/flights_awareness.svg" alt="Stacked bar charts of belief in individual impact and urgency of the climate crisis, split by number of conference flights last year.">
+          </div>
+          <figcaption class="figcaption">
+            <span class="fignum">Figure 8 |</span> Belief in individual impact (top) and urgency of the climate crisis (bottom), against the number of conference flights last year — the two barely connect.
+            <span class="credit">Survey &amp; evaluation: Fynn Neurath, Tabea Frisch, Ben Schwarz, Nils Weinhardt</span>
+          </figcaption>
+        </figure>
       </div>
 
       <div class="feature-body survey-quotes">

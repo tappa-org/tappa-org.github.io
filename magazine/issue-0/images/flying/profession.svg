@@ -37,26 +37,26 @@
 <polyline points="39.83,333.73 771.92,333.73" style="stroke-width: 1.26;stroke: #EBEBEB;stroke-linecap: butt;"/>
 <polyline points="39.83,227.70 771.92,227.70" style="stroke-width: 1.26;stroke: #EBEBEB;stroke-linecap: butt;"/>
 <polyline points="39.83,121.67 771.92,121.67" style="stroke-width: 1.26;stroke: #EBEBEB;stroke-linecap: butt;"/>
-<rect x="201.74" y="58.05" width="126.71" height="381.71" style="stroke-width: 1.26;stroke-linecap: butt;stroke-linejoin: miter;fill: #7E03A8;"/>
-<rect x="342.53" y="333.73" width="126.71" height="106.03" style="stroke-width: 1.26;stroke-linecap: butt;stroke-linejoin: miter;fill: #CC4678;"/>
-<rect x="483.31" y="418.55" width="126.71" height="21.21" style="stroke-width: 1.26;stroke-linecap: butt;stroke-linejoin: miter;fill: #F89441;"/>
-<rect x="624.10" y="418.55" width="126.71" height="21.21" style="stroke-width: 1.26;stroke-linecap: butt;stroke-linejoin: miter;fill: #F0F921;"/>
-<rect x="60.95" y="418.55" width="126.71" height="21.21" style="stroke-width: 1.26;stroke-linecap: butt;stroke-linejoin: miter;fill: #0D0887;"/>
+<rect x="201.74" y="58.05" width="126.71" height="381.71" style="stroke-width: 1.26;stroke-linecap: butt;stroke-linejoin: miter;fill: #0F7A5F;"/>
+<rect x="342.53" y="333.73" width="126.71" height="106.03" style="stroke-width: 1.26;stroke-linecap: butt;stroke-linejoin: miter;fill: #44A886;"/>
+<rect x="483.31" y="418.55" width="126.71" height="21.21" style="stroke-width: 1.26;stroke-linecap: butt;stroke-linejoin: miter;fill: #7BE0C0;"/>
+<rect x="624.10" y="418.55" width="126.71" height="21.21" style="stroke-width: 1.26;stroke-linecap: butt;stroke-linejoin: miter;fill: #D8F4E8;"/>
+<rect x="60.95" y="418.55" width="126.71" height="21.21" style="stroke-width: 1.26;stroke-linecap: butt;stroke-linejoin: miter;fill: #08372E;"/>
 <g><text x="265.09" y="52.09" text-anchor="middle" style="font-family: Liberation Sans;font-size: 13.00px;font-weight: bold;" textLength="14.88px" lengthAdjust="spacingAndGlyphs">18</text></g>
 <g><text x="405.88" y="327.77" text-anchor="middle" style="font-family: Liberation Sans;font-size: 13.00px;font-weight: bold;" textLength="7.44px" lengthAdjust="spacingAndGlyphs">5</text></g>
 <g><text x="546.67" y="412.59" text-anchor="middle" style="font-family: Liberation Sans;font-size: 13.00px;font-weight: bold;" textLength="7.44px" lengthAdjust="spacingAndGlyphs">1</text></g>
 <g><text x="687.45" y="412.59" text-anchor="middle" style="font-family: Liberation Sans;font-size: 13.00px;font-weight: bold;" textLength="7.44px" lengthAdjust="spacingAndGlyphs">1</text></g>
 <g><text x="124.31" y="412.59" text-anchor="middle" style="font-family: Liberation Sans;font-size: 13.00px;font-weight: bold;" textLength="7.44px" lengthAdjust="spacingAndGlyphs">1</text></g>
 </g><g clip-path="url(#c2)">
-<g><text x="34.01" y="443.47" text-anchor="end" style="font-family: Liberation Sans;font-size: 10.40px;fill: #4D4D4D;" textLength="5.94px" lengthAdjust="spacingAndGlyphs">0</text></g>
-<g><text x="34.01" y="337.44" text-anchor="end" style="font-family: Liberation Sans;font-size: 10.40px;fill: #4D4D4D;" textLength="5.94px" lengthAdjust="spacingAndGlyphs">5</text></g>
-<g><text x="34.01" y="231.41" text-anchor="end" style="font-family: Liberation Sans;font-size: 10.40px;fill: #4D4D4D;" textLength="11.88px" lengthAdjust="spacingAndGlyphs">10</text></g>
-<g><text x="34.01" y="125.38" text-anchor="end" style="font-family: Liberation Sans;font-size: 10.40px;fill: #4D4D4D;" textLength="11.88px" lengthAdjust="spacingAndGlyphs">15</text></g>
-<g><text x="124.31" y="472.63" text-anchor="middle" style="font-family: Liberation Sans;font-size: 10.40px;fill: #4D4D4D;" textLength="72.51px" lengthAdjust="spacingAndGlyphs">Administration</text></g>
-<g><text x="265.09" y="472.63" text-anchor="middle" style="font-family: Liberation Sans;font-size: 10.40px;fill: #4D4D4D;" textLength="61.30px" lengthAdjust="spacingAndGlyphs">PhD Student</text></g>
-<g><text x="405.88" y="472.63" text-anchor="middle" style="font-family: Liberation Sans;font-size: 10.40px;fill: #4D4D4D;" textLength="38.97px" lengthAdjust="spacingAndGlyphs">Postdoc</text></g>
-<g><text x="546.67" y="472.63" text-anchor="middle" style="font-family: Liberation Sans;font-size: 10.40px;fill: #4D4D4D;" textLength="118.03px" lengthAdjust="spacingAndGlyphs">Professor/Group Leader</text></g>
-<g><text x="687.45" y="472.63" text-anchor="middle" style="font-family: Liberation Sans;font-size: 10.40px;fill: #4D4D4D;" textLength="38.30px" lengthAdjust="spacingAndGlyphs">Student</text></g>
+<g><text x="34.01" y="443.47" text-anchor="end" style="font-family: Liberation Sans;font-size: 10.40px;fill: #4A4A46;" textLength="5.94px" lengthAdjust="spacingAndGlyphs">0</text></g>
+<g><text x="34.01" y="337.44" text-anchor="end" style="font-family: Liberation Sans;font-size: 10.40px;fill: #4A4A46;" textLength="5.94px" lengthAdjust="spacingAndGlyphs">5</text></g>
+<g><text x="34.01" y="231.41" text-anchor="end" style="font-family: Liberation Sans;font-size: 10.40px;fill: #4A4A46;" textLength="11.88px" lengthAdjust="spacingAndGlyphs">10</text></g>
+<g><text x="34.01" y="125.38" text-anchor="end" style="font-family: Liberation Sans;font-size: 10.40px;fill: #4A4A46;" textLength="11.88px" lengthAdjust="spacingAndGlyphs">15</text></g>
+<g><text x="124.31" y="472.63" text-anchor="middle" style="font-family: Liberation Sans;font-size: 10.40px;fill: #4A4A46;" textLength="72.51px" lengthAdjust="spacingAndGlyphs">Administration</text></g>
+<g><text x="265.09" y="472.63" text-anchor="middle" style="font-family: Liberation Sans;font-size: 10.40px;fill: #4A4A46;" textLength="61.30px" lengthAdjust="spacingAndGlyphs">PhD Student</text></g>
+<g><text x="405.88" y="472.63" text-anchor="middle" style="font-family: Liberation Sans;font-size: 10.40px;fill: #4A4A46;" textLength="38.97px" lengthAdjust="spacingAndGlyphs">Postdoc</text></g>
+<g><text x="546.67" y="472.63" text-anchor="middle" style="font-family: Liberation Sans;font-size: 10.40px;fill: #4A4A46;" textLength="118.03px" lengthAdjust="spacingAndGlyphs">Professor/Group Leader</text></g>
+<g><text x="687.45" y="472.63" text-anchor="middle" style="font-family: Liberation Sans;font-size: 10.40px;fill: #4A4A46;" textLength="38.30px" lengthAdjust="spacingAndGlyphs">Student</text></g>
 <g><text transform="translate(15.76,243.60) rotate(-90.00)" text-anchor="middle" style="font-family: Liberation Sans;font-size: 13.00px;" textLength="36.84px" lengthAdjust="spacingAndGlyphs">Count</text></g>
 <g><text x="39.83" y="17.61" style="font-family: Liberation Sans;font-size: 15.60px;font-weight: bold;" textLength="95.29px" lengthAdjust="spacingAndGlyphs">My Position:</text></g>
 </g>
