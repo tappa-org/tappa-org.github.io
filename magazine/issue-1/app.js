@@ -152,6 +152,7 @@
     var countEl = document.getElementById('gp-count');
 
     var LENGTH = 0.13, SIGMA_F = 1.0, SIGMA_N = 0.06;
+    var MAX_POINTS = 80;   // the exact posterior is cubic in n; 80 still redraws in a frame
     var GRID = 160;
     var seed = [[0.16, 0.62], [0.44, -0.35], [0.78, 0.30]];
     var points = seed.map(function (p) { return p.slice(); });
@@ -298,7 +299,7 @@
       var yv = ((r.height / 2) - (clientY - r.top)) / ((r.height / 2 - 22) / 1.9);
       if (x < 0 || x > 1) return;
       points.push([x, Math.max(-1.9, Math.min(1.9, yv))]);
-      if (points.length > 14) points.shift();
+      if (points.length > MAX_POINTS) points.shift();
       draw();
     }
 
@@ -308,7 +309,7 @@
       if (e.key === 'Enter' || e.key === ' ') {
         e.preventDefault();
         points.push([Math.random(), (Math.random() * 2 - 1) * 1.4]);
-        if (points.length > 14) points.shift();
+        if (points.length > MAX_POINTS) points.shift();
         draw();
       }
     });
