@@ -6,6 +6,10 @@
 
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+  // charts collapse their bars to zero width only once we know we can grow
+  // them again; without scripting they render at full width
+  document.documentElement.classList.add('js');
+
   /* ------------------------------------------------------------------
      Reading progress + current section in the rail
      ------------------------------------------------------------------ */
@@ -37,7 +41,7 @@
      Reveal figures and cards on scroll
      ------------------------------------------------------------------ */
   (function reveal() {
-    var targets = document.querySelectorAll('.fig, .card, .break, .stat-tile');
+    var targets = document.querySelectorAll('.fig, .card, .break, .stat-tile, .chart');
     if (reduceMotion || !('IntersectionObserver' in window)) {
       [].forEach.call(targets, function (t) { t.classList.add('is-in'); });
       return;
