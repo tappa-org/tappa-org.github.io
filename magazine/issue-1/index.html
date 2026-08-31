@@ -883,150 +883,188 @@
 
         <figure class="scoopmap">
           <div class="scoopmap-frame">
-        <svg class="scoopmap-svg" viewBox="0 0 900 560" role="img"
-             aria-labelledby="scoopmap-title scoopmap-desc">
-          <title id="scoopmap-title">A cartoon map of Tübingen's ice cream parlours</title>
-          <desc id="scoopmap-desc">Eight parlours sketched onto the old town: Zuckerbäck on Schmiedtorstraße, Il Dolce on Metzgergasse, San Marco by the Nonnenhaus, Cortina I on Hirschgasse, Cortina II at the Haagtor, FIGO on the Holzmarkt by the Stiftskirche, and Porto Pino and La Dolce Vita facing each other across Neckargasse. Rino is off the map, twelve kilometres west in Rottenburg.</desc>
+          <svg class="scoopmap-svg" viewBox="0 0 880 520" role="img"
+               aria-labelledby="scoopmap-title scoopmap-desc">
+            <title id="scoopmap-title">A cartoon map of Tübingen's ice cream parlours</title>
+            <desc id="scoopmap-desc">Nine numbered parlours sketched onto the old town. The Neckar runs along the south; Neckargasse climbs north from the Eberhardsbrücke to the Holzmarkt, where the Stiftskirche stands; the Marktplatz lies west of it, then the Nonnenhaus, then the Haagtor at the western edge. The numbers match the legend beneath the map. Rino, number nine, is off the map to the west in Rottenburg.</desc>
 
-          <rect class="map-ground" width="900" height="560"/>
+            <rect class="map-ground" width="880" height="520"/>
 
-          <!-- the Neckar, along the south -->
-          <path class="map-water" d="M-20 470 C120 452 260 486 400 480 C560 473 700 500 920 486 L920 580 L-20 580 Z"/>
-          <path class="map-waterline" d="M-20 470 C120 452 260 486 400 480 C560 473 700 500 920 486"/>
-          <!-- Platanenallee, the island -->
-          <path class="map-island" d="M330 492 C430 482 560 492 690 500 C700 512 690 520 660 522 C540 526 420 520 340 512 C324 508 322 496 330 492 Z"/>
-          <text class="map-water-label" x="150" y="530">Neckar</text>
-          <text class="map-island-label" x="470" y="512">Platanenallee</text>
+            <!-- ---------- the Neckar, along the south ---------- -->
+            <path class="map-water" d="M-10 424 C130 410 280 440 430 434 C580 428 720 452 890 440 L890 530 L-10 530 Z"/>
+            <path class="map-island" d="M300 470 C420 458 580 468 700 476 C716 480 716 494 698 497 C560 504 410 498 306 488 C290 485 288 473 300 470 Z"/>
+            <text class="map-label-water" x="120" y="497">Neckar</text>
+            <text class="map-label-small" x="470" y="486">Platanenallee</text>
 
-          <!-- the Ammer, threading the west of the old town -->
-          <path class="map-canal" d="M96 120 C150 210 176 268 214 316 C252 364 300 402 372 448"/>
-          <text class="map-canal-label" x="104" y="150" transform="rotate(58 104 150)">Ammer</text>
+            <!-- ---------- the built-up old town ---------- -->
+            <path class="map-town" d="M96 300 C104 200 178 128 300 108 C440 86 580 118 648 190 C706 252 700 344 640 400 C566 452 420 452 300 424 C196 400 88 384 96 300 Z"/>
 
-          <!-- the old town -->
-          <path class="map-town" d="M150 300 C168 210 232 138 340 118 C462 96 578 128 640 196 C700 262 690 350 632 410 C566 476 430 486 320 448 C214 412 138 380 150 300 Z"/>
+            <!-- ---------- streets, cut through it in white ---------- -->
+            <g class="map-street">
+              <path d="M604 430 L588 292"/>
+              <path d="M588 292 L600 168"/>
+              <path d="M588 292 L424 284"/>
+              <path d="M424 284 L396 172"/>
+              <path d="M424 284 L250 294"/>
+              <path d="M250 294 L136 322"/>
+              <path d="M250 294 L232 162"/>
+            </g>
 
-          <!-- streets -->
-          <g class="map-street">
-            <path d="M560 476 L540 300"/>          <!-- Neckargasse -->
-            <path d="M540 300 L566 172"/>          <!-- Hirschgasse -->
-            <path d="M540 300 L392 292"/>          <!-- Kirchgasse -->
-            <path d="M392 292 L352 210"/>          <!-- Metzgergasse -->
-            <path d="M392 292 L250 300"/>          <!-- Haaggasse -->
-            <path d="M250 300 L140 330"/>          <!-- out to the Haagtor -->
-            <path d="M250 300 L238 178"/>          <!-- Schmiedtorstraße -->
-          </g>
-          <g class="map-street-label">
-            <text x="566" y="392" transform="rotate(-84 566 392)">Neckargasse</text>
-            <text x="470" y="284">Kirchgasse</text>
-            <text x="318" y="300">Haaggasse</text>
-          </g>
+            <!-- ---------- the Ammer, threading the west ---------- -->
+            <path class="map-canal" d="M188 120 C214 196 226 250 254 300 C282 350 330 392 396 430"/>
 
-          <!-- the bridge -->
-          <path class="map-bridge" d="M540 466 L580 490"/>
-          <text class="map-note" x="596" y="486">Eberhardsbrücke</text>
+            <!-- ---------- landmarks ---------- -->
+            <!-- Stiftskirche, on the Holzmarkt -->
+            <g class="map-mark">
+              <rect class="map-mark-body" x="486" y="268" width="46" height="34"/>
+              <rect class="map-mark-body" x="502" y="228" width="26" height="40"/>
+              <path class="map-mark-roof" d="M498 228 L515 200 L532 228 Z"/>
+            </g>
+            <!-- Nonnenhaus -->
+            <g class="map-mark">
+              <rect class="map-mark-body" x="222" y="252" width="40" height="30"/>
+              <path class="map-mark-roof" d="M216 252 L242 230 L268 252 Z"/>
+            </g>
+            <!-- the Haagtor, a gate -->
+            <g class="map-mark">
+              <path class="map-mark-body" d="M104 330 L104 300 A20 20 0 0 1 144 300 L144 330 Z"/>
+              <rect class="map-mark-roof" x="98" y="286" width="52" height="10"/>
+            </g>
+            <!-- the Marktplatz, an open square -->
+            <rect class="map-square" x="398" y="262" width="52" height="40" rx="3"/>
 
-          <!-- Stiftskirche: a tower and a nave -->
-          <g class="map-mark">
-            <rect x="498" y="272" width="17" height="34"/>
-            <path d="M498 272 L506.5 256 L515 272 Z"/>
-            <rect x="515" y="286" width="26" height="20"/>
-            <text class="map-mark-label" x="490" y="322" text-anchor="end">Stiftskirche</text>
-          </g>
+            <!-- ---------- the bridge ---------- -->
+            <path class="map-bridge" d="M586 418 L624 452"/>
 
-          <!-- Rathaus, on the Marktplatz -->
-          <g class="map-mark">
-            <rect x="378" y="266" width="30" height="24"/>
-            <path d="M378 266 L393 250 L408 266 Z"/>
-            <text class="map-mark-label" x="393" y="308" text-anchor="middle">Marktplatz</text>
-          </g>
+            <!-- ---------- place names ---------- -->
+            <g class="map-label">
+              <text x="515" y="192" text-anchor="middle">Stiftskirche</text>
+              <text x="424" y="256" text-anchor="middle">Marktplatz</text>
+              <text x="242" y="222" text-anchor="middle">Nonnenhaus</text>
+              <text x="124" y="352" text-anchor="middle">Haagtor</text>
+              <text x="632" y="286" text-anchor="start">Holzmarkt</text>
+            </g>
+            <g class="map-label-street">
+              <text x="650" y="372" transform="rotate(-83 650 372)">Neckargasse</text>
+              <text x="470" y="318" text-anchor="middle">Kirchgasse</text>
+              <text x="336" y="270" text-anchor="middle">Haaggasse</text>
+              <text x="200" y="200" transform="rotate(-82 200 200)">Schmiedtorstr.</text>
+              <text x="632" y="248" transform="rotate(-84 632 248)">Hirschgasse</text>
+              <text x="360" y="230" transform="rotate(-76 360 230)">Metzgergasse</text>
+            </g>
+            <text class="map-label-small" x="640" y="452">Eberhardsbrücke</text>
+            <text class="map-label-small map-label-canal" x="300" y="396" transform="rotate(40 300 396)">Ammer</text>
 
-          <!-- the Haagtor, a little gate -->
-          <g class="map-mark">
-            <path d="M112 330 L112 306 A14 14 0 0 1 140 306 L140 330 Z"/>
-            <text class="map-mark-label" x="126" y="352" text-anchor="middle">Haagtor</text>
-          </g>
+            <!-- ---------- 7 and 8 face each other ---------- -->
+            <path class="map-facing" d="M578 362 L598 372"/>
 
-          <!-- Rino, off the western edge -->
-          <g class="pin pin-far" data-scoop="rino" tabindex="0" role="button"
-             aria-label="Rino, Marktplatz 17 in Rottenburg — highlight this parlour">
-            <path class="map-far-arrow" d="M150 460 L58 460"/>
-            <path class="map-far-head" d="M58 460 L70 453 L70 467 Z"/>
-            <circle class="pin-halo" cx="150" cy="460" r="17"/>
-            <circle class="pin-dot" cx="150" cy="460" r="10.5"/>
-            <text class="pin-n" x="150" y="464" text-anchor="middle">9</text>
-            <text class="pin-label" x="163" y="442">Rino</text>
-            <text class="pin-addr" x="163" y="455">Marktplatz 17, Rottenburg</text>
-            <text class="pin-addr" x="163" y="468">— 12 km west, 20 min by bus</text>
-          </g>
+            <!-- ---------- Rino is not in Tübingen ---------- -->
+            <path class="map-far" d="M110 400 L30 400"/>
+            <path class="map-far-head" d="M30 400 L44 392 L44 408 Z"/>
+            <text class="map-label-small" x="92" y="374" text-anchor="middle">Rottenburg, 12 km</text>
 
-      <g class="pin" data-scoop="zuckerback" tabindex="0" role="button"
-         aria-label="Zuckerbäck, Schmiedtorstraße — highlight this parlour">
-        <circle class="pin-halo" cx="243" cy="168" r="17"/>
-        <circle class="pin-dot" cx="243" cy="168" r="10.5"/>
-        <text class="pin-n" x="243" y="172" text-anchor="middle">1</text>
-        <text class="pin-label" x="256" y="150" text-anchor="start">Zuckerbäck</text>
-        <text class="pin-addr" x="256" y="163" text-anchor="start">Schmiedtorstraße</text>
-      </g>
-      <g class="pin" data-scoop="il-dolce" tabindex="0" role="button"
-         aria-label="Il Dolce, Metzgergasse 6 — highlight this parlour">
-        <circle class="pin-halo" cx="357" cy="232" r="17"/>
-        <circle class="pin-dot" cx="357" cy="232" r="10.5"/>
-        <text class="pin-n" x="357" y="236" text-anchor="middle">2</text>
-        <text class="pin-label" x="370" y="214" text-anchor="start">Il Dolce</text>
-        <text class="pin-addr" x="370" y="227" text-anchor="start">Metzgergasse 6</text>
-      </g>
-      <g class="pin" data-scoop="san-marco" tabindex="0" role="button"
-         aria-label="San Marco, Beim Nonnenhaus 14 — highlight this parlour">
-        <circle class="pin-halo" cx="255" cy="296" r="17"/>
-        <circle class="pin-dot" cx="255" cy="296" r="10.5"/>
-        <text class="pin-n" x="255" y="300" text-anchor="middle">3</text>
-        <text class="pin-label" x="242" y="278" text-anchor="end">San Marco</text>
-        <text class="pin-addr" x="242" y="291" text-anchor="end">Beim Nonnenhaus 14</text>
-      </g>
-      <g class="pin" data-scoop="san-marco" tabindex="0" role="button"
-         aria-label="Cortina I, Hirschgasse 12 — highlight this parlour">
-        <circle class="pin-halo" cx="566" cy="208" r="17"/>
-        <circle class="pin-dot" cx="566" cy="208" r="10.5"/>
-        <text class="pin-n" x="566" y="212" text-anchor="middle">4</text>
-        <text class="pin-label" x="579" y="190" text-anchor="start">Cortina I</text>
-        <text class="pin-addr" x="579" y="203" text-anchor="start">Hirschgasse 12</text>
-      </g>
-      <g class="pin" data-scoop="san-marco" tabindex="0" role="button"
-         aria-label="Cortina II, Vor dem Haagtor 3 — highlight this parlour">
-        <circle class="pin-halo" cx="138" cy="336" r="17"/>
-        <circle class="pin-dot" cx="138" cy="336" r="10.5"/>
-        <text class="pin-n" x="138" y="340" text-anchor="middle">5</text>
-        <text class="pin-label" x="151" y="370" text-anchor="start">Cortina II</text>
-        <text class="pin-addr" x="151" y="383" text-anchor="start">Vor dem Haagtor 3</text>
-      </g>
-      <g class="pin" data-scoop="figo" tabindex="0" role="button"
-         aria-label="FIGO, Holzmarkt 3 — highlight this parlour">
-        <circle class="pin-halo" cx="556" cy="288" r="17"/>
-        <circle class="pin-dot" cx="556" cy="288" r="10.5"/>
-        <text class="pin-n" x="556" y="292" text-anchor="middle">6</text>
-        <text class="pin-label" x="569" y="270" text-anchor="start">FIGO</text>
-        <text class="pin-addr" x="569" y="283" text-anchor="start">Holzmarkt 3</text>
-      </g>
-      <g class="pin" data-scoop="porto-pino" tabindex="0" role="button"
-         aria-label="Porto Pino, Neckargasse 15 — highlight this parlour">
-        <circle class="pin-halo" cx="528" cy="396" r="17"/>
-        <circle class="pin-dot" cx="528" cy="396" r="10.5"/>
-        <text class="pin-n" x="528" y="400" text-anchor="middle">7</text>
-        <text class="pin-label" x="515" y="378" text-anchor="end">Porto Pino</text>
-        <text class="pin-addr" x="515" y="391" text-anchor="end">Neckargasse 15</text>
-      </g>
-      <g class="pin" data-scoop="dolce-vita" tabindex="0" role="button"
-         aria-label="La Dolce Vita, Neckargasse 8 — highlight this parlour">
-        <circle class="pin-halo" cx="590" cy="420" r="17"/>
-        <circle class="pin-dot" cx="590" cy="420" r="10.5"/>
-        <text class="pin-n" x="590" y="424" text-anchor="middle">8</text>
-        <text class="pin-label" x="603" y="454" text-anchor="start">La Dolce Vita</text>
-        <text class="pin-addr" x="603" y="467" text-anchor="start">Neckargasse 8</text>
-      </g>
-        </svg>
+        <g class="pin" data-scoop="zuckerback" data-n="1" tabindex="0" role="button">
+          <circle class="pin-halo" cx="232" cy="180" r="23"/>
+          <circle class="pin-dot" cx="232" cy="180" r="15"/>
+          <text class="pin-n" x="232" y="186" text-anchor="middle">1</text>
+        </g>
+        <g class="pin" data-scoop="il-dolce" data-n="2" tabindex="0" role="button">
+          <circle class="pin-halo" cx="398" cy="206" r="23"/>
+          <circle class="pin-dot" cx="398" cy="206" r="15"/>
+          <text class="pin-n" x="398" y="212" text-anchor="middle">2</text>
+        </g>
+        <g class="pin" data-scoop="san-marco" data-n="3" tabindex="0" role="button">
+          <circle class="pin-halo" cx="268" cy="292" r="23"/>
+          <circle class="pin-dot" cx="268" cy="292" r="15"/>
+          <text class="pin-n" x="268" y="298" text-anchor="middle">3</text>
+        </g>
+        <g class="pin" data-scoop="san-marco" data-n="4" tabindex="0" role="button">
+          <circle class="pin-halo" cx="596" cy="216" r="23"/>
+          <circle class="pin-dot" cx="596" cy="216" r="15"/>
+          <text class="pin-n" x="596" y="222" text-anchor="middle">4</text>
+        </g>
+        <g class="pin" data-scoop="san-marco" data-n="5" tabindex="0" role="button">
+          <circle class="pin-halo" cx="152" cy="320" r="23"/>
+          <circle class="pin-dot" cx="152" cy="320" r="15"/>
+          <text class="pin-n" x="152" y="326" text-anchor="middle">5</text>
+        </g>
+        <g class="pin" data-scoop="figo" data-n="6" tabindex="0" role="button">
+          <circle class="pin-halo" cx="548" cy="306" r="23"/>
+          <circle class="pin-dot" cx="548" cy="306" r="15"/>
+          <text class="pin-n" x="548" y="312" text-anchor="middle">6</text>
+        </g>
+        <g class="pin" data-scoop="porto-pino" data-n="7" tabindex="0" role="button">
+          <circle class="pin-halo" cx="562" cy="356" r="23"/>
+          <circle class="pin-dot" cx="562" cy="356" r="15"/>
+          <text class="pin-n" x="562" y="362" text-anchor="middle">7</text>
+        </g>
+        <g class="pin" data-scoop="dolce-vita" data-n="8" tabindex="0" role="button">
+          <circle class="pin-halo" cx="614" cy="378" r="23"/>
+          <circle class="pin-dot" cx="614" cy="378" r="15"/>
+          <text class="pin-n" x="614" y="384" text-anchor="middle">8</text>
+        </g>
+        <g class="pin" data-scoop="rino" data-n="9" tabindex="0" role="button">
+          <circle class="pin-halo" cx="86" cy="400" r="23"/>
+          <circle class="pin-dot" cx="86" cy="400" r="15"/>
+          <text class="pin-n" x="86" y="406" text-anchor="middle">9</text>
+        </g>
+          </svg>
           </div>
+
+          <ol class="legend">
+            <li class="legend-item" data-scoop="zuckerback">
+              <span class="legend-n">1</span>
+              <span class="legend-name">Zuckerbäck</span>
+              <span class="legend-addr">Schmiedtorstraße</span>
+            </li>
+            <li class="legend-item" data-scoop="il-dolce">
+              <span class="legend-n">2</span>
+              <span class="legend-name">Il Dolce</span>
+              <span class="legend-addr">Metzgergasse 6</span>
+            </li>
+            <li class="legend-item" data-scoop="san-marco">
+              <span class="legend-n">3</span>
+              <span class="legend-name">San Marco</span>
+              <span class="legend-addr">Beim Nonnenhaus 14</span>
+            </li>
+            <li class="legend-item" data-scoop="san-marco">
+              <span class="legend-n">4</span>
+              <span class="legend-name">Cortina I</span>
+              <span class="legend-addr">Hirschgasse 12</span>
+            </li>
+            <li class="legend-item" data-scoop="san-marco">
+              <span class="legend-n">5</span>
+              <span class="legend-name">Cortina II</span>
+              <span class="legend-addr">Vor dem Haagtor 3</span>
+            </li>
+            <li class="legend-item" data-scoop="figo">
+              <span class="legend-n">6</span>
+              <span class="legend-name">FIGO</span>
+              <span class="legend-addr">Holzmarkt 3</span>
+              <span class="legend-note">opposite the Stiftskirche</span>
+            </li>
+            <li class="legend-item" data-scoop="porto-pino">
+              <span class="legend-n">7</span>
+              <span class="legend-name">Porto Pino</span>
+              <span class="legend-addr">Neckargasse 15</span>
+              <span class="legend-note">faces № 8 across the street</span>
+            </li>
+            <li class="legend-item" data-scoop="dolce-vita">
+              <span class="legend-n">8</span>
+              <span class="legend-name">La Dolce Vita</span>
+              <span class="legend-addr">Neckargasse 8</span>
+              <span class="legend-note">faces № 7 across the street</span>
+            </li>
+            <li class="legend-item" data-scoop="rino">
+              <span class="legend-n">9</span>
+              <span class="legend-name">Rino</span>
+              <span class="legend-addr">Marktplatz 17, Rottenburg</span>
+              <span class="legend-note">12 km west — 20 min by bus</span>
+            </li>
+          </ol>
+
           <figcaption class="figcaption">
-            <span class="fignum">Figure 7 |</span> Where to find them. Tap a pin to jump to the verdict — or a parlour below to find it on the map. The addresses are real; the geography is a cartoon, drawn in roughly the right relations and to no scale whatsoever.
+            <span class="fignum">Figure 9 |</span> Where to find them. Hover or tap a number to light it up on the map and in the ranking below; click to jump to the verdict. The addresses are real and current; the geography is a cartoon — the streets sit in roughly the right relation to one another and to nothing else.
             <span class="credit">Map: TAPPA design team</span>
           </figcaption>
         </figure>

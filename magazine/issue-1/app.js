@@ -617,49 +617,64 @@
     if (!map) return;
 
     var pins = [].slice.call(map.querySelectorAll('.pin'));
+    var rows = [].slice.call(map.querySelectorAll('.legend-item'));
     var scoops = [].slice.call(document.querySelectorAll('.scoop[data-scoop]'));
-    if (!pins.length || !scoops.length) return;
+    if (!pins.length) return;
 
-    function forSlug(list, slug) {
-      return list.filter(function (el) { return el.dataset.scoop === slug; });
-    }
-
+    // San Marco and both Cortinas are one entry in the ranking, so three
+    // pins and three legend rows point at the same card -- always match on
+    // the slug rather than on the element
     function highlight(slug) {
-      pins.forEach(function (p) { p.classList.toggle('is-on', p.dataset.scoop === slug); });
-      scoops.forEach(function (c) { c.classList.toggle('is-on', c.dataset.scoop === slug); });
+      [pins, rows, scoops].forEach(function (group) {
+        group.forEach(function (el) {
+          el.classList.toggle('is-on', !!slug && el.dataset.scoop === slug);
+        });
+      });
     }
 
     function clear() { highlight(null); }
 
-    // one parlour card can be shared by several pins (San Marco and both
-    // Cortinas are the same entry), so always work by slug
-    pins.forEach(function (pin) {
-      var slug = pin.dataset.scoop;
-      pin.addEventListener('mouseenter', function () { highlight(slug); });
-      pin.addEventListener('mouseleave', clear);
-      pin.addEventListener('focus', function () { highlight(slug); });
-      pin.addEventListener('blur', clear);
-
-      function go() {
-        var card = forSlug(scoops, slug)[0];
-        if (!card) return;
-        highlight(slug);
-        card.scrollIntoView({
-          behavior: reduceMotion ? 'auto' : 'smooth',
-          block: 'center'
-        });
-      }
-      pin.addEventListener('click', go);
-      pin.addEventListener('keydown', function (e) {
-        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); }
+    function jump(slug) {
+      var card = scoops.filter(function (c) { return c.dataset.scoop === slug; })[0];
+      if (!card) return;
+      highlight(slug);
+      card.scrollIntoView({
+        behavior: reduceMotion ? 'auto' : 'smooth',
+        block: 'center'
       });
+    }
+
+    function wire(el, slug, clickable) {
+      el.addEventListener('mouseenter', function () { highlight(slug); });
+      el.addEventListener('mouseleave', clear);
+      el.addEventListener('focus', function () { highlight(slug); });
+      el.addEventListener('blur', clear);
+      if (!clickable) return;
+      el.addEventListener('click', function () { jump(slug); });
+      el.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); jump(slug); }
+      });
+    }
+
+    pins.forEach(function (pin) {
+      var n = pin.dataset.n;
+      var row = rows.filter(function (r) { return r.querySelector('.legend-n').textContent === n; })[0];
+      // the pin is a bare number; its name lives in the legend row
+      if (row) {
+        pin.setAttribute('aria-label',
+          row.querySelector('.legend-name').textContent + ', ' +
+          row.querySelector('.legend-addr').textContent);
+      }
+      wire(pin, pin.dataset.scoop, true);
     });
 
-    scoops.forEach(function (card) {
-      var slug = card.dataset.scoop;
-      card.addEventListener('mouseenter', function () { highlight(slug); });
-      card.addEventListener('mouseleave', clear);
+    rows.forEach(function (row) {
+      row.tabIndex = 0;
+      row.setAttribute('role', 'button');
+      wire(row, row.dataset.scoop, true);
     });
+
+    scoops.forEach(function (card) { wire(card, card.dataset.scoop, false); });
   })();
 
   /* ------------------------------------------------------------------

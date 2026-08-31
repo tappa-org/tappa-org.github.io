@@ -3138,17 +3138,18 @@ a.cal-title:focus-visible { color: var(--accent); text-decoration: underline; }
 }
 
 /* ==========================================================================
-   Ice cream map — real addresses, cartoon geography
+   Ice cream map — real addresses, cartoon geography.
+   Nothing is labelled on the map itself except streets and landmarks; the
+   parlours are bare numbers, and the legend beneath carries the names, so
+   no two pieces of text can ever collide.
    ========================================================================== */
-.scoopmap { margin: 30px 0 26px; }
+.scoopmap { margin: 30px 0 30px; }
 
 .scoopmap-frame {
-  background: var(--paper);
+  background: #FFFFFF;
   border: 1px solid var(--rule);
   overflow: hidden;
 }
-
-.chapter-warm .scoopmap-frame { background: var(--paper); }
 
 .scoopmap-svg {
   display: block;
@@ -3159,88 +3160,85 @@ a.cal-title:focus-visible { color: var(--accent); text-decoration: underline; }
 
 .map-ground { fill: #FFFFFF; }
 
-.map-water { fill: #7BE0C0; opacity: 0.30; }
-.map-waterline { fill: none; stroke: #44A886; stroke-width: 2; }
-.map-island { fill: #D8F4E8; stroke: #44A886; stroke-width: 1.2; }
+.map-water { fill: #BFEBDC; }
+.map-island { fill: #EAF7F1; stroke: #8FD3BC; stroke-width: 1.5; }
 
-.map-canal { fill: none; stroke: #7BE0C0; stroke-width: 5; stroke-linecap: round; }
+.map-town { fill: #F1EDE4; stroke: #E0D9CB; stroke-width: 2; }
 
-.map-town {
-  fill: #FAF7F1;
-  stroke: var(--rule-2);
-  stroke-width: 1.6;
-  stroke-dasharray: 7 6;
-}
-
+/* streets are cut out of the town block in white, as on a printed map */
 .map-street path {
   fill: none;
-  stroke: var(--rule-2);
-  stroke-width: 5;
+  stroke: #FFFFFF;
+  stroke-width: 13;
   stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
-.map-bridge { stroke: var(--muted); stroke-width: 4; stroke-linecap: round; fill: none; }
+.map-canal { fill: none; stroke: #BFEBDC; stroke-width: 6; stroke-linecap: round; }
 
-.map-mark rect,
-.map-mark path { fill: #E9E9E6; stroke: var(--muted-2); stroke-width: 1.4; }
+.map-bridge { fill: none; stroke: #FFFFFF; stroke-width: 9; stroke-linecap: round; }
 
-.map-water-label,
-.map-island-label,
-.map-canal-label,
-.map-street-label text,
-.map-note,
-.map-mark-label {
-  fill: var(--muted);
+.map-square { fill: #FFFFFF; stroke: #E0D9CB; stroke-width: 1.5; }
+
+.map-mark-body { fill: #DCD5C6; stroke: #B9AF9C; stroke-width: 1.5; }
+.map-mark-roof { fill: #B9AF9C; }
+
+/* ---- type on the map ---- */
+.map-label text {
+  fill: var(--muted-2);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.map-label-street text {
+  fill: #9A9287;
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.map-label-water {
+  fill: #2C7F68;
+  font-size: 19px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.map-label-small {
+  fill: #7E9A91;
   font-size: 12px;
-  letter-spacing: 0.03em;
+  font-weight: 600;
 }
 
-.map-water-label { fill: #2C7F68; font-size: 15px; font-style: italic; }
-.map-island-label { fill: #2C7F68; font-size: 11px; }
-.map-canal-label { fill: #2C7F68; font-size: 11px; }
-.map-mark-label { fill: var(--muted-2); font-size: 11.5px; font-weight: 600; }
-.map-street-label text { font-size: 10.5px; }
-.map-note { font-size: 10px; }
+.map-label-canal { fill: #7EBFA9; }
 
-.map-far-arrow { stroke: var(--rule-2); stroke-width: 3; stroke-dasharray: 5 5; fill: none; }
-.map-far-head { fill: var(--rule-2); }
+.map-facing { stroke: var(--accent); stroke-width: 2; stroke-dasharray: 3 3; }
 
-/* ---- pins ---- */
+.map-far { stroke: #C9C2B4; stroke-width: 3.5; stroke-dasharray: 7 6; fill: none; }
+.map-far-head { fill: #C9C2B4; }
+
+/* ---- the pins ---- */
 .pin { cursor: pointer; }
 .pin:focus { outline: none; }
 
 .pin-halo {
   fill: var(--accent);
   opacity: 0;
-  transform-box: fill-box;
-  transform-origin: center;
-  transition: opacity .2s ease, transform .2s ease;
+  transition: opacity .2s ease;
 }
 
 .pin-dot {
   fill: var(--accent);
   stroke: #FFFFFF;
-  stroke-width: 2;
+  stroke-width: 3;
   transition: fill .2s ease;
 }
 
 .pin-n {
   fill: #FFFFFF;
-  font-size: 11.5px;
+  font-size: 16px;
   font-weight: 700;
-  pointer-events: none;
-}
-
-.pin-label {
-  fill: var(--ink);
-  font-size: 12.5px;
-  font-weight: 700;
-  pointer-events: none;
-}
-
-.pin-addr {
-  fill: var(--muted);
-  font-size: 10.5px;
   pointer-events: none;
 }
 
@@ -3250,12 +3248,72 @@ a.cal-title:focus-visible { color: var(--accent); text-decoration: underline; }
 
 .pin:hover .pin-halo,
 .pin:focus-visible .pin-halo,
-.pin.is-on .pin-halo { opacity: 0.22; }
+.pin.is-on .pin-halo { opacity: 0.2; }
 
-.pin:focus-visible .pin-dot { stroke: var(--deep); }
-.pin.is-on .pin-label { fill: var(--accent-deep); }
+/* ---- the legend under the map ---- */
+.legend {
+  list-style: none;
+  margin: 18px 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2px 20px;
+}
 
-/* ---- the matching card lights up too ---- */
+.legend-item {
+  display: grid;
+  grid-template-columns: 26px minmax(0, 1fr);
+  align-items: baseline;
+  gap: 2px 10px;
+  padding: 8px 10px 8px 6px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background .2s ease;
+}
+
+.legend-item:focus { outline: none; }
+.legend-item:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+
+.legend-n {
+  grid-row: span 3;
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-family: var(--sans);
+  font-size: 11.5px;
+  font-weight: 700;
+  align-self: start;
+  transition: background .2s ease;
+}
+
+.legend-name {
+  font-family: var(--sans);
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.legend-addr {
+  font-family: var(--sans);
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.legend-note {
+  font-family: var(--serif);
+  font-size: 12px;
+  font-style: italic;
+  color: var(--accent-deep);
+}
+
+.legend-item.is-on { background: #EAF7F1; }
+.legend-item.is-on .legend-n { background: var(--deep); }
+
+/* ---- the matching card in the ranking lights up too ---- */
 .scoop { transition: background .25s ease, box-shadow .25s ease; }
 
 .scoop.is-on {
@@ -3263,15 +3321,22 @@ a.cal-title:focus-visible { color: var(--accent); text-decoration: underline; }
   box-shadow: 0 0 0 2px var(--accent);
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .pin-halo, .pin-dot, .scoop { transition: none; }
+@media (max-width: 900px) {
+  .legend { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
-@media (max-width: 720px) {
-  /* the labels stop being legible long before the map does */
-  .pin-label { font-size: 15px; }
-  .pin-addr { font-size: 12.5px; }
-  .map-mark-label, .map-street-label text { font-size: 13px; }
+@media (max-width: 560px) {
+  .legend { grid-template-columns: 1fr; }
+  /* the map's own type has to grow as the map shrinks */
+  .map-label text { font-size: 20px; }
+  .map-label-street text { font-size: 17px; }
+  .map-label-small { font-size: 16px; }
+  .map-label-water { font-size: 26px; }
+  .pin-n { font-size: 19px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pin-halo, .pin-dot, .legend-item, .legend-n, .scoop { transition: none; }
 }
 
 /* ==========================================================================
