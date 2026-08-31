@@ -967,48 +967,69 @@
           <circle class="pin-halo" cx="232" cy="180" r="23"/>
           <circle class="pin-dot" cx="232" cy="180" r="15"/>
           <text class="pin-n" x="232" y="186" text-anchor="middle">1</text>
+          <circle class="pin-hit" cx="232" cy="180" r="27"/>
         </g>
         <g class="pin" data-scoop="il-dolce" data-n="2" tabindex="0" role="button">
           <circle class="pin-halo" cx="398" cy="206" r="23"/>
           <circle class="pin-dot" cx="398" cy="206" r="15"/>
           <text class="pin-n" x="398" y="212" text-anchor="middle">2</text>
+          <circle class="pin-hit" cx="398" cy="206" r="27"/>
         </g>
         <g class="pin" data-scoop="san-marco" data-n="3" tabindex="0" role="button">
           <circle class="pin-halo" cx="268" cy="292" r="23"/>
           <circle class="pin-dot" cx="268" cy="292" r="15"/>
           <text class="pin-n" x="268" y="298" text-anchor="middle">3</text>
+          <circle class="pin-hit" cx="268" cy="292" r="27"/>
         </g>
         <g class="pin" data-scoop="san-marco" data-n="4" tabindex="0" role="button">
           <circle class="pin-halo" cx="596" cy="216" r="23"/>
           <circle class="pin-dot" cx="596" cy="216" r="15"/>
           <text class="pin-n" x="596" y="222" text-anchor="middle">4</text>
+          <circle class="pin-hit" cx="596" cy="216" r="27"/>
         </g>
         <g class="pin" data-scoop="san-marco" data-n="5" tabindex="0" role="button">
           <circle class="pin-halo" cx="152" cy="320" r="23"/>
           <circle class="pin-dot" cx="152" cy="320" r="15"/>
           <text class="pin-n" x="152" y="326" text-anchor="middle">5</text>
+          <circle class="pin-hit" cx="152" cy="320" r="27"/>
         </g>
         <g class="pin" data-scoop="figo" data-n="6" tabindex="0" role="button">
           <circle class="pin-halo" cx="548" cy="306" r="23"/>
           <circle class="pin-dot" cx="548" cy="306" r="15"/>
           <text class="pin-n" x="548" y="312" text-anchor="middle">6</text>
+          <circle class="pin-hit" cx="548" cy="306" r="27"/>
         </g>
         <g class="pin" data-scoop="porto-pino" data-n="7" tabindex="0" role="button">
           <circle class="pin-halo" cx="562" cy="356" r="23"/>
           <circle class="pin-dot" cx="562" cy="356" r="15"/>
           <text class="pin-n" x="562" y="362" text-anchor="middle">7</text>
+          <circle class="pin-hit" cx="562" cy="356" r="27"/>
         </g>
         <g class="pin" data-scoop="dolce-vita" data-n="8" tabindex="0" role="button">
           <circle class="pin-halo" cx="614" cy="378" r="23"/>
           <circle class="pin-dot" cx="614" cy="378" r="15"/>
           <text class="pin-n" x="614" y="384" text-anchor="middle">8</text>
+          <circle class="pin-hit" cx="614" cy="378" r="27"/>
         </g>
         <g class="pin" data-scoop="rino" data-n="9" tabindex="0" role="button">
           <circle class="pin-halo" cx="86" cy="400" r="23"/>
           <circle class="pin-dot" cx="86" cy="400" r="15"/>
           <text class="pin-n" x="86" y="406" text-anchor="middle">9</text>
+          <circle class="pin-hit" cx="86" cy="400" r="27"/>
         </g>
           </svg>
+
+            <!-- filled in and positioned by app.js on hover or focus; the
+                 pins carry the same text in their aria-label, so this is
+                 decoration as far as assistive tech is concerned -->
+            <div class="map-tip" id="map-tip" aria-hidden="true" hidden>
+              <span class="map-tip-head">
+                <span class="map-tip-n"></span>
+                <span class="map-tip-name"></span>
+              </span>
+              <span class="map-tip-addr"></span>
+              <span class="map-tip-note"></span>
+            </div>
           </div>
 
           <ol class="legend">
@@ -1703,6 +1724,7 @@
         <div class="kicker">Feedback</div>
         <h2>Tell Us What You Think</h2>
         <p>Three questions, two minutes. Keep it? What's missing? Do you want to help make issue&nbsp;#2? Answers go to the editors, and they decide what this magazine becomes.</p>
+        <p class="feedback-aside">Want issue&nbsp;#2 to exist at all? This is the way to say so. No address needed, nothing to sign up to.</p>
       </div>
 
       <div class="form-embed" id="form-embed" data-form-src="https://docs.google.com/forms/d/e/PASTE_FORM_ID_HERE/viewform?embedded=true">
@@ -1751,23 +1773,6 @@
     </div>
   </section>
 
-  <!-- ============================ SUBSCRIBE ============================ -->
-  <section class="subscribe" id="subscribe">
-    <div class="col subscribe-inner">
-      <div class="subscribe-text">
-        <h2>Get the next issue</h2>
-        <p>TAPPA Quarterly goes out once a quarter over the university mailing list. Subscribing, unsubscribing and your data are all handled by the university's own list server — we never see or store your address.</p>
-      </div>
-      <div class="subscribe-actions">
-        <!-- TODO: point this at your Mailman/Sympa list, e.g.
-             https://lists.uni-tuebingen.de/mailman/listinfo/tappa -->
-        <a class="subscribe-cta" href="#" data-todo="mailing-list-url">Subscribe via the university list</a>
-        <a class="subscribe-alt" href="#" data-todo="mailing-list-url">Manage or cancel your subscription</a>
-      </div>
-
-      <p class="subscribe-aside">Want issue #2 to exist? <a href="#feedback">Tell us in the feedback form</a> — three questions, two minutes. No address needed, no subscription involved.</p>
-    </div>
-  </section>
 
 </main>
 

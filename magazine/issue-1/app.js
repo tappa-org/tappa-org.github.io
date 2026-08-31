@@ -632,7 +632,59 @@
       });
     }
 
-    function clear() { highlight(null); }
+    /* -- the tooltip ---------------------------------------------------- */
+    var frame = map.querySelector('.scoopmap-frame');
+    var tip = document.getElementById('map-tip');
+    var tipN = tip && tip.querySelector('.map-tip-n');
+    var tipName = tip && tip.querySelector('.map-tip-name');
+    var tipAddr = tip && tip.querySelector('.map-tip-addr');
+    var tipNote = tip && tip.querySelector('.map-tip-note');
+
+    function rowFor(n) {
+      return rows.filter(function (r) {
+        return r.querySelector('.legend-n').textContent === String(n);
+      })[0];
+    }
+
+    function showTip(pin) {
+      if (!tip || !frame) return;
+      var row = rowFor(pin.dataset.n);
+      if (!row) return;
+
+      var note = row.querySelector('.legend-note');
+      tipN.textContent = pin.dataset.n;
+      tipName.textContent = row.querySelector('.legend-name').textContent;
+      tipAddr.textContent = row.querySelector('.legend-addr').textContent;
+      tipNote.textContent = note ? note.textContent : '';
+      tipNote.hidden = !note;
+
+      // measure in page pixels: the SVG scales with the column, so user
+      // units are no use here
+      tip.hidden = false;
+      tip.classList.remove('is-below');
+      var fr = frame.getBoundingClientRect();
+      var pr = pin.getBoundingClientRect();
+      var cx = pr.left + pr.width / 2 - fr.left;
+
+      var above = pr.top - fr.top;
+      if (above - tip.offsetHeight - 14 < 0) {
+        tip.classList.add('is-below');
+        tip.style.top = (pr.bottom - fr.top) + 'px';
+      } else {
+        tip.style.top = above + 'px';
+      }
+
+      // keep the whole box inside the frame, which clips its overflow
+      var half = tip.offsetWidth / 2;
+      tip.style.left = Math.max(half + 8,
+                       Math.min(cx, fr.width - half - 8)) + 'px';
+    }
+
+    function hideTip() {
+      if (tip) tip.hidden = true;
+    }
+
+    function clear() { highlight(null); hideTip(); }
 
     function jump(slug) {
       var card = scoops.filter(function (c) { return c.dataset.scoop === slug; })[0];
@@ -644,10 +696,14 @@
       });
     }
 
-    function wire(el, slug, clickable) {
-      el.addEventListener('mouseenter', function () { highlight(slug); });
+    function wire(el, slug, clickable, tipPin) {
+      function enter() {
+        highlight(slug);
+        if (tipPin) showTip(tipPin);
+      }
+      el.addEventListener('mouseenter', enter);
       el.addEventListener('mouseleave', clear);
-      el.addEventListener('focus', function () { highlight(slug); });
+      el.addEventListener('focus', enter);
       el.addEventListener('blur', clear);
       if (!clickable) return;
       el.addEventListener('click', function () { jump(slug); });
@@ -665,16 +721,21 @@
           row.querySelector('.legend-name').textContent + ', ' +
           row.querySelector('.legend-addr').textContent);
       }
-      wire(pin, pin.dataset.scoop, true);
+      wire(pin, pin.dataset.scoop, true, pin);
     });
 
     rows.forEach(function (row) {
+      var n = row.querySelector('.legend-n').textContent;
+      var pin = pins.filter(function (p) { return p.dataset.n === n; })[0];
       row.tabIndex = 0;
       row.setAttribute('role', 'button');
-      wire(row, row.dataset.scoop, true);
+      wire(row, row.dataset.scoop, true, pin);
     });
 
     scoops.forEach(function (card) { wire(card, card.dataset.scoop, false); });
+
+    window.addEventListener('resize', hideTip);
+    window.addEventListener('scroll', hideTip, { passive: true });
   })();
 
   /* ------------------------------------------------------------------
