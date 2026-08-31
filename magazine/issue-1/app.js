@@ -610,6 +610,59 @@
   })();
 
   /* ------------------------------------------------------------------
+     Ice cream map — a pin and its parlour highlight each other
+     ------------------------------------------------------------------ */
+  (function scoopMap() {
+    var map = document.querySelector('.scoopmap');
+    if (!map) return;
+
+    var pins = [].slice.call(map.querySelectorAll('.pin'));
+    var scoops = [].slice.call(document.querySelectorAll('.scoop[data-scoop]'));
+    if (!pins.length || !scoops.length) return;
+
+    function forSlug(list, slug) {
+      return list.filter(function (el) { return el.dataset.scoop === slug; });
+    }
+
+    function highlight(slug) {
+      pins.forEach(function (p) { p.classList.toggle('is-on', p.dataset.scoop === slug); });
+      scoops.forEach(function (c) { c.classList.toggle('is-on', c.dataset.scoop === slug); });
+    }
+
+    function clear() { highlight(null); }
+
+    // one parlour card can be shared by several pins (San Marco and both
+    // Cortinas are the same entry), so always work by slug
+    pins.forEach(function (pin) {
+      var slug = pin.dataset.scoop;
+      pin.addEventListener('mouseenter', function () { highlight(slug); });
+      pin.addEventListener('mouseleave', clear);
+      pin.addEventListener('focus', function () { highlight(slug); });
+      pin.addEventListener('blur', clear);
+
+      function go() {
+        var card = forSlug(scoops, slug)[0];
+        if (!card) return;
+        highlight(slug);
+        card.scrollIntoView({
+          behavior: reduceMotion ? 'auto' : 'smooth',
+          block: 'center'
+        });
+      }
+      pin.addEventListener('click', go);
+      pin.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); }
+      });
+    });
+
+    scoops.forEach(function (card) {
+      var slug = card.dataset.scoop;
+      card.addEventListener('mouseenter', function () { highlight(slug); });
+      card.addEventListener('mouseleave', clear);
+    });
+  })();
+
+  /* ------------------------------------------------------------------
      Feedback form — embedded only once it is actually configured, so an
      unconfigured page never ships a broken Google frame (and never sends
      a reader's IP to Google either)

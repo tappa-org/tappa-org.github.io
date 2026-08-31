@@ -3136,3 +3136,151 @@ a.cal-title:focus-visible { color: var(--accent); text-decoration: underline; }
 @media (max-width: 620px) {
   .form-embed iframe { height: 980px; }
 }
+
+/* ==========================================================================
+   Ice cream map — real addresses, cartoon geography
+   ========================================================================== */
+.scoopmap { margin: 30px 0 26px; }
+
+.scoopmap-frame {
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  overflow: hidden;
+}
+
+.chapter-warm .scoopmap-frame { background: var(--paper); }
+
+.scoopmap-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  font-family: var(--sans);
+}
+
+.map-ground { fill: #FFFFFF; }
+
+.map-water { fill: #7BE0C0; opacity: 0.30; }
+.map-waterline { fill: none; stroke: #44A886; stroke-width: 2; }
+.map-island { fill: #D8F4E8; stroke: #44A886; stroke-width: 1.2; }
+
+.map-canal { fill: none; stroke: #7BE0C0; stroke-width: 5; stroke-linecap: round; }
+
+.map-town {
+  fill: #FAF7F1;
+  stroke: var(--rule-2);
+  stroke-width: 1.6;
+  stroke-dasharray: 7 6;
+}
+
+.map-street path {
+  fill: none;
+  stroke: var(--rule-2);
+  stroke-width: 5;
+  stroke-linecap: round;
+}
+
+.map-bridge { stroke: var(--muted); stroke-width: 4; stroke-linecap: round; fill: none; }
+
+.map-mark rect,
+.map-mark path { fill: #E9E9E6; stroke: var(--muted-2); stroke-width: 1.4; }
+
+.map-water-label,
+.map-island-label,
+.map-canal-label,
+.map-street-label text,
+.map-note,
+.map-mark-label {
+  fill: var(--muted);
+  font-size: 12px;
+  letter-spacing: 0.03em;
+}
+
+.map-water-label { fill: #2C7F68; font-size: 15px; font-style: italic; }
+.map-island-label { fill: #2C7F68; font-size: 11px; }
+.map-canal-label { fill: #2C7F68; font-size: 11px; }
+.map-mark-label { fill: var(--muted-2); font-size: 11.5px; font-weight: 600; }
+.map-street-label text { font-size: 10.5px; }
+.map-note { font-size: 10px; }
+
+.map-far-arrow { stroke: var(--rule-2); stroke-width: 3; stroke-dasharray: 5 5; fill: none; }
+.map-far-head { fill: var(--rule-2); }
+
+/* ---- pins ---- */
+.pin { cursor: pointer; }
+.pin:focus { outline: none; }
+
+.pin-halo {
+  fill: var(--accent);
+  opacity: 0;
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: opacity .2s ease, transform .2s ease;
+}
+
+.pin-dot {
+  fill: var(--accent);
+  stroke: #FFFFFF;
+  stroke-width: 2;
+  transition: fill .2s ease;
+}
+
+.pin-n {
+  fill: #FFFFFF;
+  font-size: 11.5px;
+  font-weight: 700;
+  pointer-events: none;
+}
+
+.pin-label {
+  fill: var(--ink);
+  font-size: 12.5px;
+  font-weight: 700;
+  pointer-events: none;
+}
+
+.pin-addr {
+  fill: var(--muted);
+  font-size: 10.5px;
+  pointer-events: none;
+}
+
+.pin:hover .pin-dot,
+.pin:focus-visible .pin-dot,
+.pin.is-on .pin-dot { fill: var(--deep); }
+
+.pin:hover .pin-halo,
+.pin:focus-visible .pin-halo,
+.pin.is-on .pin-halo { opacity: 0.22; }
+
+.pin:focus-visible .pin-dot { stroke: var(--deep); }
+.pin.is-on .pin-label { fill: var(--accent-deep); }
+
+/* ---- the matching card lights up too ---- */
+.scoop { transition: background .25s ease, box-shadow .25s ease; }
+
+.scoop.is-on {
+  background: #EAF7F1;
+  box-shadow: 0 0 0 2px var(--accent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pin-halo, .pin-dot, .scoop { transition: none; }
+}
+
+@media (max-width: 720px) {
+  /* the labels stop being legible long before the map does */
+  .pin-label { font-size: 15px; }
+  .pin-addr { font-size: 12.5px; }
+  .map-mark-label, .map-street-label text { font-size: 13px; }
+}
+
+/* ==========================================================================
+   Chapter openers -- a wide band under the chapter head, awaiting a photo
+   ========================================================================== */
+.chapter-opener { margin: 4px 0 40px; }
+
+.ph-opener { aspect-ratio: 24 / 7; }
+
+@media (max-width: 620px) {
+  .ph-opener { aspect-ratio: 16 / 9; }
+}
