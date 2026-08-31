@@ -349,6 +349,20 @@
     var reset = document.getElementById('poll-reset');
     var busy = false;
 
+    // No server and no submissions yet. Rather than count votes into this
+    // one browser's localStorage and call that a poll, sit the whole thing
+    // out: inert options, no percentages, and a line saying why.
+    if (poll.dataset.open !== 'true' || !API) {
+      poll.classList.add('is-pending');
+      options.forEach(function (o) {
+        o.disabled = true;
+        o.setAttribute('aria-disabled', 'true');
+        o.removeAttribute('aria-pressed');
+      });
+      if (reset) reset.hidden = true;
+      return;
+    }
+
     function readVote() {
       try { return window.localStorage.getItem(storeKey); } catch (e) { return null; }
     }
@@ -593,6 +607,27 @@
       if (e.target === dialog) dialog.close();
     });
     dialog.addEventListener('close', function () { stage.innerHTML = ''; });
+  })();
+
+  /* ------------------------------------------------------------------
+     Feedback form — embedded only once it is actually configured, so an
+     unconfigured page never ships a broken Google frame (and never sends
+     a reader's IP to Google either)
+     ------------------------------------------------------------------ */
+  (function feedbackForm() {
+    var box = document.getElementById('form-embed');
+    if (!box) return;
+
+    var src = box.dataset.formSrc || '';
+    var frame = box.querySelector('iframe');
+    if (!frame || src.indexOf('PASTE_FORM_ID_HERE') !== -1 || !/^https:\/\//.test(src)) {
+      box.classList.add('is-unset');
+      return;
+    }
+
+    frame.src = src;
+    frame.hidden = false;
+    box.classList.add('is-live');
   })();
 
   /* ------------------------------------------------------------------

@@ -236,7 +236,7 @@
           <h3 class="sub-headline">Growing In and Out of Tübingen</h3>
           <p>Welcome to the first issue of TAPPAS, a grassroots magazine about the people who make Tübingen's AI community what it is.</p>
           <p>We live in a world overflowing with information. We have grown used to the daily drumbeat of big news and big events — another model release, another benchmark falling to superhuman performance. While our attention is pulled toward these distant narratives, it is easy to lose sight of what is right beside us, just as rich and just as alive. Tübingen has its share of newsletters and announcements, but one thing has always seemed missing: attention to the concrete nearby — to everyday life, to people, to living itself. Research is our shared passion, and precisely for that reason it should be woven into a life, not lifted out of one and celebrated on its own. It is this life around and between the research — the people and stories of Tübingen AI — that we hope this magazine will record, share and pass around: once a quarter, by us and for us.</p>
-          <p>The magazine is carried by <a href="https://tappa-org.github.io/">TAPPA</a>, the association of Tübingen's AI PhDs and postdocs that exists to connect people across labs and institutes, and is open to all. Everything in this issue was written, photographed, surveyed and taste-tested by people you can run into at MvL and Max Planck Ring. And we warmly welcome contributions to our future issues: a piece, an interview, a photo, a rant, a puzzle. Find us in <strong>#tappa-quarterly</strong> on Slack, or through the <a href="#credits">feedback form</a> at the back.</p>
+          <p>The magazine is carried by <a href="https://tappa-org.github.io/">TAPPA</a>, the association of Tübingen's AI PhDs and postdocs that exists to connect people across labs and institutes, and is open to all. Everything in this issue was written, photographed, surveyed and taste-tested by people you can run into at MvL and Max Planck Ring. And we warmly welcome contributions to our future issues: a piece, an interview, a photo, a rant, a puzzle. Find us in <strong>#tappa-quarterly</strong> on Slack, or through the <a href="#feedback">feedback form</a> at the back.</p>
           <p>So: read, cast your vote for the photo of the quarter, disagree with the ice-cream ranking — and tell us what you would like this magazine to become.</p>
           <p><em>— Haiwen &amp; Mina, for the editorial team</em></p>
           <a class="arrow-link" href="#credits">→ Masthead &amp; credits</a>
@@ -415,27 +415,34 @@
       </aside>
       </div>
 
-      <div class="cards cards-2 cards-top-rule">
-        <a class="card" href="#">
-          <div class="ph ph-16-9">
-            <svg preserveAspectRatio="xMidYMid slice"><use href="#m-hatch"/></svg>
-            <span class="ph-badge">Placeholder</span>
-          </div>
-          <div class="kicker">Nominate</div>
-          <h4>Who should we feature next?</h4>
-          <p>Know someone whose work deserves a page? Send us a name and a sentence in <strong>#tappa-quarterly</strong>.</p>
-          <span class="arrow-link">→ Nominate in the channel</span>
-        </a>
-        <a class="card" href="#" data-todo="feedback-form-url">
-          <div class="ph ph-16-9">
-            <svg preserveAspectRatio="xMidYMid slice"><use href="#m-matrix"/></svg>
-            <span class="ph-badge">Placeholder</span>
-          </div>
-          <div class="kicker">Feedback</div>
-          <h4>Tell us what you think</h4>
-          <p>Three questions, two minutes: keep it? what's missing? want to help with issue #2?</p>
-          <span class="arrow-link">→ The feedback form</span>
-        </a>
+      <div class="takepart">
+        <div class="takepart-head">
+          <div class="kicker">Take part</div>
+          <h4 class="takepart-title">This is a community magazine, so it needs the community</h4>
+        </div>
+        <ul class="takepart-list">
+          <li>
+            <span class="takepart-n">01</span>
+            <div>
+              <h5>Nominate someone</h5>
+              <p>Know someone whose work deserves a page? Send a name and one sentence to <strong data-todo="slack-channel-url">#tappa-quarterly</strong> on Slack.</p>
+            </div>
+          </li>
+          <li>
+            <span class="takepart-n">02</span>
+            <div>
+              <h5>Tell us what you think</h5>
+              <p>Three questions, two minutes: keep it? what's missing? want to help with issue&nbsp;#2? <a class="arrow-link" href="#feedback">→ The form is at the back</a></p>
+            </div>
+          </li>
+          <li>
+            <span class="takepart-n">03</span>
+            <div>
+              <h5>Write something</h5>
+              <p>A piece, an interview, a photo, a rant, a puzzle. Issue&nbsp;#2 has room for all of it.</p>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   </section>
@@ -579,13 +586,20 @@
       <div id="photo-vote">
         <div class="kicker">Vote</div>
         <h3 class="sub-headline">Photo of the Quarter — Cast Your Vote</h3>
-        <p>Send up to three photos taken this quarter in or around Tübingen — the submission form is pinned in <strong>#tappa-quarterly</strong>. Then pick your favourite below: the winner takes a full page in the next issue, runners-up go into a collage.</p>
+        <p>Send up to three photos taken this quarter in or around Tübingen — the submission form is pinned in <strong>#tappa-quarterly</strong>. Once they are in, pick your favourite below: the winner takes a full page in the next issue, runners-up go into a collage.</p>
 
         <!-- data-api: paste the deployed Worker URL here (see backend/README.md).
              Left empty, the poll falls back to a local mock so the page works offline.
              Swap each placeholder <svg> for the submitted photo, and fill in
              caption + photographer. -->
-        <div class="poll photo-poll" id="poll" data-poll="photo-2026-01" data-api="">
+        <!-- Voting stays shut until BOTH of these are true:
+               data-api  = the deployed Worker URL (see backend/README.md)
+               data-open = "true"
+             Until then the options are inert and say so, rather than
+             counting votes into this browser's localStorage and nowhere
+             else. Swap the placeholder art and captions in at the same
+             time. -->
+        <div class="poll photo-poll" id="poll" data-poll="photo-2026-01" data-api="" data-open="false">
           <button class="poll-option" type="button" data-key="photo1" data-base="0">
             <span class="ph ph-16-9">
               <svg preserveAspectRatio="xMidYMid slice"><use href="#m-contour"/></svg>
@@ -640,10 +654,10 @@
         </div>
 
         <p class="poll-meta">
-          <span id="poll-status">Cast your vote — pick one.</span>
+          <span id="poll-status">Voting opens once the photo submissions are in.</span>
           <button class="poll-reset" type="button" id="poll-reset" hidden>Change vote</button>
         </p>
-        <p class="poll-note">One vote per reader, counted on the server. No account, no cookie beyond remembering your own choice, and nothing personal is stored.</p>
+        <p class="poll-note">When it opens: one vote per reader, counted on the server. No account, no cookie beyond remembering your own choice, and nothing personal is stored.</p>
       </div>
 
       <div class="split split-wide cards-top-rule" style="margin-top:48px; padding-top:40px">
@@ -1455,6 +1469,32 @@
     </div>
   </section>
 
+  <!-- ============================ FEEDBACK ============================ -->
+  <!-- TODO: paste the Google Form's embed URL into data-form-src below, i.e.
+         https://docs.google.com/forms/d/e/<FORM_ID>/viewform?embedded=true
+       The iframe is only loaded once that placeholder is gone, so the page
+       never shows a broken Google frame. Note that embedding the form means
+       Google receives every reader's IP address — the Datenschutz section
+       says so, and that entry needs to stay accurate. -->
+  <section class="feedback" id="feedback">
+    <div class="col">
+      <div class="feedback-head">
+        <div class="kicker">Feedback</div>
+        <h2>Tell Us What You Think</h2>
+        <p>Three questions, two minutes. Keep it? What's missing? Do you want to help make issue&nbsp;#2? Answers go to the editors, and they decide what this magazine becomes.</p>
+      </div>
+
+      <div class="form-embed" id="form-embed" data-form-src="https://docs.google.com/forms/d/e/PASTE_FORM_ID_HERE/viewform?embedded=true">
+        <iframe title="TAPPA Quarterly feedback form" loading="lazy" hidden></iframe>
+        <div class="form-fallback">
+          <p><strong>The form is not connected yet.</strong> Until it is, send your answers to <strong data-todo="slack-channel-url">#tappa-quarterly</strong> on Slack — the editors read everything either way.</p>
+        </div>
+      </div>
+
+      <p class="form-note">The form is hosted by Google. Opening this page does not contact Google; the form is only loaded once it is connected, and what you type goes to Google Forms, not to this website. See <a href="#impressum">Impressum &amp; Datenschutz</a>.</p>
+    </div>
+  </section>
+
   <!-- ============================ CREDITS ============================ -->
   <section class="chapter chapter-warm" id="credits">
     <div class="col">
@@ -1504,7 +1544,7 @@
         <a class="subscribe-alt" href="#" data-todo="mailing-list-url">Manage or cancel your subscription</a>
       </div>
 
-      <p class="subscribe-aside">Want issue #2 to exist? <a href="#" data-todo="feedback-form-url">Tell us in the feedback form</a> — three questions, two minutes. No address needed, no subscription involved.</p>
+      <p class="subscribe-aside">Want issue #2 to exist? <a href="#feedback">Tell us in the feedback form</a> — three questions, two minutes. No address needed, no subscription involved.</p>
     </div>
   </section>
 
@@ -1562,7 +1602,7 @@
       <!-- ---------------- Datenschutz ---------------- -->
       <div class="legal-col">
         <h3>Datenschutzerklärung</h3>
-        <p class="legal-lede">Kurzfassung: Diese Seite setzt keine Tracking-Cookies, bindet keine Dienste Dritter ein und erhebt keine personenbezogenen Daten.</p>
+        <p class="legal-lede">Kurzfassung: Diese Seite setzt keine Tracking-Cookies und erhebt selbst keine personenbezogenen Daten. Einzige Ausnahme ist das eingebettete Feedback-Formular — dazu unten mehr.</p>
 
         <h4>Keine Analyse, kein Tracking</h4>
         <p>Es kommen weder Analyse-Werkzeuge noch Werbenetzwerke zum Einsatz. Es werden keine Cookies gesetzt.</p>
@@ -1575,6 +1615,9 @@
 
         <h4>Umfrage</h4>
         <p>Sofern die Umfrage serverseitig gezählt wird, speichert der Server ausschließlich einen mit einem Geheimnis gesalzenen SHA-256-Hash der IP-Adresse, um Mehrfachabstimmungen zu begrenzen. Die IP-Adresse selbst wird nicht gespeichert; die Hashes werden nach 90 Tagen gelöscht.</p>
+
+        <h4>Feedback-Formular</h4>
+        <p>Das Feedback-Formular am Ende der Seite wird als iframe von Google Forms (Google Ireland Limited) eingebunden. Beim Laden des Formulars wird Ihre IP-Adresse an Google übertragen; Google kann dabei Cookies setzen. Das Formular wird erst geladen, wenn es eingerichtet ist — bis dahin verlässt beim Aufruf dieser Seite keine Anfrage Ihren Browser in Richtung Google. Ihre Antworten werden bei Google Forms gespeichert, nicht auf dieser Website. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO; es gilt zusätzlich die Datenschutzerklärung von Google.</p>
 
         <h4>Newsletter</h4>
         <p>Der Versand läuft über die Mailingliste der Universität. An- und Abmeldung sowie die Verarbeitung Ihrer Adresse erfolgen dort; wir sehen und speichern keine E-Mail-Adressen. Es gilt die Datenschutzerklärung der Universität Tübingen.</p>
