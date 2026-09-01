@@ -595,80 +595,63 @@
       <div class="accent-rule"></div>
 
       <div id="photo-vote">
-        <div class="kicker">Vote</div>
-        <h3 class="sub-headline">Photo of the Quarter — Cast Your Vote</h3>
-        <p>Send up to three photos taken this quarter in or around Tübingen — the submission form is pinned in <strong>#tappa-quarterly</strong>. Once they are in, pick your favourite below: the winner takes a full page in the next issue, runners-up go into a collage.</p>
+        <div class="kicker">Call for photographs</div>
+        <h3 class="sub-headline">Photo of the Quarter</h3>
+        <p>Send up to three photos taken this quarter in or around Tübingen — post them in <strong data-todo="slack-channel-url">#tappa-quarterly</strong>, or mail them to the editors. The winner takes a full page in the next issue, runners-up go into a collage.</p>
 
-        <!-- data-api: paste the deployed Worker URL here (see backend/README.md).
-             Left empty, the poll falls back to a local mock so the page works offline.
-             Swap each placeholder <svg> for the submitted photo, and fill in
-             caption + photographer. -->
-        <!-- Voting stays shut until BOTH of these are true:
-               data-api  = the deployed Worker URL (see backend/README.md)
-               data-open = "true"
-             Until then the options are inert and say so, rather than
-             counting votes into this browser's localStorage and nowhere
-             else. Swap the placeholder art and captions in at the same
-             time. -->
-        <div class="poll photo-poll" id="poll" data-poll="photo-2026-01" data-api="" data-open="false">
-          <button class="poll-option" type="button" data-key="photo1" data-base="0">
-            <span class="ph ph-16-9">
+        <!-- The four frames below are where the shortlist goes: swap each
+             placeholder <svg> for the submitted photo and fill in the
+             caption and the photographer. There is deliberately no voting
+             here — reader voting needs a server to count on, and this site
+             contacts nobody. If it comes back, it comes back with a
+             decision about where the counting happens. -->
+        <div class="shortlist">
+          <figure class="shortlist-item">
+            <div class="ph ph-16-9">
               <svg preserveAspectRatio="xMidYMid slice"><use href="#m-contour"/></svg>
               <span class="ph-badge">Placeholder</span>
-            </span>
-            <span class="photo-meta">
-              <span class="poll-label">[Photo 1 — caption]</span>
-              <span class="photo-by">by [name]</span>
-            </span>
-            <span class="bar"><span class="fill"></span></span>
-            <span class="pct">0%</span>
-          </button>
+            </div>
+            <figcaption>
+              <span class="shortlist-label">[Photo 1 — caption]</span>
+              <span class="shortlist-by">by [name]</span>
+            </figcaption>
+          </figure>
 
-          <button class="poll-option" type="button" data-key="photo2" data-base="0">
-            <span class="ph ph-16-9">
+          <figure class="shortlist-item">
+            <div class="ph ph-16-9">
               <svg preserveAspectRatio="xMidYMid slice"><use href="#m-ribbon"/></svg>
               <span class="ph-badge">Placeholder</span>
-            </span>
-            <span class="photo-meta">
-              <span class="poll-label">[Photo 2 — caption]</span>
-              <span class="photo-by">by [name]</span>
-            </span>
-            <span class="bar"><span class="fill"></span></span>
-            <span class="pct">0%</span>
-          </button>
+            </div>
+            <figcaption>
+              <span class="shortlist-label">[Photo 2 — caption]</span>
+              <span class="shortlist-by">by [name]</span>
+            </figcaption>
+          </figure>
 
-          <button class="poll-option" type="button" data-key="photo3" data-base="0">
-            <span class="ph ph-16-9">
+          <figure class="shortlist-item">
+            <div class="ph ph-16-9">
               <svg preserveAspectRatio="xMidYMid slice"><use href="#m-frame"/></svg>
               <span class="ph-badge">Placeholder</span>
-            </span>
-            <span class="photo-meta">
-              <span class="poll-label">[Photo 3 — caption]</span>
-              <span class="photo-by">by [name]</span>
-            </span>
-            <span class="bar"><span class="fill"></span></span>
-            <span class="pct">0%</span>
-          </button>
+            </div>
+            <figcaption>
+              <span class="shortlist-label">[Photo 3 — caption]</span>
+              <span class="shortlist-by">by [name]</span>
+            </figcaption>
+          </figure>
 
-          <button class="poll-option" type="button" data-key="photo4" data-base="0">
-            <span class="ph ph-16-9">
+          <figure class="shortlist-item">
+            <div class="ph ph-16-9">
               <svg preserveAspectRatio="xMidYMid slice"><use href="#m-rings"/></svg>
               <span class="ph-badge ph-badge-light">Placeholder</span>
-            </span>
-            <span class="photo-meta">
-              <span class="poll-label">[Photo 4 — caption]</span>
-              <span class="photo-by">by [name]</span>
-            </span>
-            <span class="bar"><span class="fill"></span></span>
-            <span class="pct">0%</span>
-          </button>
+            </div>
+            <figcaption>
+              <span class="shortlist-label">[Photo 4 — caption]</span>
+              <span class="shortlist-by">by [name]</span>
+            </figcaption>
+          </figure>
         </div>
 
-        <p class="poll-meta">
-          <span id="poll-status">Voting opens once the photo submissions are in.</span>
-          <button class="poll-reset" type="button" id="poll-reset" hidden>Change vote</button>
-        </p>
-        <p class="poll-note">When it opens: one vote per reader, counted on the server. No account, no cookie beyond remembering your own choice, and nothing personal is stored.</p>
+        <p class="shortlist-note">The editors pick the winner this issue. Tell them which one you would have chosen — the argument is half the fun.</p>
       </div>
 
       <div class="split split-wide cards-top-rule" style="margin-top:48px; padding-top:40px">
@@ -1712,12 +1695,6 @@
   </section>
 
   <!-- ============================ FEEDBACK ============================ -->
-  <!-- TODO: paste the Google Form's embed URL into data-form-src below, i.e.
-         https://docs.google.com/forms/d/e/<FORM_ID>/viewform?embedded=true
-       The iframe is only loaded once that placeholder is gone, so the page
-       never shows a broken Google frame. Note that embedding the form means
-       Google receives every reader's IP address — the Datenschutz section
-       says so, and that entry needs to stay accurate. -->
   <section class="feedback" id="feedback">
     <div class="col">
       <div class="feedback-head">
@@ -1727,14 +1704,20 @@
         <p class="feedback-aside">Want issue&nbsp;#2 to exist at all? This is the way to say so. No address needed, nothing to sign up to.</p>
       </div>
 
-      <div class="form-embed" id="form-embed" data-form-src="https://docs.google.com/forms/d/e/PASTE_FORM_ID_HERE/viewform?embedded=true">
-        <iframe title="TAPPA Quarterly feedback form" loading="lazy" hidden></iframe>
-        <div class="form-fallback">
-          <p><strong>The form is not connected yet.</strong> Until it is, send your answers to <strong data-todo="slack-channel-url">#tappa-quarterly</strong> on Slack — the editors read everything either way.</p>
-        </div>
-      </div>
+      <ul class="feedback-ways">
+        <li>
+          <span class="feedback-way-label">By mail</span>
+          <a class="feedback-way-link" href="mailto:tappa.tue@gmail.com?subject=TAPPA%20Quarterly%20%E2%80%94%20feedback%20on%20Issue%2001">tappa.tue@gmail.com</a>
+          <span class="feedback-way-note">Keep it? What's missing? Want to help with issue&nbsp;#2? Three lines is plenty.</span>
+        </li>
+        <li>
+          <span class="feedback-way-label">On Slack</span>
+          <span class="feedback-way-link" data-todo="slack-channel-url">#tappa-quarterly</span>
+          <span class="feedback-way-note">Where the editors already are, and where the argument about the ice cream ranking is happening.</span>
+        </li>
+      </ul>
 
-      <p class="form-note">The form is hosted by Google. Opening this page does not contact Google; the form is only loaded once it is connected, and what you type goes to Google Forms, not to this website. See <a href="#impressum">Impressum &amp; Datenschutz</a>.</p>
+      <p class="form-note">No form, and nothing to sign up to. This page loads nothing from anyone else, so reading it tells no third party that you were here.</p>
     </div>
   </section>
 
@@ -1828,22 +1811,13 @@
       <!-- ---------------- Datenschutz ---------------- -->
       <div class="legal-col">
         <h3>Datenschutzerklärung</h3>
-        <p class="legal-lede">Kurzfassung: Diese Seite setzt keine Tracking-Cookies und erhebt selbst keine personenbezogenen Daten. Einzige Ausnahme ist das eingebettete Feedback-Formular — dazu unten mehr.</p>
+        <p class="legal-lede">Kurzfassung: Diese Seite bindet keine Dienste Dritter ein, setzt keine Cookies, speichert nichts auf Ihrem Gerät und erhebt selbst keine personenbezogenen Daten.</p>
 
         <h4>Keine Analyse, kein Tracking</h4>
-        <p>Es kommen weder Analyse-Werkzeuge noch Werbenetzwerke zum Einsatz. Es werden keine Cookies gesetzt.</p>
+        <p>Es kommen weder Analyse-Werkzeuge noch Werbenetzwerke zum Einsatz. Es werden keine Cookies gesetzt und es wird nichts im <code>localStorage</code> Ihres Browsers abgelegt. Es sind keine Inhalte Dritter eingebettet — keine Karten, keine Formulare, keine Videos, keine Schriften von fremden Servern.</p>
 
         <h4>Schriften</h4>
         <p>Spectral und Inter werden von diesem Server ausgeliefert, nicht über ein Google-CDN. Beim Laden der Seite wird also keine IP-Adresse an Dritte übertragen.</p>
-
-        <h4>Lokale Speicherung</h4>
-        <p>Die Umfrage merkt sich Ihre eigene Antwort im <code>localStorage</code> Ihres Browsers, damit sie angezeigt werden kann. Diese Angabe verlässt Ihr Gerät nicht und lässt sich durch Löschen der Browserdaten entfernen.</p>
-
-        <h4>Umfrage</h4>
-        <p>Sofern die Umfrage serverseitig gezählt wird, speichert der Server ausschließlich einen mit einem Geheimnis gesalzenen SHA-256-Hash der IP-Adresse, um Mehrfachabstimmungen zu begrenzen. Die IP-Adresse selbst wird nicht gespeichert; die Hashes werden nach 90 Tagen gelöscht.</p>
-
-        <h4>Feedback-Formular</h4>
-        <p>Das Feedback-Formular am Ende der Seite wird als iframe von Google Forms (Google Ireland Limited) eingebunden. Beim Laden des Formulars wird Ihre IP-Adresse an Google übertragen; Google kann dabei Cookies setzen. Das Formular wird erst geladen, wenn es eingerichtet ist — bis dahin verlässt beim Aufruf dieser Seite keine Anfrage Ihren Browser in Richtung Google. Ihre Antworten werden bei Google Forms gespeichert, nicht auf dieser Website. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO; es gilt zusätzlich die Datenschutzerklärung von Google.</p>
 
         <h4>Newsletter</h4>
         <p>Der Versand läuft über die Mailingliste der Universität. An- und Abmeldung sowie die Verarbeitung Ihrer Adresse erfolgen dort; wir sehen und speichern keine E-Mail-Adressen. Es gilt die Datenschutzerklärung der Universität Tübingen.</p>

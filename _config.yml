@@ -76,7 +76,6 @@ include:
 # their entries' file path in the `include:` list.
 #
 exclude:
-  - magazine/issue-1/backend/
 #
 # exclude:
 #   - .sass-cache/

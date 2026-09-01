@@ -26,6 +26,13 @@
   not profile readers, and update the Datenschutzerklärung first.
 {%- endcomment -%}
 
+{%- comment -%}
+  MathJax is off (site.mathjax.enable is unset) and loads from
+  cdn.jsdelivr.net when switched on -- the one remaining third-party
+  request anywhere in the site. If you ever enable it, vendor it into
+  assets/js/vendor/ the way jQuery and Font Awesome are, and say so
+  in the Datenschutzerklaerung.
+{%- endcomment -%}
 {% if site.mathjax == true or site.mathjax.enable == true %}
 <!-- MathJax -->
 {% capture mathjaxjs %}https://cdn.jsdelivr.net/npm/mathjax@3/es5/{{ site.mathjax.combo | default: "tex-svg" }}.js{% endcapture %}
