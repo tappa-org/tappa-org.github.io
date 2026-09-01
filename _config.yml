@@ -41,11 +41,10 @@ mathjax:
   enable: # MathJax equations, e.g. true, false (default)
   combo:  # "tex-svg" (default), "tex-mml-chtml", etc.: docs.mathjax.org/en/latest/web/components/combined.html
   tags:  # "none", "ams" (default), "all"
-google_fonts:
-  - name: "Source Sans Pro"
-    weights: "400,400i,700,700i"
-  - name: "Lora"
-    weights: "400,400i,700,700i"
+# Webfonts are self-hosted — see assets/fonts/README.txt and
+# assets/css/fonts.css. Do NOT add a `google_fonts:` key here: the theme
+# turns it into a fonts.googleapis.com request, which sends every
+# visitor's IP address to Google on every page load.
 
 # Liquid
 liquid:
