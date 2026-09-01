@@ -595,63 +595,77 @@
       <div class="accent-rule"></div>
 
       <div id="photo-vote">
-        <div class="kicker">Call for photographs</div>
+        <div class="kicker">Vote</div>
         <h3 class="sub-headline">Photo of the Quarter</h3>
         <p>Send up to three photos taken this quarter in or around Tübingen — post them in <strong data-todo="slack-channel-url">#tappa-quarterly</strong>, or mail them to the editors. The winner takes a full page in the next issue, runners-up go into a collage.</p>
 
-        <!-- The four frames below are where the shortlist goes: swap each
-             placeholder <svg> for the submitted photo and fill in the
-             caption and the photographer. There is deliberately no voting
-             here — reader voting needs a server to count on, and this site
-             contacts nobody. If it comes back, it comes back with a
-             decision about where the counting happens. -->
-        <div class="shortlist">
-          <figure class="shortlist-item">
-            <div class="ph ph-16-9">
+        <!-- This poll is layout, not a feature. The `is-pending` class on the
+             container hides the bars and the percentages, and every option
+             carries `disabled`, so the whole thing is inert with no script
+             behind it: nothing is counted, nothing is sent anywhere, and
+             nothing is written to the reader's device.
+             To make it real you need somewhere to count votes, which is a
+             decision about hosting rather than markup. Until then: swap each
+             placeholder <svg> for the submitted photo and fill in the caption
+             and the photographer. -->
+        <div class="poll photo-poll is-pending" id="poll" data-poll="photo-2026-01">
+          <button class="poll-option" type="button" data-key="photo1" disabled aria-disabled="true">
+            <span class="ph ph-16-9">
               <svg preserveAspectRatio="xMidYMid slice"><use href="#m-contour"/></svg>
               <span class="ph-badge">Placeholder</span>
-            </div>
-            <figcaption>
-              <span class="shortlist-label">[Photo 1 — caption]</span>
-              <span class="shortlist-by">by [name]</span>
-            </figcaption>
-          </figure>
+            </span>
+            <span class="photo-meta">
+              <span class="poll-label">[Photo 1 — caption]</span>
+              <span class="photo-by">by [name]</span>
+            </span>
+            <span class="bar"><span class="fill"></span></span>
+            <span class="pct">0%</span>
+          </button>
 
-          <figure class="shortlist-item">
-            <div class="ph ph-16-9">
+          <button class="poll-option" type="button" data-key="photo2" disabled aria-disabled="true">
+            <span class="ph ph-16-9">
               <svg preserveAspectRatio="xMidYMid slice"><use href="#m-ribbon"/></svg>
               <span class="ph-badge">Placeholder</span>
-            </div>
-            <figcaption>
-              <span class="shortlist-label">[Photo 2 — caption]</span>
-              <span class="shortlist-by">by [name]</span>
-            </figcaption>
-          </figure>
+            </span>
+            <span class="photo-meta">
+              <span class="poll-label">[Photo 2 — caption]</span>
+              <span class="photo-by">by [name]</span>
+            </span>
+            <span class="bar"><span class="fill"></span></span>
+            <span class="pct">0%</span>
+          </button>
 
-          <figure class="shortlist-item">
-            <div class="ph ph-16-9">
+          <button class="poll-option" type="button" data-key="photo3" disabled aria-disabled="true">
+            <span class="ph ph-16-9">
               <svg preserveAspectRatio="xMidYMid slice"><use href="#m-frame"/></svg>
               <span class="ph-badge">Placeholder</span>
-            </div>
-            <figcaption>
-              <span class="shortlist-label">[Photo 3 — caption]</span>
-              <span class="shortlist-by">by [name]</span>
-            </figcaption>
-          </figure>
+            </span>
+            <span class="photo-meta">
+              <span class="poll-label">[Photo 3 — caption]</span>
+              <span class="photo-by">by [name]</span>
+            </span>
+            <span class="bar"><span class="fill"></span></span>
+            <span class="pct">0%</span>
+          </button>
 
-          <figure class="shortlist-item">
-            <div class="ph ph-16-9">
+          <button class="poll-option" type="button" data-key="photo4" disabled aria-disabled="true">
+            <span class="ph ph-16-9">
               <svg preserveAspectRatio="xMidYMid slice"><use href="#m-rings"/></svg>
               <span class="ph-badge ph-badge-light">Placeholder</span>
-            </div>
-            <figcaption>
-              <span class="shortlist-label">[Photo 4 — caption]</span>
-              <span class="shortlist-by">by [name]</span>
-            </figcaption>
-          </figure>
+            </span>
+            <span class="photo-meta">
+              <span class="poll-label">[Photo 4 — caption]</span>
+              <span class="photo-by">by [name]</span>
+            </span>
+            <span class="bar"><span class="fill"></span></span>
+            <span class="pct">0%</span>
+          </button>
         </div>
 
-        <p class="shortlist-note">The editors pick the winner this issue. Tell them which one you would have chosen — the argument is half the fun.</p>
+        <p class="poll-meta">
+          <span id="poll-status">Voting is not open — the editors pick the winner this issue.</span>
+        </p>
+        <p class="poll-note">Tell them which one you would have chosen: <strong data-todo="slack-channel-url">#tappa-quarterly</strong>, or by mail. The argument is half the fun.</p>
       </div>
 
       <div class="split split-wide cards-top-rule" style="margin-top:48px; padding-top:40px">
@@ -1818,9 +1832,6 @@
 
         <h4>Schriften</h4>
         <p>Spectral und Inter werden von diesem Server ausgeliefert, nicht über ein Google-CDN. Beim Laden der Seite wird also keine IP-Adresse an Dritte übertragen.</p>
-
-        <h4>Newsletter</h4>
-        <p>Der Versand läuft über die Mailingliste der Universität. An- und Abmeldung sowie die Verarbeitung Ihrer Adresse erfolgen dort; wir sehen und speichern keine E-Mail-Adressen. Es gilt die Datenschutzerklärung der Universität Tübingen.</p>
 
         <h4>Hosting</h4>
         <p>Die Seite wird bei [hosting provider] gehostet. Beim Abruf werden dort technisch notwendige Server-Logs (u. a. IP-Adresse) verarbeitet. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO.</p>
