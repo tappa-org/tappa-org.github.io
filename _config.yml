@@ -76,6 +76,8 @@ include:
 # their entries' file path in the `include:` list.
 #
 exclude:
+  # review drafts, not part of the published site
+  - docs/
 #
 # exclude:
 #   - .sass-cache/
