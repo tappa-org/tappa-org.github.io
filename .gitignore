@@ -3,7 +3,10 @@ _site
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
-vendor
+# Bundler's vendored gems, at the repo root. Anchored with a leading
+# slash: an unanchored `vendor` matches ANY directory of that name at
+# any depth, which silently swallowed assets/js/vendor/.
+/vendor
 
 
 ### gem ###

@@ -9,11 +9,11 @@
   {%- endfor -%}
 {%- else -%}
   {%- comment -%}
-    jQuery and Font Awesome are served from this origin rather than from
-    code.jquery.com and use.fontawesome.com, so no visitor IP is disclosed
-    to those CDNs. See assets/js/vendor/README.txt.
+    jQuery is gone: the three things it did here are now DOMContentLoaded,
+    a CSS scroll-behavior rule, and a lightbox that had nothing to open.
+    See assets/js/main.js. Font Awesome is served from this origin rather
+    than use.fontawesome.com — see assets/js/vendor/README.txt.
   {%- endcomment -%}
-  <script src="{{ '/assets/js/vendor/jquery-3.3.1.min.js' | relative_url }}"></script>
   <script src="{{ '/assets/js/main.min.js' | relative_url }}"></script>
   <script src="{{ '/assets/js/vendor/fontawesome-all-5.0.12.js' | relative_url }}"></script>
 {%- endif -%}
