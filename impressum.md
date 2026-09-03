@@ -42,7 +42,7 @@ Diese Seite verlinkt auf externe Websites Dritter, auf deren Inhalte wir keinen 
 
 ### Urheberrecht
 
-Beiträge und Bilder sind Eigentum der jeweiligen Autorinnen und Autoren; sie sind bei den einzelnen Artikeln genannt. Die verwendeten Schriften stehen unter der SIL Open Font License 1.1.
+Beiträge und Bilder sind Eigentum der jeweiligen Autorinnen und Autoren; sie sind bei den einzelnen Artikeln genannt. Einzelne Abbildungen stammen von Pexels und werden unter der Pexels-Lizenz verwendet; die Fotografinnen und Fotografen sind an der jeweiligen Abbildung genannt. Die verwendeten Schriften stehen unter der SIL Open Font License 1.1.
 
 ---
 
