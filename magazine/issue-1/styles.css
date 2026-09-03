@@ -1436,17 +1436,123 @@ a.cal-title:focus-visible { color: var(--accent); text-decoration: underline; }
   border: 1px solid var(--rule);
 }
 
+/* The card is now a flip container: the padding and the background moved onto
+   .scoop-face, because a rotating element cannot carry the cell's fill. */
 .scoop {
-  background: var(--paper);
-  padding: 20px 22px 22px;
+  display: grid;          /* so .scoop-inner stretches to the row height */
+  perspective: 1200px;
+  background: none;
+  padding: 0;
 }
-
-.chapter-warm .scoop { background: var(--warm); }
 
 .scoop[hidden] { display: none; }
 
-.scoop.is-fav { background: var(--warm); }
-.chapter-warm .scoop.is-fav { background: var(--paper); }
+/* Both faces occupy the same grid cell, so the card still sizes itself to the
+   taller of the two and the 1px-gap hairline grid is left alone. */
+.scoop-inner {
+  display: grid;
+  min-height: 100%;
+  transform-style: preserve-3d;
+  transition: transform .6s cubic-bezier(.2,.7,.3,1);
+}
+
+.scoop-face {
+  grid-area: 1 / 1;
+  backface-visibility: hidden;
+  padding: 20px 22px 22px;
+  background: var(--paper);
+}
+
+.chapter-warm .scoop-face { background: var(--warm); }
+.scoop.is-fav .scoop-face { background: var(--warm); }
+.chapter-warm .scoop.is-fav .scoop-face { background: var(--paper); }
+
+.scoop-back {
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+}
+
+.scoop:hover .scoop-inner,
+.scoop:focus .scoop-inner,
+.scoop:focus-within .scoop-inner { transform: rotateY(180deg); }
+
+.scoop:focus { outline: 2px solid var(--accent); outline-offset: -2px; }
+
+.scoop-maps {
+  display: grid;
+  gap: 10px;
+  flex: 1;
+  align-content: start;
+}
+
+/* The one card that covers three parlours. Stacked rather than 3-up, so each
+   map gets the full card width; the name sits beside it and the crop is
+   shallower, which keeps the card from dragging its whole grid row taller. */
+.scoop-maps.is-trio { gap: 8px; }
+
+.is-trio .scoop-map {
+  display: grid;
+  /* fixed caption column: "Vor dem Haagtor 3" would otherwise size `auto`
+     and eat most of the row */
+  grid-template-columns: minmax(0, 1fr) 104px;
+  gap: 10px;
+  align-items: center;
+}
+
+.is-trio .scoop-map img { aspect-ratio: 16 / 7; }
+
+.scoop-map { margin: 0; }
+
+.scoop-map img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border: 1px solid var(--rule);
+  background: var(--warm);
+}
+
+.scoop-map figcaption {
+  font-family: var(--sans);
+  margin-top: 5px;
+}
+
+.scoop-map-name {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--muted-2);
+}
+
+.scoop-map-addr {
+  display: block;
+  font-size: 10.5px;
+  font-weight: 400;
+  line-height: 1.35;
+  color: var(--muted);
+  margin-top: 1px;
+}
+
+.is-trio .scoop-map figcaption { margin-top: 0; }
+.is-trio .scoop-map-name { font-size: 10.5px; }
+.is-trio .scoop-map-addr { font-size: 9.5px; }
+
+.scoop-osm {
+  font-family: var(--sans);
+  font-size: 9.5px;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  margin: 12px 0 0;
+}
+
+.scoop-osm a { color: inherit; }
+
+@media (prefers-reduced-motion: reduce) {
+  .scoop-inner { transition: none; }
+}
 
 .scoop-name {
   font-family: var(--serif);
