@@ -11,6 +11,22 @@
 <link rel="preload" href="fonts/inter-600-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="fonts.css">
 <link rel="stylesheet" href="styles.css">
+
+<!-- Visitor counting — GoatCounter. Deliberately left commented out: this
+     page is plain HTML, not built by Jekyll, so it cannot read the
+     `goatcounter_code` key from _config.yml the way the rest of the site
+     does. To switch it on, replace YOURCODE below, uncomment the two lines,
+     and at the same moment uncomment the analytics paragraph in the privacy
+     column near the foot of this file — that column currently promises that
+     no analytics are in use.
+
+     GoatCounter sets no cookies and writes nothing to the reader's device,
+     so no § 25 TDDDG consent banner is required; it stores no raw IP address,
+     only a daily-salted hash. Legal basis Art. 6(1)(f) GDPR.
+
+<script data-goatcounter="https://YOURCODE.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+-->
 </head>
 <body>
 
@@ -191,7 +207,7 @@
           <h3 class="sub-headline">Growing In and Out of Tübingen</h3>
           <p>Welcome to the first issue of TAPPAS, a grassroots magazine about the people who make Tübingen's AI community what it is.</p>
           <p>We live in a world overflowing with information. We have grown used to the daily drumbeat of big news and big events — another model release, another benchmark falling to superhuman performance. While our attention is pulled toward these distant narratives, it is easy to lose sight of what is right beside us, just as rich and just as alive. Tübingen has its share of newsletters and announcements, but one thing has always seemed missing: attention to the concrete nearby — to everyday life, to people, to living itself. Research is our shared passion, and precisely for that reason it should be woven into a life, not lifted out of one and celebrated on its own. It is this life around and between the research — the people and stories of Tübingen AI — that we hope this magazine will record, share and pass around: once a quarter, by us and for us.</p>
-          <p>The magazine is carried by <a href="https://tappa-org.github.io/">TAPPA</a>, the association of Tübingen's AI PhDs and postdocs that exists to connect people across labs and institutes, and is open to all. Everything in this issue was written, photographed, surveyed and taste-tested by people you can run into at MvL and Max Planck Ring. And we warmly welcome contributions to our future issues: a piece, an interview, a photo, a rant, a puzzle. Find us in <strong>#tappa-quarterly</strong> on Slack, or through the <a href="#feedback">feedback form</a> at the back.</p>
+          <p>The magazine is carried by <a href="https://tappa-org.github.io/">TAPPA</a>, the association of Tübingen's AI PhDs and postdocs that exists to connect people across labs and institutes, and is open to all. Everything in this issue was written, photographed, surveyed and taste-tested by people you can run into at MvL and Max Planck Ring. And we warmly welcome contributions to our future issues: a piece, an interview, a photo, a rant, a puzzle. Find us in <strong>#tappas</strong> on Slack, or through the <a href="#feedback">feedback form</a> at the back.</p>
           <p>So: read, cast your vote for the photo of the quarter, disagree with the ice-cream ranking — and tell us what you would like this magazine to become.</p>
           <p><em>— Haiwen &amp; Mina, for the editorial team</em></p>
           <a class="arrow-link" href="#credits">→ Masthead &amp; credits</a>
@@ -227,7 +243,7 @@
         <div>
           <div class="kicker">The Interview</div>
           <h3 class="feature-headline">The Shape of Uncertainty</h3>
-          <p class="standfirst">Most of our readers have met Philipp Hennig already — he holds the chair for the Methods of Machine Learning in Tübingen, co-founded the research field of probabilistic numerics, and since this summer directs the Tübingen AI Center. Knowing his title is not the same as knowing how he thinks about the job. We talked in his office in July. What follows is a lightly edited Q&amp;A.</p>
+          <p class="standfirst">Most of our readers have met Philipp Hennig already — he holds the chair for the Methods of Machine Learning in Tübingen, co-founded the research field of probabilistic numerics, and since this summer directs the Tübingen AI Center. Knowing his title is not the same as knowing how he thinks about the job. We talked in his office in July.</p>
           <div class="byline">Interview by Haiwen Huang · <span id="read-time"></span></div>
         </div>
         <figure class="fig">
@@ -381,7 +397,7 @@
             <span class="takepart-n">01</span>
             <div>
               <h5>Nominate someone</h5>
-              <p>Know someone whose work deserves a page? Send a name and one sentence to <strong data-todo="slack-channel-url">#tappa-quarterly</strong> on Slack.</p>
+              <p>Know someone whose work deserves a page? Send a name and one sentence to <strong data-todo="slack-channel-url">#tappas</strong> on Slack.</p>
             </div>
           </li>
           <li>
@@ -542,75 +558,83 @@
       <div id="photo-vote">
         <div class="kicker">Vote</div>
         <h3 class="sub-headline">Photo of the Quarter</h3>
-        <p>Send up to three photos taken this quarter in or around Tübingen — post them in <strong data-todo="slack-channel-url">#tappa-quarterly</strong>, or mail them to the editors. The winner takes a full page in the next issue, runners-up go into a collage.</p>
+        <p>Six photographs taken this quarter in and around Tübingen, sent in by readers. Pick the one that should take a full page in the next issue — the runners-up go into a collage.</p>
 
-        <!-- This poll is layout, not a feature. The `is-pending` class on the
-             container hides the bars and the percentages, and every option
-             carries `disabled`, so the whole thing is inert with no script
-             behind it: nothing is counted, nothing is sent anywhere, and
-             nothing is written to the reader's device.
-             To make it real you need somewhere to count votes, which is a
-             decision about hosting rather than markup. Until then: swap each
-             placeholder <svg> for the submitted photo and fill in the caption
-             and the photographer. -->
-        <div class="poll photo-poll is-pending" id="poll" data-poll="photo-2026-01">
-          <button class="poll-option" type="button" data-key="photo1" disabled aria-disabled="true">
-            <span class="ph ph-16-9">
-              <svg preserveAspectRatio="xMidYMid slice"><use href="#m-contour"/></svg>
-              <span class="ph-badge">Placeholder</span>
-            </span>
-            <span class="photo-meta">
-              <span class="poll-label">[Photo 1 — caption]</span>
-              <span class="photo-by">by [name]</span>
-            </span>
-            <span class="bar"><span class="fill"></span></span>
-            <span class="pct">0%</span>
-          </button>
+        <p class="poll-cta">
+          <a class="btn-vote" href="TODO-PHOTO-VOTE-FORM-URL" target="_blank" rel="noopener noreferrer">Vote for your favourite →</a>
+          <span class="poll-cta-note">Opens a Google Form in a new tab. Nothing is sent to Google until you click.</span>
+        </p>
 
-          <button class="poll-option" type="button" data-key="photo2" disabled aria-disabled="true">
-            <span class="ph ph-16-9">
-              <svg preserveAspectRatio="xMidYMid slice"><use href="#m-ribbon"/></svg>
-              <span class="ph-badge">Placeholder</span>
-            </span>
-            <span class="photo-meta">
-              <span class="poll-label">[Photo 2 — caption]</span>
-              <span class="photo-by">by [name]</span>
-            </span>
-            <span class="bar"><span class="fill"></span></span>
-            <span class="pct">0%</span>
-          </button>
-
-          <button class="poll-option" type="button" data-key="photo3" disabled aria-disabled="true">
-            <span class="ph ph-16-9">
-              <svg preserveAspectRatio="xMidYMid slice"><use href="#m-frame"/></svg>
-              <span class="ph-badge">Placeholder</span>
-            </span>
-            <span class="photo-meta">
-              <span class="poll-label">[Photo 3 — caption]</span>
-              <span class="photo-by">by [name]</span>
-            </span>
-            <span class="bar"><span class="fill"></span></span>
-            <span class="pct">0%</span>
-          </button>
-
-          <button class="poll-option" type="button" data-key="photo4" disabled aria-disabled="true">
-            <span class="ph ph-16-9">
-              <svg preserveAspectRatio="xMidYMid slice"><use href="#m-rings"/></svg>
-              <span class="ph-badge ph-badge-light">Placeholder</span>
-            </span>
-            <span class="photo-meta">
-              <span class="poll-label">[Photo 4 — caption]</span>
-              <span class="photo-by">by [name]</span>
-            </span>
-            <span class="bar"><span class="fill"></span></span>
-            <span class="pct">0%</span>
-          </button>
+        <!-- The vote lives in a Google Form rather than on this page: a form
+             embedded here would load docs.google.com for every reader and hand
+             Google their IP address on page load, which is what the privacy
+             note below promises not to do. A link sends nothing until clicked.
+             The photographs run in two columns, portrait and landscape
+             alternating so the two stacks come out the same height and the
+             grid has no ragged gap at the bottom. Numbering runs down the
+             left column first, so it matches the options in the vote form. -->
+        <div class="photo-gallery">
+          <div class="photo-col">
+            <figure class="photo-candidate">
+              <div class="ph ph-portrait">
+                <img src="images/photos/02-punting-neckar.jpg" alt="Punting boats on the Neckar below the old town houses, seen past a balcony flower box" loading="lazy">
+                <span class="ph-badge">Photo 1</span>
+              </div>
+              <figcaption class="photo-meta">
+                <span class="poll-label">1. Tuebingen classic photo</span>
+              </figcaption>
+            </figure>
+            <figure class="photo-candidate">
+              <div class="ph ph-4-3">
+                <img src="images/photos/03-hirschauer-baggersee.jpg" alt="The sun setting through trees and reeds over the still water of the Hirschauer Baggersee" loading="lazy">
+                <span class="ph-badge">Photo 2</span>
+              </div>
+              <figcaption class="photo-meta">
+                <span class="poll-label">2. Hirschauer Baggersee during sunset in September 2026</span>
+              </figcaption>
+            </figure>
+            <figure class="photo-candidate">
+              <div class="ph ph-4-3">
+                <img src="images/photos/05-cows.jpg" alt="Cows grazing on a bright green hillside meadow beside a blossoming tree" loading="lazy">
+                <span class="ph-badge">Photo 3</span>
+              </div>
+              <figcaption class="photo-meta">
+                <span class="poll-label">3. Some non-random cows on a lawn close or somewhat close to Tübingen</span>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="photo-col">
+            <figure class="photo-candidate">
+              <div class="ph ph-4-3">
+                <img src="images/photos/01-double-rainbow.jpg" alt="A double rainbow arcing over a low modern building and the hills beyond, at sunset" loading="lazy">
+                <span class="ph-badge">Photo 4</span>
+              </div>
+              <figcaption class="photo-meta">
+                <span class="poll-label">4. Double rainbow!</span>
+              </figcaption>
+            </figure>
+            <figure class="photo-candidate">
+              <div class="ph ph-portrait">
+                <img src="images/photos/04-pink-clouds.jpg" alt="Pink evening clouds above the paved walkway and the observatory dome at Cyber Valley" loading="lazy">
+                <span class="ph-badge">Photo 5</span>
+              </div>
+              <figcaption class="photo-meta">
+                <span class="poll-label">5. pink clouds</span>
+              </figcaption>
+            </figure>
+            <figure class="photo-candidate">
+              <div class="ph ph-4-3">
+                <img src="images/photos/06-benches.jpg" alt="A meadow with stone benches and a gravel path, looking out over wooded hills under tall clouds" loading="lazy">
+                <span class="ph-badge">Photo 6</span>
+              </div>
+              <figcaption class="photo-meta">
+                <span class="poll-label">6. If you ever need a break… (these are the benches and the view behind the Amazon building)</span>
+              </figcaption>
+            </figure>
+          </div>
         </div>
 
-        <p class="poll-meta">
-          <span id="poll-status">Voting is not open — the editors pick the winner this issue.</span>
-        </p>
-        <p class="poll-note">Tell them which one you would have chosen: <strong data-todo="slack-channel-url">#tappa-quarterly</strong>, or by mail. The argument is half the fun.</p>
+        <p class="poll-note">Want to argue for one of them, or send your own for next issue? <strong data-todo="slack-channel-url">#tappas</strong> on Slack, or by mail. The argument is half the fun.</p>
       </div>
 
       <div class="split split-wide cards-top-rule" style="margin-top:48px; padding-top:40px">
@@ -1338,7 +1362,6 @@
       <div class="grid" style="margin-top:34px">
       <div class="feature-body">
         <p><strong>Overall, there does not seem to be a connection between how people feel about the climate crisis and their flying behavior.</strong> This could of course be due to the small sample size — or there is actually not much of a connection. Looking at the individual questions, the overwhelming majority of people believe that the climate crisis is an urgent problem. Moreover, many people think that they have a choice in what conferences to attend, and that individual behavior can at least have somewhat of an impact. However, flying to conferences is considered to be an important part of academia.</p>
-        <p>To get some more insight into how people deal with this conflict between systemic expectations and personal preferences, we also asked you to share your thoughts in the survey. Here, we give a selection of excerpts of different takes:</p>
       </div>
       <aside class="article-rail">
         <blockquote class="rail-quote">“Hate the game, not the player.”
@@ -1453,6 +1476,10 @@
       </div>
 
 
+      <div class="feature-body">
+        <p>To get some more insight into how people deal with this conflict between systemic expectations and personal preferences, we also asked you to share your thoughts in the survey. Here, we give a selection of excerpts of different takes:</p>
+      </div>
+
       <p class="quote-lede">The excerpts below fall into four arguments. We have sorted them accordingly.</p>
 
       <div class="survey-quote-groups">
@@ -1551,24 +1578,34 @@
       <div class="feedback-head">
         <div class="kicker">Feedback</div>
         <h2>Tell Us What You Think</h2>
-        <p>Three questions, two minutes. Keep it? What's missing? Do you want to help make issue&nbsp;#2? Answers go to the editors, and they decide what this magazine becomes.</p>
-        <p class="feedback-aside">Want issue&nbsp;#2 to exist at all? This is the way to say so. No address needed, nothing to sign up to.</p>
+        <p>Three questions, two minutes. Keep it? What&#8217;s missing? Do you want to help make issue&nbsp;#2? Answers go to the editors, and they decide what this magazine becomes.</p>
+        <p class="feedback-aside">Want issue&nbsp;#2 to exist at all? This is the way to say so.</p>
       </div>
+
+      <!-- Linked, not embedded. An <iframe> to docs.google.com would fetch
+           Google on page load and hand them every reader's IP address whether
+           or not anyone fills the form in — which would need a consent banner
+           and would break the promise in the privacy note below. A link sends
+           nothing until the reader clicks it. -->
+      <p class="poll-cta">
+        <a class="btn-vote" href="TODO-FEEDBACK-FORM-URL" target="_blank" rel="noopener noreferrer">Open the feedback form &rarr;</a>
+        <span class="poll-cta-note">Opens a Google Form in a new tab. Anonymous; no sign-in needed.</span>
+      </p>
 
       <ul class="feedback-ways">
         <li>
           <span class="feedback-way-label">By mail</span>
-          <a class="feedback-way-link" href="mailto:tappa.tue@gmail.com?subject=TAPPA%20Quarterly%20%E2%80%94%20feedback%20on%20Issue%2001">tappa.tue@gmail.com</a>
-          <span class="feedback-way-note">Keep it? What's missing? Want to help with issue&nbsp;#2? Three lines is plenty.</span>
+          <a class="feedback-way-link" href="mailto:tappa.tue@gmail.com?subject=TAPPAS%20%E2%80%94%20feedback%20on%20Issue%2001">tappa.tue@gmail.com</a>
+          <span class="feedback-way-note">If you would rather not use a form. Three lines is plenty.</span>
         </li>
         <li>
           <span class="feedback-way-label">On Slack</span>
-          <span class="feedback-way-link" data-todo="slack-channel-url">#tappa-quarterly</span>
+          <span class="feedback-way-link" data-todo="slack-channel-url">#tappas</span>
           <span class="feedback-way-note">Where the editors already are, and where the argument about the ice cream ranking is happening.</span>
         </li>
       </ul>
 
-      <p class="form-note">No form, and nothing to sign up to. This page loads nothing from anyone else, so reading it tells no third party that you were here.</p>
+      <p class="form-note">The form is a link, not an embed: this page itself loads nothing from anyone else, so reading it tells no third party that you were here. Following the link takes you to Google, under Google&#8217;s own terms.</p>
     </div>
   </section>
 
@@ -1614,78 +1651,110 @@
 <section class="legal" id="impressum">
   <div class="col">
     <div class="legal-head">
-      <h2>Impressum &amp; Datenschutz</h2>
-      <span class="legal-sub">Angaben gemäß § 5 DDG · Legal notice &amp; privacy</span>
+      <h2>Legal Notice &amp; Privacy</h2>
+      <span class="legal-sub">Information pursuant to § 5 of the German Digital Services Act (DDG)</span>
     </div>
 
     <div class="legal-grid">
-      <!-- ---------------- Impressum ---------------- -->
+      <!-- ---------------- Legal Notice ---------------- -->
       <div class="legal-col">
-        <h3>Impressum</h3>
+        <h3>Legal Notice</h3>
 
         <dl class="legal-dl">
-          <dt>Diensteanbieter</dt>
+          <dt>Website operator</dt>
           <dd>
-            [TAPPA — full legal name of the group or association]<br>
-            [Legal form, e.g. nicht eingetragene Studierendeninitiative / e.V.]<br>
-            [Street and number]<br>
-            [72076 Tübingen, Germany]
+            <strong>TAPPA — T&#252;bingen AI PhD and Postdoc Assembly</strong><br>
+            TAPPA is a grassroots initiative bringing together PhD students and postdocs conducting
+            research in artificial intelligence in T&#252;bingen. This website is operated on behalf
+            of TAPPA by its responsible representatives.
           </dd>
 
-          <dt>Vertreten durch</dt>
-          <dd>[Name(s) of the chair or responsible board members]</dd>
-
-          <dt>Kontakt</dt>
+          <dt>Contact</dt>
           <dd>
-            E-Mail: <a href="mailto:tappa@example.uni-tuebingen.de">[tappa@example.uni-tuebingen.de]</a><br>
-            Telefon: [+49 …]
+            For questions regarding TAPPA or this website, please use the contact options provided on our
+            <a href="https://tappa-org.github.io/contact/">Get in touch</a> page.<br>
+            E-Mail: <a href="mailto:tappa.tue@gmail.com">tappa.tue@gmail.com</a>
           </dd>
 
-          <dt>Registereintrag</dt>
-          <dd>[Vereinsregister … / Amtsgericht … / VR … — or delete this entry if not registered]</dd>
-
-          <dt>Verantwortlich für den Inhalt<br><span class="legal-fine">nach § 18 Abs. 2 MStV</span></dt>
+          <dt>Responsible persons</dt>
           <dd>
-            [Name of the responsible editor]<br>
+            TAPPA<br>
+            [Name of the responsible person]<br>
             [Street and number]<br>
-            [72076 Tübingen, Germany]
+            72076 T&#252;bingen, Germany<br>
+            <span class="legal-fine">For matters concerning the content of this website, please contact
+            the TAPPA team via the contact details provided on the website.</span>
           </dd>
         </dl>
 
-        <h4>Haftung für Links</h4>
-        <p>Diese Seite verlinkt auf externe Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Für diese fremden Inhalte ist stets der jeweilige Anbieter verantwortlich.</p>
+        <h4>Content of this website</h4>
+        <p>We make every effort to ensure that the information provided on this website is accurate and up to date. However, we cannot guarantee the completeness, accuracy, or timeliness of the information.</p>
+        <p>TAPPA is a voluntary grassroots initiative. Information about events, meetings, projects, and other activities is provided for general informational purposes and may be subject to change.</p>
 
-        <h4>Urheberrecht · Copyright</h4>
-        <p>Beiträge und Bilder sind Eigentum der jeweiligen Autorinnen und Autoren; sie sind bei den einzelnen Artikeln genannt. Die Schriften Spectral und Inter stehen unter der SIL Open Font License 1.1.</p>
+        <h4>External links</h4>
+        <p>This website contains links to external websites operated by third parties. We carefully select the links we provide, but we have no control over the content of external websites.</p>
+        <p>We therefore assume no responsibility or liability for the content of linked third-party websites. The respective operators are solely responsible for their content. If we become aware of any legal violations on linked websites, we will review the relevant link and take appropriate action where necessary.</p>
+
+        <h4>Copyright</h4>
+        <p>Unless otherwise stated, the content and materials published on this website are subject to applicable copyright law. The reproduction, editing, distribution, or other use of content beyond the limits permitted by copyright law requires the prior consent of the respective rights holder.</p>
+        <p>Where content on this website has been created by third parties, the rights of those third parties remain unaffected. Articles and images belong to their respective authors, who are named with each piece. The typefaces Spectral and Inter are licensed under the SIL Open Font License 1.1.</p>
+
+        <h4>Contact regarding this Legal Notice</h4>
+        <p>If you have questions about this Legal Notice or believe that content on this website violates applicable law, please contact us through the contact details provided on this website.</p>
+
+        <p class="legal-fine">Last updated: September 2026</p>
       </div>
 
-      <!-- ---------------- Datenschutz ---------------- -->
+      <!-- ---------------- Privacy ---------------- -->
       <div class="legal-col">
-        <h3>Datenschutzerklärung</h3>
-        <p class="legal-lede">Kurzfassung: Diese Seite bindet keine Dienste Dritter ein, setzt keine Cookies, speichert nichts auf Ihrem Gerät und erhebt selbst keine personenbezogenen Daten.</p>
+        <h3>Privacy Policy</h3>
 
-        <h4>Keine Analyse, kein Tracking</h4>
-        <p>Es kommen weder Analyse-Werkzeuge noch Werbenetzwerke zum Einsatz. Es werden keine Cookies gesetzt und es wird nichts im <code>localStorage</code> Ihres Browsers abgelegt. Es sind keine Inhalte Dritter eingebettet — keine Karten, keine Formulare, keine Videos, keine Schriften von fremden Servern.</p>
+        <h4>Privacy and data protection</h4>
+        <p>We take the protection of personal data seriously. Personal data is processed only where this is permitted under applicable data protection law, in particular the General Data Protection Regulation (GDPR) and applicable German data protection legislation.</p>
+        <p>Where processing is based on your consent, you may withdraw that consent at any time. Withdrawal of consent does not affect the lawfulness of processing carried out before the withdrawal.</p>
 
-        <h4>Schriften</h4>
-        <p>Spectral und Inter werden von diesem Server ausgeliefert, nicht über ein Google-CDN. Beim Laden der Seite wird also keine IP-Adresse an Dritte übertragen.</p>
+        <p class="legal-lede">In short: this page embeds no third-party services, sets no cookies, stores nothing on your device, and collects no personal data itself.</p>
+
+        <h4>No analytics, no tracking</h4>
+        <p>No analytics tools and no advertising networks are used. No cookies are set and nothing is written to your browser&#8217;s <code>localStorage</code>. No third-party content is embedded — no maps, no forms, no videos, no fonts from someone else&#8217;s server. The feedback and voting forms are links, not embeds: nothing is sent to Google unless you follow one.</p>
+
+        <!-- Swap the paragraph above for the two below at the same moment you
+             uncomment the GoatCounter script in the <head> of this file. Until
+             then this block must stay commented out, because it describes
+             something that is not happening.
+
+        <h4>Visitor statistics</h4>
+        <p>To find out roughly how many people read an issue, this page uses
+        <a href="https://www.goatcounter.com/" target="_blank" rel="noopener noreferrer">GoatCounter</a>,
+        an open-source analytics tool. It sets no cookies and writes nothing to your device, so no
+        consent banner is required under § 25 TDDDG. It stores no IP address: a visit is identified
+        by a hash of IP address, browser string and a salt that is discarded every 24 hours, which
+        cannot be traced back to you or used to follow you across sites. Only aggregate counts are
+        kept — page views, referrer, browser, country. The legal basis is our legitimate interest in
+        knowing whether the magazine is read, Art. 6(1)(f) GDPR. You can object at any time using
+        the contact address above, or by enabling &#8220;Do Not Track&#8221; in your browser, which
+        GoatCounter honours.</p>
+        -->
+
+        <h4>Fonts</h4>
+        <p>Spectral and Inter are served from this server rather than from a Google CDN, so loading the page transmits no IP address to any third party.</p>
 
         <h4>Hosting</h4>
-        <p>Die Seite wird bei [hosting provider] gehostet. Beim Abruf werden dort technisch notwendige Server-Logs (u. a. IP-Adresse) verarbeitet. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO.</p>
+        <p>The site is hosted on GitHub Pages (GitHub, Inc.). When the page is retrieved, technically necessary server logs (including the IP address) are processed there. The legal basis is Art. 6(1)(f) GDPR.</p>
 
-        <h4>Ihre Rechte</h4>
-        <p>Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch sowie ein Beschwerderecht bei einer Aufsichtsbehörde. Wenden Sie sich dafür an die oben genannte Kontaktadresse.</p>
+        <h4>Your rights</h4>
+        <p>You have the right of access, rectification, erasure, restriction of processing, data portability and objection, as well as the right to lodge a complaint with a supervisory authority. Please use the contact address given above.</p>
       </div>
     </div>
 
-    <p class="legal-note">Alle Angaben in eckigen Klammern müssen vor der Veröffentlichung ersetzt werden. Dieser Entwurf ist keine Rechtsberatung — bitte einmal von der Universität oder dem AStA gegenlesen lassen.</p>
+    <p class="legal-note">Everything in square brackets must be replaced before publication. This draft is not legal advice — please have it read once by the university or the AStA.</p>
   </div>
 </section>
 
 <footer class="colophon">
   <div class="col colophon-inner">
     <p>TAPPA Quarterly is written and edited by the Tübingen AI PhD &amp; postdoc community.</p>
-    <p><a href="#impressum">Impressum &amp; Datenschutz</a> · © 2026 TAPPA · House Style v0.1</p>
+    <p><a href="#impressum">Legal Notice &amp; Privacy</a> · © 2026 TAPPA · House Style v0.1</p>
   </div>
 </footer>
 

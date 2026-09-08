@@ -2,4 +2,28 @@
 
 <!-- insert favicons. use http://realfavicongenerator.net/ -->
 
+{% comment %}
+  Visitor counting — GoatCounter.
+
+  Nothing loads until `goatcounter_code` is set in _config.yml, so the site
+  stays third-party-free by default. To switch it on:
+
+    1. Register the site at https://www.goatcounter.com/ and note the code
+       (the part before `.goatcounter.com` in your dashboard URL).
+    2. Put that code in _config.yml as `goatcounter_code: yourcode`.
+    3. Uncomment the analytics paragraph in impressum.md — the privacy
+       policy currently states that no analytics are in use, and that
+       has to stop being true at the same moment this starts loading.
+
+  Why this tool: it sets no cookies and writes nothing to the visitor's
+  device, so § 25 TDDDG (ex-TTDSG) consent does not apply and no banner is
+  needed. It never stores a raw IP address — a visit is identified by a
+  hash of IP + User-Agent + a salt that is rotated daily — so what remains
+  is aggregate counts. Processing rests on Art. 6(1)(f) GDPR.
+{% endcomment %}
+{% if site.goatcounter_code %}
+<script data-goatcounter="https://{{ site.goatcounter_code }}.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+{% endif %}
+
 <!-- end custom head snippets -->

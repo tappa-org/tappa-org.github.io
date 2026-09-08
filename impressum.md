@@ -1,75 +1,114 @@
 ---
 layout: page
-title: 'Impressum & Datenschutz'
+title: 'Legal Notice'
 permalink: /impressum/
 ---
 
-<p style="font-size:0.9em;opacity:0.75;margin-top:-0.5em">Angaben gemäß § 5 DDG · Legal notice &amp; privacy</p>
+<p style="font-size:0.9em;opacity:0.75;margin-top:-0.5em">Information pursuant to § 5 of the German Digital Services Act (DDG)</p>
 
 <div style="background:#FBF1DE;border:1px solid #C9A45E;padding:0.9em 1.1em;margin:1.5em 0;font-size:0.92em">
-<strong>Entwurf.</strong> Alle Angaben in <em>[eckigen Klammern]</em> müssen vor der Veröffentlichung ersetzt werden. Dieser Text ist keine Rechtsberatung und wird gerade gegengelesen.
+<strong>Draft.</strong> The name and address of the responsible person still have to be filled in before publication — § 5 DDG requires a natural person who can be contacted. This text is not legal advice.
 </div>
 
-## Impressum
+## Website operator
 
-**Diensteanbieter**
+**TAPPA – Tübingen AI PhD and Postdoc Assembly**
 
-[TAPPA — vollständiger Name der Initiative]
-[Rechtsform, z. B. nicht eingetragene Initiative]
-[Straße und Hausnummer]
-[72076 Tübingen]
+TAPPA is a grassroots initiative bringing together PhD students and postdocs conducting research in artificial intelligence in Tübingen.
 
-**Vertreten durch**
+This website is operated on behalf of TAPPA by its responsible representatives.
 
-[Name(n) der verantwortlichen Personen]
+## Contact
 
-**Kontakt**
+For questions regarding TAPPA or this website, please use the contact options provided on our [Get in touch]({{ '/contact/' | relative_url }}) page.
 
 E-Mail: [tappa.tue@gmail.com](mailto:tappa.tue@gmail.com)
 
-**Registereintrag**
+## Responsible persons
 
-[Nicht eingetragen — entfällt, bitte bestätigen]
+TAPPA
 
-**Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV**
+[Name of the responsible person]\
+[Street and number]\
+72076 Tübingen, Germany
 
-[Name der verantwortlichen Redakteurin / des Redakteurs]
-[Anschrift]
+For matters concerning the content of this website, please contact the TAPPA team via the contact details provided on the website.
 
-### Haftung für Links
+## Content of this website
 
-Diese Seite verlinkt auf externe Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Für diese fremden Inhalte ist stets der jeweilige Anbieter verantwortlich.
+We make every effort to ensure that the information provided on this website is accurate and up to date. However, we cannot guarantee the completeness, accuracy, or timeliness of the information.
 
-### Urheberrecht
+TAPPA is a voluntary grassroots initiative. Information about events, meetings, projects, and other activities is provided for general informational purposes and may be subject to change.
 
-Beiträge und Bilder sind Eigentum der jeweiligen Autorinnen und Autoren; sie sind bei den einzelnen Artikeln genannt. Einzelne Abbildungen stammen von Pexels und werden unter der Pexels-Lizenz verwendet; die Fotografinnen und Fotografen sind an der jeweiligen Abbildung genannt. Die verwendeten Schriften stehen unter der SIL Open Font License 1.1.
+## External links
+
+This website contains links to external websites operated by third parties. We carefully select the links we provide, but we have no control over the content of external websites.
+
+We therefore assume no responsibility or liability for the content of linked third-party websites. The respective operators are solely responsible for their content.
+
+If we become aware of any legal violations on linked websites, we will review the relevant link and take appropriate action where necessary.
+
+## Copyright
+
+Unless otherwise stated, the content and materials published on this website are subject to applicable copyright law.
+
+The reproduction, editing, distribution, or other use of content beyond the limits permitted by copyright law requires the prior consent of the respective rights holder.
+
+Where content on this website has been created by third parties, the rights of those third parties remain unaffected.
+
+## Privacy and data protection
+
+We take the protection of personal data seriously.
+
+Personal data is processed only where this is permitted under applicable data protection law, in particular the General Data Protection Regulation (GDPR) and applicable German data protection legislation.
+
+Where processing is based on your consent, you may withdraw that consent at any time. Withdrawal of consent does not affect the lawfulness of processing carried out before the withdrawal.
+
+For detailed information about how personal data is processed on this website, please refer to our [Privacy Policy](#privacy-policy).
+
+## Contact regarding this Legal Notice
+
+If you have questions about this Legal Notice or believe that content on this website violates applicable law, please contact us through the contact details provided on this website.
+
+*Last updated: September 2026*
 
 ---
 
-## Datenschutzerklärung
+## Privacy Policy
+{: #privacy-policy}
 
-**Kurzfassung:** Diese Website bindet keine Dienste Dritter ein, setzt keine Cookies, speichert nichts auf Ihrem Gerät und erhebt selbst keine personenbezogenen Daten.
+**In short:** this website embeds no third-party services, sets no cookies, stores nothing on your device, and collects no personal data itself.
 
-### Keine Analyse, kein Tracking
+### No analytics, no tracking
 
-Es kommen weder Analyse-Werkzeuge noch Werbenetzwerke zum Einsatz. Es werden keine Cookies gesetzt und es wird nichts im `localStorage` Ihres Browsers abgelegt.
+No analytics tools and no advertising networks are used. No cookies are set and nothing is written to your browser's `localStorage`.
 
-### Keine eingebetteten Inhalte
+<!-- Delete the paragraph above and uncomment the one below at the same moment
+     you set `goatcounter_code` in _config.yml. Until then it must stay
+     commented out, because it describes something that is not happening.
 
-Es sind keine Inhalte Dritter eingebettet — keine Karten, keine Formulare, keine Videos, keine Kalender. Beim Aufruf dieser Seite wird außer zum Hoster keine Verbindung zu einem anderen Server aufgebaut.
+### Visitor statistics
 
-### Schriften und Skripte
+To find out roughly how many people read this site, we use [GoatCounter](https://www.goatcounter.com/), an open-source analytics tool. It sets no cookies and writes nothing to your device, so no consent banner is required under § 25 TDDDG. It stores no IP address: a visit is identified by a hash of IP address, browser string and a salt that is discarded every 24 hours, which cannot be traced back to you or used to follow you across sites. Only aggregate counts are kept — page views, referrer, browser, country. The legal basis is our legitimate interest in knowing whether the site is read, Art. 6(1)(f) GDPR. You can object at any time using the contact address above, or by enabling "Do Not Track" in your browser, which GoatCounter honours.
 
-Alle Schriften (Lora, Source Sans Pro, Spectral, Inter) und alle Skripte werden von diesem Server ausgeliefert, nicht über ein CDN. Es wird also keine IP-Adresse an Google, an ein Icon-CDN oder an einen anderen Dritten übertragen.
+-->
 
-### Kontakt
+### No embedded content
 
-Wenn Sie uns per E-Mail schreiben, verarbeiten wir Ihre Nachricht ausschließlich zur Beantwortung. Ein Kontaktformular gibt es nicht.
+No third-party content is embedded — no maps, no forms, no videos, no calendars. Loading this page opens no connection to any server other than the host.
+
+### Fonts and scripts
+
+All fonts (Lora, Source Sans Pro, Spectral, Inter) and all scripts are served from this server, not from a CDN. No IP address is therefore transmitted to Google, to an icon CDN, or to any other third party.
+
+### Contact
+
+If you write to us by e-mail, we process your message solely in order to answer it. There is no contact form.
 
 ### Hosting
 
-Die Seite wird bei [Hoster — derzeit GitHub Pages, wird geprüft] gehostet. Beim Abruf werden dort technisch notwendige Server-Logs (u. a. IP-Adresse) verarbeitet. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO.
+The site is hosted on GitHub Pages (GitHub, Inc.). When the site is retrieved, technically necessary server logs (including the IP address) are processed there. The legal basis is Art. 6(1)(f) GDPR.
 
-### Ihre Rechte
+### Your rights
 
-Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch sowie ein Beschwerderecht bei einer Aufsichtsbehörde. Wenden Sie sich dafür an die oben genannte Kontaktadresse.
+You have the right of access, rectification, erasure, restriction of processing, data portability and objection, as well as the right to lodge a complaint with a supervisory authority. Please use the contact address given above.
