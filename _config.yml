@@ -45,7 +45,7 @@ mathjax:
 # Set it to your GoatCounter site code (the bit before .goatcounter.com) to
 # switch counting on — and uncomment the analytics paragraph in impressum.md
 # at the same time. See _includes/head-custom.html for the reasoning.
-goatcounter_code:
+goatcounter_code: tappas
 
 # Webfonts are self-hosted — see assets/fonts/README.txt and
 # assets/css/fonts.css. Do NOT add a `google_fonts:` key here: the theme

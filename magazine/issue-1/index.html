@@ -12,21 +12,13 @@
 <link rel="stylesheet" href="fonts.css">
 <link rel="stylesheet" href="styles.css">
 
-<!-- Visitor counting — GoatCounter. Deliberately left commented out: this
-     page is plain HTML, not built by Jekyll, so it cannot read the
-     `goatcounter_code` key from _config.yml the way the rest of the site
-     does. To switch it on, replace YOURCODE below, uncomment the two lines,
-     and at the same moment uncomment the analytics paragraph in the privacy
-     column near the foot of this file — that column currently promises that
-     no analytics are in use.
-
-     GoatCounter sets no cookies and writes nothing to the reader's device,
-     so no § 25 TDDDG consent banner is required; it stores no raw IP address,
-     only a daily-salted hash. Legal basis Art. 6(1)(f) GDPR.
-
-<script data-goatcounter="https://YOURCODE.goatcounter.com/count"
+<!-- Visitor counting — GoatCounter. Sets no cookies and writes nothing to
+     the reader's device, so no § 25 TDDDG consent banner is required; it
+     stores no raw IP address, only a daily-salted hash. Legal basis
+     Art. 6(1)(f) GDPR. Described in the privacy column at the foot of this
+     page — the two must stay in step. -->
+<script data-goatcounter="https://tappas.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
--->
 </head>
 <body>
 
@@ -199,7 +191,6 @@
           </div>
           <figcaption class="figcaption">
             <span class="fignum">Figure 1 |</span> The team behind Issue 01.
-            <span class="credit">Photo: [photographer]</span>
           </figcaption>
         </figure>
         <div>
@@ -560,7 +551,7 @@
         <p>Six photographs taken this quarter in and around Tübingen, sent in by readers. Pick the one that should take a full page in the next issue — the runners-up go into a collage.</p>
 
         <p class="poll-cta">
-          <a class="btn-vote" href="TODO-PHOTO-VOTE-FORM-URL" target="_blank" rel="noopener noreferrer">Vote for your favourite →</a>
+          <a class="btn-vote" href="https://docs.google.com/forms/d/e/1FAIpQLSdpY6TmrV8yEePliqGhF4JwP80QUpk7rDHnBMZKdl8iZRmN9g/viewform" target="_blank" rel="noopener noreferrer">Vote for your favourite →</a>
           <span class="poll-cta-note">Opens a Google Form in a new tab. Nothing is sent to Google until you click.</span>
         </p>
 
@@ -1587,7 +1578,7 @@
            and would break the promise in the privacy note below. A link sends
            nothing until the reader clicks it. -->
       <p class="poll-cta">
-        <a class="btn-vote" href="TODO-FEEDBACK-FORM-URL" target="_blank" rel="noopener noreferrer">Open the feedback form &rarr;</a>
+        <a class="btn-vote" href="https://forms.gle/Dbrpzuc36oMZo1xR7" target="_blank" rel="noopener noreferrer">Open the feedback form &rarr;</a>
         <span class="poll-cta-note">Opens a Google Form in a new tab. Anonymous; no sign-in needed.</span>
       </p>
 
@@ -1604,7 +1595,7 @@
         </li>
       </ul>
 
-      <p class="form-note">The form is a link, not an embed: this page itself loads nothing from anyone else, so reading it tells no third party that you were here. Following the link takes you to Google, under Google&#8217;s own terms.</p>
+      <p class="form-note">The form is a link, not an embed: nothing of yours reaches Google unless you follow it, and then under Google&#8217;s own terms. The page does count readers — see the privacy note below for what that does and does not record.</p>
     </div>
   </section>
 
@@ -1678,8 +1669,8 @@
           <dt>Responsible persons</dt>
           <dd>
             TAPPA<br>
-            [Name of the responsible person]<br>
-            [Street and number]<br>
+            Rabanus Derr<br>
+            Max-Planck-Ring 4<br>
             72076 T&#252;bingen, Germany<br>
             <span class="legal-fine">For matters concerning the content of this website, please contact
             the TAPPA team via the contact details provided on the website.</span>
@@ -1712,10 +1703,13 @@
         <p>We take the protection of personal data seriously. Personal data is processed only where this is permitted under applicable data protection law, in particular the General Data Protection Regulation (GDPR) and applicable German data protection legislation.</p>
         <p>Where processing is based on your consent, you may withdraw that consent at any time. Withdrawal of consent does not affect the lawfulness of processing carried out before the withdrawal.</p>
 
-        <p class="legal-lede">In short: this page embeds no third-party services, sets no cookies, stores nothing on your device, and collects no personal data itself.</p>
+        <p class="legal-lede">In short: this page sets no cookies, stores nothing on your device, and collects no personal data about you. It counts readers, in a way that cannot identify one.</p>
 
-        <h4>No analytics, no tracking</h4>
-        <p>No analytics tools and no advertising networks are used. No cookies are set and nothing is written to your browser&#8217;s <code>localStorage</code>. No third-party content is embedded — no maps, no forms, no videos, no fonts from someone else&#8217;s server. The feedback and voting forms are links, not embeds: nothing is sent to Google unless you follow one.</p>
+        <h4>Visitor statistics</h4>
+        <p>To find out roughly how many people read an issue, this page uses <a href="https://www.goatcounter.com/" target="_blank" rel="noopener noreferrer">GoatCounter</a>, an open-source analytics tool. It sets no cookies and writes nothing to your device, so no consent banner is required under § 25 TDDDG. It stores no IP address: a visit is identified by a hash of IP address, browser string and a salt that is discarded every 24 hours, which cannot be traced back to you or used to follow you across sites. Only aggregate counts are kept — page views, referrer, browser, country. The legal basis is our legitimate interest in knowing whether the magazine is read, Art. 6(1)(f) GDPR. You can object at any time using the contact address above, or by switching on &#8220;Do Not Track&#8221; in your browser, which GoatCounter honours.</p>
+
+        <h4>No tracking, nothing embedded</h4>
+        <p>No advertising networks are used and nothing follows you between sites. No third-party content is embedded — no maps, no forms, no videos, no fonts from someone else&#8217;s server. The feedback and voting forms are links, not embeds: nothing is sent to Google unless you follow one.</p>
 
         <!-- Swap the paragraph above for the two below at the same moment you
              uncomment the GoatCounter script in the <head> of this file. Until
@@ -1746,7 +1740,7 @@
       </div>
     </div>
 
-    <p class="legal-note">Everything in square brackets must be replaced before publication. This draft is not legal advice — please have it read once by the university or the AStA.</p>
+    <p class="legal-note">This notice is not legal advice — it is worth having read once by the university or the AStA.</p>
   </div>
 </section>
 

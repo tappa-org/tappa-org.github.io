@@ -3,17 +3,18 @@
 <!-- insert favicons. use http://realfavicongenerator.net/ -->
 
 {% comment %}
-  Visitor counting — GoatCounter.
+  Visitor counting — GoatCounter, live as the site `tappas`.
 
-  Nothing loads until `goatcounter_code` is set in _config.yml, so the site
-  stays third-party-free by default. To switch it on:
+  The script is emitted only when `goatcounter_code` is set in _config.yml.
+  Clearing that key turns counting off everywhere on the Jekyll side — but
+  if you do, two other things have to change with it, or the site starts
+  describing itself wrongly:
 
-    1. Register the site at https://www.goatcounter.com/ and note the code
-       (the part before `.goatcounter.com` in your dashboard URL).
-    2. Put that code in _config.yml as `goatcounter_code: yourcode`.
-    3. Uncomment the analytics paragraph in impressum.md — the privacy
-       policy currently states that no analytics are in use, and that
-       has to stop being true at the same moment this starts loading.
+    1. The "Visitor statistics" section in impressum.md.
+    2. The <head> of magazine/issue-1/index.html, which carries its own copy
+       of this script. That page is plain HTML, not built by Jekyll, so it
+       cannot read this key — deliberately, because front matter would show
+       up as literal text in the raw-file previews we use for review.
 
   Why this tool: it sets no cookies and writes nothing to the visitor's
   device, so § 25 TDDDG (ex-TTDSG) consent does not apply and no banner is

@@ -6,10 +6,6 @@ permalink: /impressum/
 
 <p style="font-size:0.9em;opacity:0.75;margin-top:-0.5em">Information pursuant to § 5 of the German Digital Services Act (DDG)</p>
 
-<div style="background:#FBF1DE;border:1px solid #C9A45E;padding:0.9em 1.1em;margin:1.5em 0;font-size:0.92em">
-<strong>Draft.</strong> The name and address of the responsible person still have to be filled in before publication — § 5 DDG requires a natural person who can be contacted. This text is not legal advice.
-</div>
-
 ## Website operator
 
 **TAPPA – Tübingen AI PhD and Postdoc Assembly**
@@ -28,8 +24,8 @@ E-Mail: [tappa.tue@gmail.com](mailto:tappa.tue@gmail.com)
 
 TAPPA
 
-[Name of the responsible person]\
-[Street and number]\
+Rabanus Derr\
+Max-Planck-Ring 4\
 72076 Tübingen, Germany
 
 For matters concerning the content of this website, please contact the TAPPA team via the contact details provided on the website.
@@ -77,29 +73,19 @@ If you have questions about this Legal Notice or believe that content on this we
 ## Privacy Policy
 {: #privacy-policy}
 
-**In short:** this website embeds no third-party services, sets no cookies, stores nothing on your device, and collects no personal data itself.
-
-### No analytics, no tracking
-
-No analytics tools and no advertising networks are used. No cookies are set and nothing is written to your browser's `localStorage`.
-
-<!-- Delete the paragraph above and uncomment the one below at the same moment
-     you set `goatcounter_code` in _config.yml. Until then it must stay
-     commented out, because it describes something that is not happening.
+**In short:** this website sets no cookies, stores nothing on your device, and collects no personal data about you. It counts readers, in a way that cannot identify one.
 
 ### Visitor statistics
 
-To find out roughly how many people read this site, we use [GoatCounter](https://www.goatcounter.com/), an open-source analytics tool. It sets no cookies and writes nothing to your device, so no consent banner is required under § 25 TDDDG. It stores no IP address: a visit is identified by a hash of IP address, browser string and a salt that is discarded every 24 hours, which cannot be traced back to you or used to follow you across sites. Only aggregate counts are kept — page views, referrer, browser, country. The legal basis is our legitimate interest in knowing whether the site is read, Art. 6(1)(f) GDPR. You can object at any time using the contact address above, or by enabling "Do Not Track" in your browser, which GoatCounter honours.
+To find out roughly how many people read this site, we use [GoatCounter](https://www.goatcounter.com/), an open-source analytics tool. It sets no cookies and writes nothing to your device, so no consent banner is required under § 25 TDDDG. It stores no IP address: a visit is identified by a hash of IP address, browser string and a salt that is discarded every 24 hours, which cannot be traced back to you or used to follow you across sites. Only aggregate counts are kept — page views, referrer, browser, country. The legal basis is our legitimate interest in knowing whether the site is read, Art. 6(1)(f) GDPR. You can object at any time using the contact address above, or by switching on "Do Not Track" in your browser, which GoatCounter honours.
 
--->
+### No tracking, nothing embedded
 
-### No embedded content
-
-No third-party content is embedded — no maps, no forms, no videos, no calendars. Loading this page opens no connection to any server other than the host.
+No advertising networks are used and nothing follows you between sites. No cookies are set and nothing is written to your browser's `localStorage`. No third-party content is embedded — no maps, no forms, no videos, no calendars. Apart from the host and the counter described above, loading a page opens no connection to any other server.
 
 ### Fonts and scripts
 
-All fonts (Lora, Source Sans Pro, Spectral, Inter) and all scripts are served from this server, not from a CDN. No IP address is therefore transmitted to Google, to an icon CDN, or to any other third party.
+All fonts (Lora, Source Sans Pro, Spectral, Inter) are served from this server, not from a CDN, as is all of the site's own JavaScript. No IP address is transmitted to Google, to an icon CDN, or to any other third party. The one script loaded from elsewhere is the counter described above.
 
 ### Contact
 
