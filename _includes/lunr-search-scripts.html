@@ -1,3 +1,10 @@
+{%- comment -%}
+  WARNING: the script below is written against jQuery, which this site
+  no longer loads. Nothing includes this file today — it only runs for
+  a page with `layout: search`, and there is none — but if you add one,
+  rewrite these handlers in plain DOM first, or the search box will do
+  nothing and throw on every keypress.
+{%- endcomment -%}
 {%- assign lang = site.locale | slice: 0,2 | default: "en" -%}
   {%- case lang -%}
     {%- when "da" -%}

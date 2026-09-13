@@ -1,0 +1,11 @@
+# Tappa Quarterly issues, newest first.
+# The first entry is shown as the current issue; the rest appear under "Past issues".
+# To add an issue: drop the issue's index.html in magazine/<slug>/ and the cover in
+# images/magazine/, then add a block at the top of this list.
+#
+# `url` is where the issue itself lives. Keep the trailing slash.
+
+- title: "Issue 1"
+  date: "Summer 2026"
+  cover: /images/magazine/tappa-quarterly-cover.jpg
+  url: /magazine/issue-1/

@@ -1,0 +1,13 @@
+/* Local overrides, loaded after the theme and the skin.
+ *
+ * scroll-behavior replaces the jquery.smooth-scroll plugin that used to be
+ * bundled into assets/js/main.min.js — the browser does this natively now,
+ * and honours prefers-reduced-motion without being asked.
+ */
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}

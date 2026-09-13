@@ -31,7 +31,7 @@ email: tappa.tue@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   TAPPA is a grassroots initiative to bring together PhD students and Postdocs doing research on AI in Tübingen.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://milagorecki.github.io/pages-test" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://tappa-org.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 logo: 'images/logo.png' # path of site logo, e.g. "/images/logo.png"
 date_format: "%B %-d, %Y"
 future: true
@@ -41,11 +41,16 @@ mathjax:
   enable: # MathJax equations, e.g. true, false (default)
   combo:  # "tex-svg" (default), "tex-mml-chtml", etc.: docs.mathjax.org/en/latest/web/components/combined.html
   tags:  # "none", "ams" (default), "all"
-google_fonts:
-  - name: "Source Sans Pro"
-    weights: "400,400i,700,700i"
-  - name: "Lora"
-    weights: "400,400i,700,700i"
+# Visitor counting. Leave empty and nothing third-party is loaded at all.
+# Set it to your GoatCounter site code (the bit before .goatcounter.com) to
+# switch counting on — and uncomment the analytics paragraph in impressum.md
+# at the same time. See _includes/head-custom.html for the reasoning.
+goatcounter_code: tappas
+
+# Webfonts are self-hosted — see assets/fonts/README.txt and
+# assets/css/fonts.css. Do NOT add a `google_fonts:` key here: the theme
+# turns it into a fonts.googleapis.com request, which sends every
+# visitor's IP address to Google on every page load.
 
 # Liquid
 liquid:
@@ -75,6 +80,10 @@ include:
 #
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
+#
+exclude:
+  # review drafts, not part of the published site
+  - docs/
 #
 # exclude:
 #   - .sass-cache/
