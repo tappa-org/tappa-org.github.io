@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>TAPPA Quarterly — Issue 01 cover</title>
+<link rel="stylesheet" href="fonts.css">
+<style>
+/* Source for cover.jpg. Renders at exactly 1652x2338; re-export with:
+   "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" \
+     --headless --screenshot=cover.png --window-size=1652,2338 \
+     --hide-scrollbars --default-background-color=0 cover.html
+   then: sips -s format jpeg -s formatOptions 92 cover.png --out cover.jpg */
+
+:root {
+  --deep:  #08372E;
+  --warm:  #FAF7F1;
+  --mint:  #7BE0C0;
+  --serif: "Spectral", Georgia, serif;
+  --sans:  "Inter", -apple-system, Arial, sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body {
+  width: 1652px;
+  height: 2338px;
+  background: var(--deep);
+  -webkit-font-smoothing: antialiased;
+}
+
+.cover {
+  position: relative;
+  width: 1652px;
+  height: 2338px;
+  overflow: hidden;
+  padding: 132px 128px 118px;
+  display: flex;
+  flex-direction: column;
+}
+
+.rings { position: absolute; top: 300px; right: -260px; width: 1500px; height: 1500px; }
+.rings circle { fill: none; stroke: var(--warm); stroke-width: 2; opacity: 0.07; }
+.rings .dot { fill: var(--mint); stroke: none; opacity: 0.55; }
+
+.masthead, .lead { position: relative; z-index: 1; }
+
+.rule-top {
+  display: flex;
+  justify-content: space-between;
+  font: 600 25px/1 var(--sans);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(250, 247, 241, 0.62);
+}
+
+.wordmark {
+  margin-top: 62px;
+  font: 700 268px/0.86 var(--serif);
+  letter-spacing: -0.012em;
+  color: var(--warm);
+}
+
+.subtitle {
+  margin-top: 34px;
+  font: italic 500 116px/1 var(--serif);
+  color: var(--warm);
+  opacity: 0.93;
+}
+
+.blurb {
+  margin-top: 54px;
+  max-width: 1010px;
+  font: 400 33px/1.62 var(--sans);
+  color: rgba(250, 247, 241, 0.7);
+}
+
+.lead { margin-top: auto; }
+
+.lead-rule {
+  width: 152px;
+  height: 5px;
+  background: var(--mint);
+  opacity: 0.85;
+  margin-bottom: 42px;
+}
+
+.eyebrow {
+  font: 600 26px/1 var(--sans);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--mint);
+}
+
+.lead h1 {
+  margin-top: 26px;
+  font: 700 108px/1.06 var(--serif);
+  letter-spacing: -0.008em;
+  color: var(--warm);
+}
+
+.lead .standfirst {
+  margin-top: 28px;
+  max-width: 1240px;
+  font: 400 34px/1.5 var(--sans);
+  color: rgba(250, 247, 241, 0.74);
+}
+
+.teasers { margin-top: 74px; }
+
+.teaser {
+  display: grid;
+  grid-template-columns: 268px 1fr;
+  gap: 40px;
+  align-items: baseline;
+  padding: 36px 0;
+  border-top: 2px solid rgba(250, 247, 241, 0.16);
+}
+.teaser:last-child { border-bottom: 2px solid rgba(250, 247, 241, 0.16); }
+
+.teaser .dept {
+  font: 600 23px/1.45 var(--sans);
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  color: var(--mint);
+  opacity: 0.92;
+}
+.teaser h2 {
+  font: 600 48px/1.16 var(--serif);
+  color: var(--warm);
+}
+.teaser p {
+  margin-top: 12px;
+  font: 400 29px/1.45 var(--sans);
+  color: rgba(250, 247, 241, 0.66);
+}
+</style>
+</head>
+<body>
+<div class="cover">
+
+  <svg class="rings" viewBox="0 0 1500 1500" aria-hidden="true">
+    <circle cx="750" cy="750" r="190"/>
+    <circle cx="750" cy="750" r="360"/>
+    <circle cx="750" cy="750" r="540"/>
+    <circle cx="750" cy="750" r="716"/>
+    <circle class="dot" cx="750" cy="750" r="9"/>
+    <circle class="dot" cx="1049" cy="466" r="7"/>
+    <circle class="dot" cx="492" cy="1027" r="6"/>
+  </svg>
+
+  <div class="masthead">
+    <div class="rule-top">
+      <span>Issue 01 — Summer 2026</span>
+      <span>tappa-org.github.io</span>
+    </div>
+    <div class="wordmark">TAPPA</div>
+    <div class="subtitle">Quarterly</div>
+    <p class="blurb">
+      The magazine of the T&uuml;bingen AI PhD &amp; postdoc community &mdash;
+      interviews, research, life, and one question answered with data.
+    </p>
+  </div>
+
+  <div class="lead">
+    <div class="lead-rule"></div>
+    <div class="eyebrow">The Interview &middot; People</div>
+    <h1>The Shape of Uncertainty</h1>
+    <p class="standfirst">
+      A conversation with Philipp Hennig on probability, patience, and machines
+      that know what they don&rsquo;t know.
+    </p>
+
+    <div class="teasers">
+      <div class="teaser">
+        <div class="dept">By the Numbers</div>
+        <div>
+          <h2>Should We Fly to Conferences?</h2>
+          <p>26 of us on flying, guilt and the climate crisis</p>
+        </div>
+      </div>
+      <div class="teaser">
+        <div class="dept">Research</div>
+        <div>
+          <h2>From the Friday Talks</h2>
+          <p>The talk series of the T&uuml;bingen AI community</p>
+        </div>
+      </div>
+      <div class="teaser">
+        <div class="dept">Life &middot; Fun</div>
+        <div>
+          <h2>Ice Cream Parlours of T&uuml;bingen, Rated</h2>
+          <p>Plus: the photo vote, and the word of the quarter</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
