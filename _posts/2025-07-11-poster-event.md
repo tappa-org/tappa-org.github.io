@@ -4,6 +4,7 @@ title:  "Tübingen AI Summer Poster Event Upcoming"
 date:   2025-07-11 14:00:00 +0100
 tags: event
 published: true
+permalink: /summer-poster-event-2025/
 image:
   path: /images/events/2024-12-pre-neurips.jpg
   thumbnail: /images/events/2024-12-pre-neurips.jpg

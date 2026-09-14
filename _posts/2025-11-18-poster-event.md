@@ -4,6 +4,7 @@ title:  "Tübingen AI Winter Poster Event Upcoming"
 date:   2025-11-18 15:00:00 +0100
 tags: event
 published: true
+permalink: /poster-event/
 image:
   path: /images/events/2025-11-poster-event.png
   thumbnail: /images/events/2025-11-poster-event-thumb.png
