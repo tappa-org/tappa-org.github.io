@@ -37,10 +37,6 @@ date_format: "%B %-d, %Y"
 future: true
 read_time: # reading time estimates, e.g. true
 words_per_minute: # 200
-mathjax:
-  enable: # MathJax equations, e.g. true, false (default)
-  combo:  # "tex-svg" (default), "tex-mml-chtml", etc.: docs.mathjax.org/en/latest/web/components/combined.html
-  tags:  # "none", "ams" (default), "all"
 
 # Webfonts are self-hosted — see assets/fonts/README.txt and
 # assets/css/fonts.css. Do NOT add a `google_fonts:` key here: the theme

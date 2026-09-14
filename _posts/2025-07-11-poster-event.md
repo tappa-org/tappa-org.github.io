@@ -15,6 +15,6 @@ The Tübingen AI Center, the Cluster of Excellence "Machine Learning”, and the
 
 If your paper has been accepted to one of the venues [here](https://ellis.eu/nomination-phd-postdoc) since the last event (December 2024), please present your poster! Otherwise, come and join us to mingle, discuss, exchange, and wrap up the day with drinks and snacks!
 
-:spiral_calendar_pad: Friday, July 11 – 14:00-18:00
-:round_pushpin: Tübingen AI Research Building, ground floor coffee lounge (Maria-von-Linden-Straße 6, 72076 Tübingen)
-:memo: https://forms.gle/DdrsvP5rWYrDzy1RA (registration link for all)
+🗓️ Friday, July 11 – 14:00-18:00
+📍 Tübingen AI Research Building, ground floor coffee lounge (Maria-von-Linden-Straße 6, 72076 Tübingen)
+📝 https://forms.gle/DdrsvP5rWYrDzy1RA (registration link for all)
