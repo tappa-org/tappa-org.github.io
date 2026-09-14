@@ -51,8 +51,6 @@ mathjax:
 liquid:
   error_mode: strict
 
-title: TAPPA
-description: # this means to ignore newlines until "baseurl:"
 # Build settings
 permalink: /:categories/:title/
 markdown: kramdown

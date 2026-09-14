@@ -5,7 +5,8 @@ layout: home
 limit: 10
 show_excerpts: true
 entries_layout: list
-title: ""
+title: "Home"
+hide_title: true
 image:
   path: /images/header_long.jpeg
   thumbnail: /images/header_long.jpeg
