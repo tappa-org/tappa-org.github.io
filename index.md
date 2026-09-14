@@ -5,7 +5,8 @@ layout: home
 limit: 10
 show_excerpts: true
 entries_layout: list
-title: ""
+title: "Home"
+hide_title: true
 image:
   path: /images/header_long.jpeg
   thumbnail: /images/header_long.jpeg
@@ -21,9 +22,9 @@ the Tübingen AI ecosystem by addressing common concerns, organizing events, and
 
 ## TAPPA meetings
 
-:clock5: Usually, we meet on the 1st Thursday of the month, 17:00-18:00.
+🕔 Usually, we meet on the 1st Thursday of the month, 17:00-18:00.
 
-:round_pushpin: The location alternates between MPI-IS, MvL6 and MvL1 (MvL = Maria-von-Linden-Straße).
+📍 The location alternates between MPI-IS, MvL6 and MvL1 (MvL = Maria-von-Linden-Straße).
 
 
 ### Upcoming meetings

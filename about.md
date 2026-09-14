@@ -1,6 +1,7 @@
 ---
 layout: page
-title: ''
+title: "About us"
+hide_title: true
 #image:
 #  path: /images/about-pic-long.jpeg
 #  thumbnail: /images/about-pic-long.jpeg

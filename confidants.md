@@ -1,6 +1,7 @@
 ---
 layout: page
-title: ''
+title: "Confidants"
+hide_title: true
 permalink: /confidants/
 ---
 
