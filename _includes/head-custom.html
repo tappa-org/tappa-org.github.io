@@ -2,29 +2,6 @@
 
 <!-- insert favicons. use http://realfavicongenerator.net/ -->
 
-{% comment %}
-  Visitor counting — GoatCounter, live as the site `tappas`.
-
-  The script is emitted only when `goatcounter_code` is set in _config.yml.
-  Clearing that key turns counting off everywhere on the Jekyll side — but
-  if you do, two other things have to change with it, or the site starts
-  describing itself wrongly:
-
-    1. The "Visitor statistics" section in impressum.md.
-    2. The <head> of magazine/issue-1/index.html, which carries its own copy
-       of this script. That page is plain HTML, not built by Jekyll, so it
-       cannot read this key — deliberately, because front matter would show
-       up as literal text in the raw-file previews we use for review.
-
-  Why this tool: it sets no cookies and writes nothing to the visitor's
-  device, so § 25 TDDDG (ex-TTDSG) consent does not apply and no banner is
-  needed. It never stores a raw IP address — a visit is identified by a
-  hash of IP + User-Agent + a salt that is rotated daily — so what remains
-  is aggregate counts. Processing rests on Art. 6(1)(f) GDPR.
-{% endcomment %}
-{% if site.goatcounter_code %}
-<script data-goatcounter="https://{{ site.goatcounter_code }}.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
-{% endif %}
+<script src="{{ '/assets/js/goatcounter.js' | relative_url }}"></script>
 
 <!-- end custom head snippets -->
