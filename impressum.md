@@ -25,7 +25,7 @@ E-Mail: [tappa.tue@gmail.com](mailto:tappa.tue@gmail.com)
 TAPPA
 
 Rabanus Derr\
-Max-Planck-Ring 4\
+Maria-von-Linden-Strasse 1\
 72076 Tübingen, Germany
 
 For matters concerning the content of this website, please contact the TAPPA team via the contact details provided on the website.
