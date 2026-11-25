@@ -24,7 +24,7 @@ TAPPA is a grassroots initiative built by and for PhD students and Postdocs in t
 - join forces to push for common issues\
 <span style="color: gray;">*e.g. improved onboarding through a joint wiki, collecting arguments for higher salaries*</span>
 - co-organize events across different institutes or PhD programs\
-<span style="color: gray;">*e.g. pre-conference poster sessions, alumni talk series*</span>
+<span style="color: gray;">*e.g. pre-conference poster sessions, diversity and inclusion talk series*</span>
 - provide information flow, in particular also between representatives and their communities\
 <span style="color: gray;">*e.g. latest developments in grad schools, updates from board meetings*</span>
 - include more people in organization and decision processes, for transparency and community building\
