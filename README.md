@@ -29,12 +29,10 @@ Run `bundle install` and `bundle exec jekyll serve` to build and serve the site 
 ├── _projects/     # Collection of project pages
 ├── about.md       # 'About us' page
 ├── confidants.md  # 'Confidants' page
-├── contact.md     # 'Get in touch' page
 ├── events.md      # 'News' page
 ├── index.md       # 'Home' page
-└── projects.md    # 'Projects' page
+├── projects.md    # 'Projects' page
+└── magazine.md     # 'Tappa Quarterly' page
 ```
 
 Use these as templates for creating new pages.
-
-

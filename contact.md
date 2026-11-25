@@ -6,6 +6,7 @@ image:
   caption: "Tuebingen 3D-map at Stadtmuseum. Photo credit: Mila" #""
 title: 'Get in touch with us!'
 # permalink: /Contact/
+# ECLUDED FROM WEBSITE
 ---
 
 If you are interested in joining TAPPA or have any further questions, please reach out to us:
